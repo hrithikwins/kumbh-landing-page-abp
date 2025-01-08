@@ -1,101 +1,122 @@
+import DosAndDonts from "@/components/DosAndDonts";
+import Enquirenow from "@/components/Enquirenow";
+import MahaKumbh from "@/components/MahaKumbh";
+import News from "@/components/News";
+import TimingSlider from "@/components/TimingSlider";
 import Image from "next/image";
+
+
+const Frame =()=>{
+  return <div className="text-center flex justify-center z-50">
+    <img src="/frame1.png"/>
+    <div className="absolute translate-y-[80px] text-[#FFF5E3]">
+      <div className="text-[20px]">PAUSH PURNAMASI</div>
+      <div className="font-semibold text-2xl">13 JANUARY 2025</div>
+    </div>
+  </div>
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="overflow-x-hidden">
+    <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center h-screen">
+  
+      <div className="flex flex-row justify-between px-6 py-5">
+        <div>
+          <img src="/ABP.png" className="z-10 w-20" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="text-white text-center text-2xl">THE PRESTIGIOUS PRAYAGRAJ <br/> MAHAKUMBH MELA 2025</div>
+
+        <div></div>
+
+      </div>
+
+      <div>
+        <img src="cloud.svg" className="w-[20%]" />
+        <div className="flex flex-row">
+
+        <img src="land 1.svg" className="w-[45%] absolute translate-y-10" />
+        <img src="land 2.svg" className="w-[45%] absolute right-0 " />
+        <img src="saint frame.svg" className="w-[52%] absolute left-[25%] top-[10%]" />
+        </div>
+        
+        
+      </div>
+    </div>
+
+    {/* dates section */}
+
+    <div className="bg-[#FFF5E3] py-10">
+      <img  src="water-hand 1.svg" className="absolute w-[20%] right-0 mt-40 z-40"/>
+      <img  src="water-hand 2.svg" className="absolute w-[20%] mt-40 z-40"/>
+
+     <div className="flex justify-center items-center flex-col">
+      <img src="new kumbh logo 1.svg" className="w-[30%]"  />
+      <div className="text-[#6A302F] text-center font-normal text-3xl translate-y-[-40px]">GET RID OF ALL YOUR SINS-<br/>
+      HOLY SNAN DATES</div>
+     </div>
+
+      <div className="grid grid-flow-row grid-cols-3 gap-10 px-10 z-50"> 
+        <Frame/>
+        <Frame/>
+        <Frame/>
+        <Frame/>
+        <Frame/>
+        <Frame/>
+      </div>
+
+      <div className="flex flex-row items-center justify-center gap-5 mt-10">
+        <img   src="diamond.svg" className="w-8"/>
+        <div className="text-[#6A302F] underline text-2xl">BOOK YOUR SNAN DATES</div>
+        <img   src="diamond.svg" className="w-8"/>
+      </div>
+         
+    <div className="border-[#87C0F0] border-t border-r border-l  mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[200px]"> 
+
+      <div className="flex flex-row items-center px-10 gap-10 justify-center text-center mt-10">
+         <div className="text-center">
+          <div className="uppercase text-[#6A302F] text-4xl">humanity <br/> Gathering</div>
+          <div className="text-xs text-[#222] mt-2">It’s the world’s largest peaceful congregation, attracting millions of devotees, saints, and tourists. All coming together for a shared spiritual experience.</div>
+         </div>
+
+         <div className="text-center">
+          <div className="uppercase text-[#6A302F] text-4xl">humanity <br/> Gathering</div>
+          <div className="text-xs text-[#222] mt-2">It’s the world’s largest peaceful congregation, attracting millions of devotees, saints, and tourists. All coming together for a shared spiritual experience.</div>
+         </div>
+
+         <div className="text-center">
+          <div className="uppercase text-[#6A302F] text-4xl">humanity <br/> Gathering</div>
+          <div className="text-xs text-[#222] mt-2">It’s the world’s largest peaceful congregation, attracting millions of devotees, saints, and tourists. All coming together for a shared spiritual experience.</div>
+         </div>
+
+      </div>
+    </div>
+
+    <div >
+      <img src="media room- tv.svg" className="absolute w-[450px] left-[38%] m-auto z-50 translate-y-[-150px]" />
+    </div>
+    <div>
+      <img src="/river.svg" className="translate-y-[-10px]"/>
+      <img src="/mask.svg" className="absolute translate-y-[-130px]"/>
+    </div>
+
+
+    </div>
+
+
+    {/* */}
+
+    <TimingSlider/>
+
+    <MahaKumbh/>
+
+    <News/>
+
+    <DosAndDonts/>
+
+    <Enquirenow/>
+
     </div>
   );
 }
