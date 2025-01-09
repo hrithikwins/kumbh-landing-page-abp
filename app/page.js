@@ -1,5 +1,6 @@
 import DosAndDonts from "@/components/DosAndDonts";
 import Enquirenow from "@/components/Enquirenow";
+import Everythingyouneedtoknow from "@/components/Everythingyouneedtoknow";
 import MahaKumbh from "@/components/MahaKumbh";
 import News from "@/components/News";
 import TimingSlider from "@/components/TimingSlider";
@@ -37,7 +38,12 @@ export default function Home() {
         <div className="flex flex-row">
 
         <img src="land 1.svg" className="w-[45%] absolute translate-y-10" />
+        <img src="image 7.svg" className="w-[38%] absolute translate-y-72" />
+        <img src="image 7.svg" className="w-[28%] left-[14%] absolute translate-y-72" />
+        <img src="flower left.svg" className="w-[30%] absolute translate-y-72" />
+
         <img src="land 2.svg" className="w-[45%] absolute right-0 " />
+        <img src="image 7.svg" className="w-[38%] absolute right-0  translate-y-72" />
         <img src="saint frame.svg" className="w-[52%] absolute left-[25%] top-[10%]" />
         </div>
         
@@ -95,6 +101,7 @@ export default function Home() {
 
     <div >
       <img src="media room- tv.svg" className="absolute w-[450px] left-[38%] m-auto z-50 translate-y-[-150px]" />
+      <img src="sadhu 1.svg" className="absolute w-[250px] left-[42%] m-auto z-40 translate-y-[-120px]" />
     </div>
     <div>
       <img src="/river.svg" className="translate-y-[-10px]"/>
@@ -114,6 +121,8 @@ export default function Home() {
     <News/>
 
     <DosAndDonts/>
+
+    <Everythingyouneedtoknow/>
 
     <Enquirenow/>
 

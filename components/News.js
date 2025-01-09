@@ -19,8 +19,7 @@ const Card = () => {
 };
 
 const MySwiper = () => {
-  const prevRef = useRef < HTMLDivElement > null; // Ref for the previous button
-  const nextRef = useRef < HTMLDivElement > null; // Ref for the next button
+ 
 
   useEffect(() => {
     // Delay assigning refs to ensure DOM elements are rendered
