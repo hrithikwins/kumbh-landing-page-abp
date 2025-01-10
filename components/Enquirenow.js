@@ -4,11 +4,11 @@ const Enquirenow = () => {
   return (
     <div className="my-10">
        
-       <img src="image 41.png"  className="absolute -z-10 right-0 translate-y-20"/> 
-       <img src="image 40.svg"  className="absolute -z-10"/> 
+       <img src="image 41.png"  className="absolute -z-10 right-0 translate-y-36 w-[40%]"/> 
+       <img src="image 40.svg"  className="absolute -z-10  w-[30%] translate-y-24"/> 
     
       <div className="flex flex-row justify-between items-center -z-10 px-10">
-        <div className="flex flex-row items-center gap-10">
+        <div className="flex flex-row items-center gap-6">
           <img src="ABP.png" />
           <img className="h-20 w-20" src="new kumbh logo 1.svg" />
         </div>
@@ -40,7 +40,7 @@ const Enquirenow = () => {
         </div>
 
         <div className="mt-20">
-          <img className="w-60" src="Frame 10.svg" />
+          <img className="w-60 translate-x-2" src="Frame 10.svg" />
         </div>
       </div>
 

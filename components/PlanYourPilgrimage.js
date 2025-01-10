@@ -44,17 +44,17 @@ const PlanYourPilgrimage = () => {
           </div>
 
 
-           <div className="flex flex-row justify-center  mt-10 gap-80 w-full items-center">
+            
+         
+          
+           <div className="flex flex-row justify-center   mt-10 gap-80 w-full items-center">
 
             <img src="sadhu new 1.svg" className="w-[400px] z-50"/>
             <img src="sadhu new1 1.svg" className="w-[400px] z-50"/>
             <img src="sadhu new3 1.svg" className="w-[280px] z-50"/>
-            <img src="water1 1.svg" className="w-full absolute  translate-y-[100px]"/>
+            <img src="water1 1.svg" className="w-full absolute  translate-y-[120px]"/>
 
            </div>
-            
-         
-          
         </div>
 
       </div>

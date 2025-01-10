@@ -74,10 +74,10 @@ const TimingSlider = () => {
           </div>
         </div>
 
-        <div>
+        <div className="">
           {" "}
           <img
-            className="w-[400px]"
+            className="w-[500px]"
             src="https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg="
           />
         </div>

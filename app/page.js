@@ -27,15 +27,16 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center h-screen">
         <div className="flex flex-row justify-between px-6 py-5">
-          <div>
+          <div className="flex flex-row items-center gap-6">
             <img src="/ABP.png" className="z-10 w-20" />
+            <img src="new kumbh logo 1.svg" className="z-10 w-20 hover:scale-125 cursor-pointer" />
           </div>
 
           <div className="text-white text-center text-2xl">
             THE PRESTIGIOUS PRAYAGRAJ <br /> MAHAKUMBH MELA 2025
           </div>
 
-          <div></div>
+          <div className="w-40"></div>
         </div>
 
         <div>
@@ -49,17 +50,17 @@ export default function Home() {
             />
             <img
               src="image 7.svg"
-              className="w-[28%] left-[14%] absolute translate-y-72"
+              className="w-[32%] left-[14%] absolute translate-y-72"
             />
 
             <img
               src="image 6.svg"
-              className="w-[28%] left-[40%] z-40 absolute translate-y-[450px]"
+              className="w-[35%] left-[40%] z-40 absolute translate-y-[450px]"
             />
 
             <img
               src="image 8.svg"
-              className="w-[28%] left-[30%] z-30 absolute translate-y-[400px]"
+              className="w-[32%] left-[30%] z-30 absolute translate-y-[400px]"
             />
             <img
               src="flower left.svg"
@@ -159,18 +160,18 @@ export default function Home() {
         <div>
           <img
             src="media room- tv.svg"
-            className="absolute w-[450px] left-[38%] m-auto z-50 translate-y-[-150px]"
+            className="absolute w-[420px] left-[38%] m-auto z-50 translate-y-[-150px]"
           />
           <img
             src="sadhu 1.svg"
             className="absolute w-[250px] left-[42%] m-auto z-40 translate-y-[-120px]"
           />
         </div>
+      </div>
         <div>
-          <img src="/river.svg" className="translate-y-[-10px]" />
+          <img src="/river.svg" className="translate-y-[-10px] w-full" />
           <img src="/mask.svg" className="absolute w-full translate-y-[-130px]" />
         </div>
-      </div>
 
       {/* */}
 

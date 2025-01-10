@@ -84,12 +84,13 @@ const DosAndDonts = () => {
         )}
       </div>
 
-      <div className="bg-gradient-to-r from-[#FED7CF] via-white to-white absolute -z-10 ">
-        <img src="/dondont1 1.svg"/>
+      <div className="bg-gradient-to-r from-[#FED7CF] via-white to-white absolute -z-40  h-[400px] w-full ">
       </div>
       <div className="flex flex-row items-center justify-between z-30 mt-32">
-      <img src="/image 31.svg"/>
-      <img src="/image 33.svg"/>
+        <img src="/dondont1 1.svg" className="z-30 absolute translate-y-[-90px]"/>/
+      <img src="/image 31.svg"  className="z-40 translate-y-[60px] left-0 absolute"/>
+      <img src="/image 33.svg"  className="z-40 translate-y-[60px]"/>
+      <img src="water1 1.svg" className="w-full absolute  translate-y-[60px] z-20"/>
       </div>
     </div>
   );

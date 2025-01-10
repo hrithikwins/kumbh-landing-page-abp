@@ -12,7 +12,7 @@ const Card = () => {
     <div>
       <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2025/01/08/202501083296726.jpg?quality=80&zoom=1&ssl=1" />
 
-      <div className="text-2xl px-2 py-2">13 जनवरी से हो रहा महाकुंभ का आगाज, रेलवे के इस ऐप में जानें अपनी यात्रा से जुड़ी हर डिटेल</div>
+      <div className="text-2xl py-2">13 जनवरी से हो रहा महाकुंभ का आगाज, रेलवे के इस ऐप में जानें अपनी यात्रा से जुड़ी हर डिटेल</div>
     </div>
   );
 };
