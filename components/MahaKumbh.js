@@ -3,7 +3,7 @@ import React from 'react'
 const MahaKumbh = () => {
   return (
     <div className=''>
-       <div><img src='/image 21.svg' /></div>
+       <div><img src='/image 21.svg' className='w-full' /></div>
         <div className='bg-[#FED7CF]  grid grid-flow-row grid-cols-3 gap-20 px-10 py-20 '>
 
             <div className='text-center '>
@@ -25,7 +25,7 @@ const MahaKumbh = () => {
             </div>
 
         </div>
-        <div><img src='/image 21.svg' className='rotate-180 translate-y-[-20px]' /></div>
+        <div><img src='/image 21.svg' className='rotate-180 w-full translate-y-[-20px]' /></div>
     </div>
   )
 }

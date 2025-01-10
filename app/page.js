@@ -1,9 +1,11 @@
 import DosAndDonts from "@/components/DosAndDonts";
 import Enquirenow from "@/components/Enquirenow";
 import Everythingyouneedtoknow from "@/components/Everythingyouneedtoknow";
+import Footer from "@/components/Footer";
 import MahaKumbh from "@/components/MahaKumbh";
 import MahaKumbhGallery from "@/components/MahaKumbhGallery";
 import News from "@/components/News";
+import PlanYourPilgrimage from "@/components/PlanYourPilgrimage";
 import TimingSlider from "@/components/TimingSlider";
 import TourPackages from "@/components/TourPackages";
 import Image from "next/image";
@@ -38,6 +40,7 @@ export default function Home() {
 
         <div>
           <img src="cloud.svg" className="w-[20%]" />
+          <img src="image 12.svg" className="w-[25%] translate-y-[-220px] absolute right-0" />
           <div className="flex flex-row">
             <img src="land 1.svg" className="w-[45%] absolute translate-y-10" />
             <img
@@ -48,15 +51,30 @@ export default function Home() {
               src="image 7.svg"
               className="w-[28%] left-[14%] absolute translate-y-72"
             />
+
+            <img
+              src="image 6.svg"
+              className="w-[28%] left-[40%] z-40 absolute translate-y-[450px]"
+            />
+
+            <img
+              src="image 8.svg"
+              className="w-[28%] left-[30%] z-30 absolute translate-y-[400px]"
+            />
             <img
               src="flower left.svg"
-              className="w-[30%] absolute translate-y-72"
+              className="w-[30%] absolute translate-y-60"
+            />
+
+            <img
+              src="flower right.svg"
+              className="w-[30%] absolute translate-y-48 right-0 z-40"
             />
 
             <img src="land 2.svg" className="w-[45%] absolute right-0 " />
             <img
-              src="image 7.svg"
-              className="w-[38%] absolute right-0  translate-y-72"
+              src="image 12.svg"
+              className="w-[48%] absolute right-0  translate-y-60"
             />
             <img
               src="saint frame.svg"
@@ -68,7 +86,7 @@ export default function Home() {
 
       {/* dates section */}
 
-      <div className="bg-[#FFF5E3] py-10">
+      <div className="bg-[#FFF5E3] py-10 pt-32">
         <img
           src="water-hand 1.svg"
           className="absolute w-[20%] right-0 mt-40 z-40"
@@ -150,13 +168,15 @@ export default function Home() {
         </div>
         <div>
           <img src="/river.svg" className="translate-y-[-10px]" />
-          <img src="/mask.svg" className="absolute translate-y-[-130px]" />
+          <img src="/mask.svg" className="absolute w-full translate-y-[-130px]" />
         </div>
       </div>
 
       {/* */}
 
       <TimingSlider />
+
+      <PlanYourPilgrimage/>
 
       <News />
 
@@ -166,11 +186,13 @@ export default function Home() {
 
       <DosAndDonts />
 
-      <TourPackages/>
+      <TourPackages />
 
       <Everythingyouneedtoknow />
 
       <Enquirenow />
+
+      <Footer />
     </div>
   );
 }

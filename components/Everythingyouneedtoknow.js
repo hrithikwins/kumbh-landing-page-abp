@@ -20,7 +20,7 @@ const Everythingyouneedtoknow = () => {
   return (
     <div className="">
       <div>
-        <img src="/image 21.svg" />
+        <img src="/image 21.svg" className="w-full" />
       </div>
       <div className="bg-[#FED7CF] text-center py-10">
         <div className="font-semibold text-sm">|| Useful links ||</div>
@@ -107,7 +107,7 @@ const Everythingyouneedtoknow = () => {
    
 
       <div>
-        <img src="/image 21.svg" className="rotate-180 translate-y-[-10px]" />
+        <img src="/image 21.svg" className="rotate-180 w-full translate-y-[-10px]" />
       </div>
     </div>
   );
