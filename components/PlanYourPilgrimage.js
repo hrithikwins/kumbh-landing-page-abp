@@ -17,10 +17,32 @@ const PlanYourPilgrimage = () => {
 
         <div className="flex flex-row items-center mt-10 justify-center gap-20">
           <img className="w-60" src="Group 18.svg" />
+          <div className="relative w-[500px] h-[270px]">
+            {/* Frame Image */}
+            <Image
+              src="/images/big-frame.png"
+              alt="frame"
+              layout="fill"
+              objectFit="contain"
+              className="z-10"
+            />
+
+            {/* Inner Image */}
+            <div className="absolute inset-0 flex justify-center z-0">
+              <Image
+                src="/images/main-image.svg"
+                alt="main-image"
+                width={490}
+                height={300}
+                className="object-cover "
+              />
+            </div>
+          </div>
           <img className="w-60" src="Group 19.svg" />
         </div>
         <div className="h-[350px]">
           <img src="image 25.svg" className="absolute left-0 z-50" />
+
           <img
             src="kalash 1.svg"
             className="absolute w-60 mt-20 left-[45%] z-50"

@@ -166,7 +166,7 @@ const TimingSlider = () => {
         />
         <div className="relative flex justify-around items-center w-full h-full ">
           {data.map((step, index) => (
-            <div key={step.id} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center">
               <Image
                 src={
                   index == number
