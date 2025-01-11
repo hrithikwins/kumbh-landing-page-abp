@@ -46,7 +46,6 @@ const services = [
   },
 ];
 
-
 const travel = [
   {
     title: "Where to Stay",
@@ -75,27 +74,22 @@ const travel = [
   },
 ];
 
-
 const food = [
   {
     title: "Mela Attractions",
-    subtitle:
-      "All the list of attractions you will find in Kumbh Mela area",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area",
   },
   {
     title: "Mela Attractions",
-    subtitle:
-      "All the list of attractions you will find in Kumbh Mela area",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area",
   },
   {
     title: "Mela Attractions",
-    subtitle:
-      "All the list of attractions you will find in Kumbh Mela area",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area",
   },
 ];
 
-
-const allThings=[
+const allThings = [
   {
     title: "Nearby Attractions",
     subtitle:
@@ -111,8 +105,7 @@ const allThings=[
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
   },
-  
-]
+];
 
 const Everythingyouneedtoknow = () => {
   const [active, setActive] = useState("All services");
@@ -135,7 +128,10 @@ const Everythingyouneedtoknow = () => {
       </div>
       <div className="bg-[#FED7CF] text-center py-10">
         <div className="font-semibold text-sm">|| Useful links ||</div>
-        <div className="text-[#6A302F] text-center font-normal text-4xl mt-4">
+        <div
+          id="useful-links-section"
+          className="text-[#6A302F] text-center font-normal text-4xl mt-4"
+        >
           Everything You Need
         </div>
 
@@ -208,25 +204,49 @@ const Everythingyouneedtoknow = () => {
         <div className="grid grid-flow-row grid-cols-4 mt-10 gap-10 px-10 z-50">
           {active == "All services"
             ? services.map((item, index) => {
-                return <Frame key={index} title={item.title} subtitle={item.subtitle} />;
+                return (
+                  <Frame
+                    key={index}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                );
               })
             : null}
 
           {active == "Travel & Rest"
             ? travel.map((item, index) => {
-                return <Frame key={index} title={item.title} subtitle={item.subtitle} />;
+                return (
+                  <Frame
+                    key={index}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                );
               })
             : null}
 
           {active == "Food & Attractions"
             ? food.map((item, index) => {
-                return <Frame key={index} title={item.title} subtitle={item.subtitle} />;
+                return (
+                  <Frame
+                    key={index}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                );
               })
             : null}
 
           {active == "All Things Kumbh"
             ? allThings.map((item, index) => {
-                return <Frame key={index} title={item.title} subtitle={item.subtitle} />;
+                return (
+                  <Frame
+                    key={index}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                );
               })
             : null}
         </div>

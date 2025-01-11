@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../public/fonts/Merriweather/Merriweather-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Merriweather", "Forum", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 .swiper-container {
   position: relative;
@@ -15,8 +30,4 @@
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   font-size: 18px;
-}
-
-body {
-  font-family: 'Forum', sans-serif;
 }

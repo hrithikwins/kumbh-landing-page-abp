@@ -11,9 +11,16 @@ const Card = () => {
     <div>
       <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202412/maha-kumbh-mela-2025-143422361-16x9.jpg?VersionId=ZYyiXH2SdcCmzflRWBjWHlMR6eClM7.A" />
 
-      <div className="text-2xl  py-2">13 जनवरी से हो रहा महाकुंभ का आगाज, रेलवे के इस ऐप में जानें अपनी यात्रा से जुड़ी हर डिटेल</div>
+      <div className="text-2xl  py-2">
+        13 जनवरी से हो रहा महाकुंभ का आगाज, रेलवे के इस ऐप में जानें अपनी यात्रा
+        से जुड़ी हर डिटेल
+      </div>
 
-      <div className="text-sm">Kumbh Rail Seva App: 'कुंभ रेल सेवा' ऐप में प्रयागराज में शुरू हो रहे महाकुंभ से जुड़ी हर जानकारी डिटेल में मिलेगी. इसमें ट्रेन के साथ प्रयागराज में ठहरने के लिए होटल-लॉज तक के बारे में जान सकेंगे.</div>
+      <div className="text-sm">
+        Kumbh Rail Seva App: 'कुंभ रेल सेवा' ऐप में प्रयागराज में शुरू हो रहे
+        महाकुंभ से जुड़ी हर जानकारी डिटेल में मिलेगी. इसमें ट्रेन के साथ
+        प्रयागराज में ठहरने के लिए होटल-लॉज तक के बारे में जान सकेंगे.
+      </div>
     </div>
   );
 };
@@ -36,7 +43,10 @@ const MySwiper = () => {
 
   return (
     <div className="swiper-container px-10 ">
-      <div className="text-4xl mt-40  text-center text-[#6A302F] ">
+      <div
+        id="abp-news-coverage-section"
+        className="text-4xl mt-40  text-center text-[#6A302F] "
+      >
         ABP News Coverage
       </div>
 

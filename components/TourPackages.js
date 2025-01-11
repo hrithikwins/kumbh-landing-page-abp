@@ -54,7 +54,10 @@ const TourPackages = () => {
 
   return (
     <div className="swiper-container px-10 ">
-      <div className="text-4xl  text-center text-[#6A302F]  mt-10">
+      <div
+        id="tour-package-section"
+        className="text-4xl  text-center text-[#6A302F]  mt-10"
+      >
         Tour Packages For You
       </div>
 
@@ -114,7 +117,7 @@ const TourPackages = () => {
 
         <div>
           <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
-          View all tour packages
+            View all tour packages
           </button>
         </div>
         <div className="swiper-button-nextt cursor-pointer ">
