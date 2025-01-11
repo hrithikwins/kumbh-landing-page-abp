@@ -392,7 +392,7 @@ export default function Home() {
         <MahaKumbhGallery />
         {/* Plane your pilgrimage section */}
         <PlanYourPilgrimage />
-
+        {/*History section */}
         <TimingSlider />
 
         <MahaKumbh />
