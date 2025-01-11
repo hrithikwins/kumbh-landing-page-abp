@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Dos = [
@@ -78,7 +79,7 @@ const DosAndDonts = () => {
             {Dos.map((item, index) => {
               return (
                 <div
-                  className="text-left bg-[#FFF5E3] px-4 py-2 text-sm h-24 flex flex-row items-center justify-end"
+                  className="text-left bg-[#FFF5E3] px-4 py-2 text-sm h-24 flex flex-row items-center justify-end border-2 border-solid border-[#787060]"
                   key={index}
                 >
                   {item}
@@ -91,7 +92,7 @@ const DosAndDonts = () => {
             {donts.map((item, index) => {
               return (
                 <div
-                  className="text-left bg-[#FFF5E3] px-4 py-2 text-sm h-24 flex flex-row items-center justify-end"
+                  className="text-left bg-[#FFF5E3] px-4 py-2 text-sm h-24 flex flex-row items-center justify-end border-2 border-solid border-[#787060]"
                   key={index}
                 >
                   {item}
@@ -104,6 +105,13 @@ const DosAndDonts = () => {
 
       <div className="bg-gradient-to-r from-[#FED7CF] via-white to-white absolute -z-40  h-[400px] w-full "></div>
       <div className="flex flex-row items-center justify-between z-30 mt-32">
+        <Image
+          src="/images/do-and-dont/snake-head.png"
+          alt="snake-head"
+          width={300}
+          height={300}
+          className="z-30 absolute translate-y-[-250px] right-40 "
+        />
         <img
           src="/dondont1 1.svg"
           className="z-30 absolute translate-y-[-90px]"
@@ -111,9 +119,12 @@ const DosAndDonts = () => {
         /
         <img
           src="/image 31.svg"
-          className="z-40 translate-y-[60px] left-0 absolute"
+          className="z-40 translate-y-[60px] -left-60 absolute"
         />
-        <img src="/image 33.svg" className="z-40 translate-y-[60px]" />
+        <img
+          src="/image 33.svg"
+          className="z-40 translate-y-[60px] -right-10"
+        />
         <img
           src="water1 1.svg"
           className="w-full absolute  translate-y-[60px] z-20"

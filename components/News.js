@@ -60,8 +60,8 @@ const MySwiper = () => {
         spaceBetween={20} // Space between slides
         slidesPerView={4} // Number of slides visible at a time
         navigation={{
-          nextEl: ".swiper-button-nextt",
-          prevEl: ".swiper-button-prevv",
+          nextEl: ".swiper-button-next-news",
+          prevEl: ".swiper-button-prev-news",
         }}
         loop={true} // Enable infinite loop
       >
@@ -89,7 +89,7 @@ const MySwiper = () => {
         </SwiperSlide>
       </Swiper>
       <div className="flex flex-row justify-between items-center mt-10 w-fit gap-10 m-auto">
-        <div className="swiper-button-prevv cursor-pointer">
+        <div className="swiper-button-prev-news cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -109,7 +109,7 @@ const MySwiper = () => {
             View all latest news
           </button>
         </div>
-        <div className="swiper-button-nextt cursor-pointer ">
+        <div className="swiper-button-next-news cursor-pointer ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"

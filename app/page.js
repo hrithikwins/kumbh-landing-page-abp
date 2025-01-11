@@ -11,13 +11,13 @@ import TourPackages from "@/components/TourPackages";
 import Image from "next/image";
 import Link from "next/link";
 
-const Frame = () => {
+const Frame = ({ data }) => {
   return (
     <div className="text-center flex justify-center z-50">
       <Image src="/frame1.png" alt="frame1" width={500} height={500} />
       <div className="absolute translate-y-[80px] text-[#FFF5E3]">
-        <div className="text-[20px]">PAUSH PURNAMASI</div>
-        <div className="font-semibold text-2xl">13 JANUARY 2025</div>
+        <div className="text-[20px]">{data.title}</div>
+        <div className="font-semibold text-2xl">{data.date}</div>
       </div>
     </div>
   );
@@ -64,6 +64,34 @@ export default function Home() {
       link: "#",
     },
   ];
+
+  const framesData = [
+    {
+      title: "PAUSH PURNAMASI",
+      date: "13 JANUARY 2025",
+    },
+    {
+      title: "MAKAR SANKRANTI",
+      date: "14 JANUARY 2025",
+    },
+    {
+      title: "MAUNI AMAVASYA",
+      date: "29 JANUARY 2025",
+    },
+    {
+      title: "BASANT PANCHAMI",
+      date: "3 FEBRUARY 2025",
+    },
+    {
+      title: "MAGHI PURNAMASI",
+      date: "12 FEBRUARY 2025",
+    },
+    {
+      title: "MAHA SHIVARATRI",
+      date: "26 FEBRUARY 2025",
+    },
+  ];
+
   return (
     <>
       {/** nav bar */}
@@ -287,12 +315,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-flow-row grid-cols-3 gap-10 px-10 z-50">
-            <Frame />
-            <Frame />
-            <Frame />
-            <Frame />
-            <Frame />
-            <Frame />
+            {framesData.map((frame, index) => (
+              <Frame key={index} data={frame} />
+            ))}
           </div>
 
           <div className="flex flex-row items-center justify-center gap-5 mt-10">

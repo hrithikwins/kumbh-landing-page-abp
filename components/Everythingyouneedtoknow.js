@@ -1,11 +1,15 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
-const Frame = ({ title, subtitle }) => {
+const Frame = ({ title, subtitle, icon }) => {
   return (
     <div className="text-center flex justify-center z-50">
-      <img src="/frame1.png" />
+      <img src="/frame1.png" alt="frame" className="h-48" />
       <div className="absolute translate-y-[40px] text-[#FFF5E3]">
+        <div className="flex justify-center">
+          <Image src={icon} alt={title} width={50} height={50} />
+        </div>
         <div className="text-[20px]">{title}</div>
         <div className="text-xs max-w-72 mt-2">{subtitle}</div>
       </div>
@@ -18,31 +22,46 @@ const services = [
     title: "How to Reach",
     subtitle:
       "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+    icon: "/images/useful-links/how-to-reach.svg",
   },
   {
-    title: "How to Reach",
-    subtitle:
-      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+    title: "Where to Stay",
+    subtitle: "Details about Tent City and Hotels.",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
   {
-    title: "How to Reach",
+    title: "Direction to Ghats",
     subtitle:
-      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+      "Discover the different ghats in Prayagraj and find their locations on Google Maps.",
+    icon: "/images/useful-links/direction-to-ghat.svg",
   },
   {
-    title: "How to Reach",
+    title: "Tourist Guide",
     subtitle:
-      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors.",
+    icon: "/images/useful-links/tourist-guide.svg",
   },
   {
-    title: "How to Reach",
-    subtitle:
-      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+    title: "Visitor's Guide",
+    subtitle: "How to reach Prayagraj from other major cities of India.",
+    icon: "/images/useful-links/visitor-guide.svg",
   },
   {
-    title: "How to Reach",
+    title: "Mela Attractions",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area.",
+    icon: "/images/useful-links/mela-attraction.svg",
+  },
+  {
+    title: "Nearby Attractions",
     subtitle:
-      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela.",
+    icon: "/images/useful-links/nearby-attraction.svg",
+  },
+  {
+    title: "Food and Things",
+    subtitle:
+      "Discover the culinary delights offered in Prayagraj, and in the Kumbh Mela.",
+    icon: "/images/useful-links/food-and-thing.svg",
   },
 ];
 
@@ -51,26 +70,31 @@ const travel = [
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    icon: "/images/useful-links/where-to-stay.svg",
   },
 ];
 
@@ -78,14 +102,17 @@ const food = [
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
+    icon: "/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
+    icon: "/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
+    icon: "/images/useful-links/mela-attraction.svg",
   },
 ];
 
@@ -94,16 +121,19 @@ const allThings = [
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
+    icon: "/images/useful-links/nearby-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
+    icon: "/images/useful-links/nearby-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
+    icon: "/images/useful-links/nearby-attraction.svg",
   },
 ];
 
@@ -209,6 +239,7 @@ const Everythingyouneedtoknow = () => {
                     key={index}
                     title={item.title}
                     subtitle={item.subtitle}
+                    icon={item.icon}
                   />
                 );
               })
@@ -221,6 +252,7 @@ const Everythingyouneedtoknow = () => {
                     key={index}
                     title={item.title}
                     subtitle={item.subtitle}
+                    icon={item.icon}
                   />
                 );
               })
@@ -233,6 +265,7 @@ const Everythingyouneedtoknow = () => {
                     key={index}
                     title={item.title}
                     subtitle={item.subtitle}
+                    icon={item.icon}
                   />
                 );
               })
@@ -245,6 +278,7 @@ const Everythingyouneedtoknow = () => {
                     key={index}
                     title={item.title}
                     subtitle={item.subtitle}
+                    icon={item.icon}
                   />
                 );
               })
