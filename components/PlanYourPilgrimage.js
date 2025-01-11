@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const PlanYourPilgrimage = () => {
@@ -76,6 +77,13 @@ const PlanYourPilgrimage = () => {
             <img
               src="water1 1.svg"
               className="w-full absolute  translate-y-[120px]"
+            />
+            <Image
+              src="/mask.svg"
+              alt="mask"
+              width={500}
+              height={500}
+              className="absolute w-full z-20 translate-y-[210px]"
             />
           </div>
         </div>

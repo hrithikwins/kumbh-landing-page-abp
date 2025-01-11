@@ -2,56 +2,68 @@
 import React, { useState } from "react";
 
 const data = [
-    {
-        time:"~3000 BCE",
-        title:"Mythological Origin",
-        subTitle:"Samudra Manthan",
-        image:"https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
-        content:" According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela."
-    },
-    {
-        time:"7th Century CE",
-        title:"Mythological Origin",
-        subTitle:"Samudra Manthan",
-        image:"https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
-        content:" According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela."
-    },
-    {
-        time:"12th Century",
-        title:"Mythological Origin",
-        subTitle:"Samudra Manthan",
-        image:"https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
-        content:" According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela."
-    },
-    {
-        time:"18th Century",
-        title:"Mythological Origin",
-        image:"https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
-        subTitle:"Samudra Manthan",
-        content:" According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela."
-    }
-]
+  {
+    time: "~3000 BCE",
+    title: "Mythological Origin",
+    subTitle: "Samudra Manthan",
+    image:
+      "https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
+    content:
+      " According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela.",
+  },
+  {
+    time: "7th Century CE",
+    title: "Mythological Origin",
+    subTitle: "Samudra Manthan",
+    image:
+      "https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
+    content:
+      " According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela.",
+  },
+  {
+    time: "12th Century",
+    title: "Mythological Origin",
+    subTitle: "Samudra Manthan",
+    image:
+      "https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
+    content:
+      " According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela.",
+  },
+  {
+    time: "18th Century",
+    title: "Mythological Origin",
+    image:
+      "https://media.istockphoto.com/id/478438644/photo/har-ki-paur-ghat-in-haridwar-during-kunbh-mela-india.jpg?s=612x612&w=0&k=20&c=zmVqjJ8W6whfi99G57dPsZhsUNavWvlAgd-UKEDxrWg=",
+    subTitle: "Samudra Manthan",
+    content:
+      " According to Hindu mythology, gods (devas) and demons (asuras) churned the ocean to obtain the nectar of immortality (amrita).During a divine battle over the nectar, four drops fell atPrayagraj, Haridwar, Nashik, and Ujjain, making these sites sacred and forming the foundation for Kumbh Mela.",
+  },
+];
 
 const TimingSlider = () => {
+  const [number, setNumber] = useState(0);
 
-    const [number,setNumber] = useState(0)
-
-    const swiperFunction =(type)=>{
-      console.log(type)
-      if(type){
-        if(number==data.length-1){setNumber(0)}
-        else{setNumber(number+1)}
+  const swiperFunction = (type) => {
+    console.log(type);
+    if (type) {
+      if (number == data.length - 1) {
+        setNumber(0);
+      } else {
+        setNumber(number + 1);
       }
-      else{
-        if(number==0){setNumber(data.length-1)}
-        else{setNumber(number-1)}
+    } else {
+      if (number == 0) {
+        setNumber(data.length - 1);
+      } else {
+        setNumber(number - 1);
       }
     }
+  };
 
   return (
     <div className="px-10 py-10 text-center overflow-x-hidden">
       <div className="text-center text-xs">|| Sarvsidhpradh Kumbh ||</div>
-      <div className="text-3xl mt-4  text-[#6A302F]">
+      <div id="history-section" className="text-3xl mt-4  text-[#6A302F]">
         History of (Spirituality+Humanity) Kumbh Mela
       </div>
       <div className="mt-4 text-center text-xs">
@@ -63,14 +75,15 @@ const TimingSlider = () => {
       </div>
 
       <div className="text-[280px] m-auto flex flex-row  text-center absolute text-[#FFF5E3] -z-30">
-      {data[number].time}
+        {data[number].time}
       </div>
       <div className="grid grid-flow-row grid-cols-3 gap-10 mt-20 text-left z-40">
         <div className="">
           <div className="uppercase text-2xl">{data[number].title}</div>
           <div className="text-[#DC581A] text-xl mt-1">{data[number].time}</div>
           <div className="font-semibold mt-2">{data[number].subTitle}</div>
-          <div className="text-xs max-w-[400px] mt-2">{data[number].content}
+          <div className="text-xs max-w-[400px] mt-2">
+            {data[number].content}
           </div>
         </div>
 
@@ -83,7 +96,12 @@ const TimingSlider = () => {
         </div>
 
         <div className=" flex flex-row gap-10 items-center justify-center">
-          <div onClick={()=>{swiperFunction(false)}} className="hover:cursor-pointer">
+          <div
+            onClick={() => {
+              swiperFunction(false);
+            }}
+            className="hover:cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -98,7 +116,12 @@ const TimingSlider = () => {
             </svg>
           </div>
 
-          <div onClick={()=>{swiperFunction(true)}} className="hover:cursor-pointer">
+          <div
+            onClick={() => {
+              swiperFunction(true);
+            }}
+            className="hover:cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"

@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       name: "History",
-      link: "#",
+      link: "#history-section",
     },
     {
       name: "Plane Your Pilgrimage",
@@ -111,24 +111,28 @@ export default function Home() {
       <div className="overflow-x-hidden">
         <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center h-screen">
           <div className="flex flex-row justify-between px-6 py-5">
-            <div className="flex flex-row items-center gap-6">
-              <Image
-                src="/ABP.png"
-                alt="ABP logo"
-                width={80}
-                height={80}
-                className="z-10 w-20"
-              />
-              <Image
-                src="/new kumbh logo 1.svg"
-                alt="Kumbh logo"
-                width={80}
-                height={80}
-                className="z-10 w-20 hover:scale-125 cursor-pointer"
-              />
+            <div className="flex flex-row items-center gap-6 ">
+              <div className="z-10 w-24">
+                <Image
+                  src="/ABP.png"
+                  alt="ABP logo"
+                  width={80}
+                  height={80}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+              <div className="w-24 z-10">
+                <Image
+                  src="/new kumbh logo 1.svg"
+                  alt="Kumbh logo"
+                  width={80}
+                  height={80}
+                  className="object-contain w-full h-full hover:scale-125 cursor-pointer"
+                />
+              </div>
             </div>
 
-            <div className="text-white text-center text-2xl">
+            <div className="text-[#FFF5E3] text-center text-4xl leading-[60px] font-thin">
               THE PRESTIGIOUS PRAYAGRAJ <br /> MAHAKUMBH MELA 2025
             </div>
 
@@ -233,7 +237,7 @@ export default function Home() {
                 height={500}
                 className="w-[48%] absolute right-0 translate-y-60"
               />
-              <div className="w-[52%] absolute left-[25%] top-[10%]">
+              <div className="w-[52%] absolute left-[25%] top-[26%]">
                 <Image
                   src="/saint frame.svg"
                   alt="saint frame"
@@ -248,7 +252,7 @@ export default function Home() {
 
         {/* About Section */}
 
-        <div className="bg-[#FFF5E3] py-10 pt-32">
+        <div className="bg-[#FFF5E3] py-10 pt-32 mt-32">
           <Image
             src="/water-hand 1.svg"
             alt="water hand 1"
@@ -354,14 +358,14 @@ export default function Home() {
               alt="media room tv"
               width={420}
               height={420}
-              className="absolute w-[420px] left-[38%] m-auto z-50 translate-y-[-150px]"
+              className="absolute w-[420px] left-[38%] m-auto z-10 translate-y-[-40px]"
             />
             <Image
               src="/sadhu 1.svg"
               alt="sadhu"
               width={250}
               height={250}
-              className="absolute w-[250px] left-[42%] m-auto z-40 translate-y-[-120px]"
+              className="absolute w-[250px] left-[42%] m-auto z-40 translate-y-[-30px]"
             />
           </div>
         </div>
@@ -378,21 +382,18 @@ export default function Home() {
             alt="mask"
             width={500}
             height={500}
-            className="absolute w-full translate-y-[-130px]"
+            className="absolute w-full z-20 translate-y-[-130px]"
           />
         </div>
 
-        {/* */}
-
-        <TimingSlider />
-
-        {/* Plane your pilgrimage section */}
-
-        <PlanYourPilgrimage />
         {/**ABP News Coverage section */}
         <News />
-
+        {/*MahaKumbh Gallery section */}
         <MahaKumbhGallery />
+        {/* Plane your pilgrimage section */}
+        <PlanYourPilgrimage />
+
+        <TimingSlider />
 
         <MahaKumbh />
 
