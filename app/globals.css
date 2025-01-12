@@ -1,9 +1,12 @@
 @font-face {
   font-family: "Merriweather";
   src: url("../public/fonts/Merriweather/Merriweather-Regular.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../public/fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
 }
 
 @tailwind base;
@@ -11,7 +14,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Merriweather", "Forum", sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -30,4 +33,13 @@ html {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   font-size: 18px;
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(
+          circle at center,
+          #fed7cf 30%,
+          rgba(255, 255, 255, 0.5) 50%,
+          white 70%
+  );
 }
