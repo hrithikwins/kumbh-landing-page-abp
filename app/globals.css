@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Merriweather";
   src: url("../public/fonts/Merriweather/Merriweather-Regular.ttf")
-  format("truetype");
+    format("truetype");
 }
 
 @font-face {
@@ -37,9 +37,9 @@ html {
 
 .bg-radial-gradient {
   background: radial-gradient(
-          circle at center,
-          #fed7cf 30%,
-          rgba(255, 255, 255, 0.5) 50%,
-          white 70%
+    circle at center,
+    #fed7cf 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    white 70%
   );
 }

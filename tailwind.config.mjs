@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        lora: ["Lora", "serif"],
+        merriweather: ["Merriweather", "serif"],
+      },
     },
   },
   plugins: [],
