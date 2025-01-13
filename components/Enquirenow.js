@@ -110,7 +110,7 @@ const Enquirenow = () => {
             </p>
           </div>
           <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
-            Explore our service offerings
+            Enter Mahakumbh Mela
           </button>
         </div>
 

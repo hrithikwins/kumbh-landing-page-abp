@@ -147,7 +147,8 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                   onClick={() => window.open("https://kumbh.gov.in/en/howtoreach", "_blank")}>
                 How to reach?
               </div>
               <Image
@@ -174,7 +175,8 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                   onClick={() => window.open("https://kumbh.gov.in/en/travelplanner", "_blank")}>
                 Tourist guide
               </div>
               <Image
@@ -200,8 +202,9 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
-                where to stay?
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                   onClick={() => window.open("https://kumbh.gov.in/en/travelplanner", "_blank")}>
+                Where to stay?
               </div>
               <Image
                 src="/diamond.svg"
