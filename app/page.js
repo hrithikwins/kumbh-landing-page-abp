@@ -344,13 +344,15 @@ export default function Home() {
           />
 
           <div className="flex justify-center items-center flex-col">
+            <Link href="https://kumbh.gov.in" className="w-[50%] mb-10 lg:mb-0 lg:w-[30%] " target="_blank">
             <Image
               src="/new kumbh logo 1.svg"
               alt="new kumbh logo"
               width={500}
               height={500}
-              className="w-[50%] mb-10 lg:mb-0 lg:w-[30%]"
+              className="cursor-pointer"
             />
+            </Link>
             <div
               id="about-section"
               className="text-[#6A302F] text-center font-normal text-3xl translate-y-[-40px]"

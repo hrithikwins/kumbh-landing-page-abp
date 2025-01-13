@@ -35,7 +35,7 @@ const Enquirenow = () => {
                 alt="kumbh-logo"
                 width={100}
                 height={100}
-                className="h-35 w-35 hover:scale-125 cursor-pointer"
+                className="h-35 w-35 cursor-pointer"
             />
           </Link>
         </div>
