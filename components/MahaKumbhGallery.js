@@ -69,14 +69,16 @@ const MahaKumbhGallery = () => {
       <div>
         <img
           src="image 29.svg"
-          className="absolute translate-y-[-300px] left-0"
+          alt="flower-left"
+          className="absolute translate-y-[-150px] w-[200px] left-0 lg:w-auto lg:translate-y-[-300px]"
         />
         <img
           src="image 30.svg"
-          className="absolute translate-y-[-300px] right-0"
+          alt="flower-right"
+          className="absolute translate-y-[-150px] w-[200px] right-0 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>
-      <div className="text-4xl  text-center text-[#6A302F]  mt-40">
+      <div className="text-4xl  text-center text-[#6A302F] pt-40 mt-40 lg:pt-0">
         Mahakumbh 2025 Gallery
       </div>
 
@@ -89,6 +91,18 @@ const MahaKumbhGallery = () => {
         modules={[Navigation]}
         spaceBetween={20} // Space between slides
         slidesPerView={4} // Number of slides visible at a time
+        breakpoints={{
+          // Adjust slides per view based on screen width
+          0: {
+            slidesPerView: 1, // 1 slide on mobile
+          },
+          768: {
+            slidesPerView: 2, // 2 slides on tablets
+          },
+          1024: {
+            slidesPerView: 4, // 4 slides on laptops and larger screens
+          },
+        }}
         navigation={{
           nextEl: ".swiper-button-next-gallery",
           prevEl: ".swiper-button-prev-gallery",

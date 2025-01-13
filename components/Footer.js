@@ -308,7 +308,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-48 font-lora">
-      <div className="w-full bg-[#4B0505] py-10 px-32 flex  flex-col gap-5">
+      <div className="hidden lg:flex w-full bg-[#4B0505] py-10 px-32   flex-col gap-5">
         <div className="flex gap-10">
           {/**Logo */}
           <Image src="/ABP.png" alt="abp-logo" width={100} height={100} />
@@ -345,12 +345,12 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-full bg-black text-white py-10 px-32 flex flex-col gap-2">
+      <div className="w-full bg-black text-white py-10 px-5 text-sm lg:px-32 lg:text-base flex flex-col gap-2">
         {/* Links of the website */}
         <div className="w-full font-semibold">
-          <ul className="flex justify-between">
+          <ul className="flex flex-wrap gap-2 uppercase lg:flex-nowrap lg:justify-between">
             {footerLinks.map((item, index) => (
-              <li key={index} className="text-white text-xl">
+              <li key={index} className="text-white text-sm lg:text-xl">
                 <a href={item.link}>{item.name}</a>
               </li>
             ))}
@@ -359,12 +359,12 @@ const Footer = () => {
         <div className="w-full flex justify-between mt-5 font-lora">
           {/*News websites */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-[#FBB900] text-xl uppercase">
+            <h3 className="text-[#FBB900] text-sm lg:text-xl uppercase">
               {footerNewsLinks.title}
             </h3>
             <ul className="flex gap-5">
               {footerNewsLinks.listOfWebsites.map((item, index) => (
-                <li key={index} className="text-white text-md">
+                <li key={index} className="text-white text-xs lg:text-base">
                   <a href={item.link}>{item.name}</a>
                 </li>
               ))}
@@ -372,21 +372,22 @@ const Footer = () => {
           </div>
           {/*Footer social links */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-[#FBB900] text-xl uppercase">
+            <h3 className="text-[#FBB900] text-sm lg:text-xl uppercase">
               {footerSocialLinks.title}
             </h3>
-            <div className="flex gap-3">
+            <div className="flex gap-1 lg:gap-3">
               {footerSocialLinks.links.map((item, index) => (
                 <a
                   key={index}
                   href={item.link}
-                  className="bg-white w-7 h-7 flex justify-center items-center  rounded-[50%]"
+                  className="bg-white w-4 h-4 lg:w-7 lg:h-7 flex justify-center items-center  rounded-[50%]"
                 >
                   <Image
                     src={item.icon}
                     alt={item.name}
                     width={15}
                     height={15}
+                    className="w-2 h-2 lg:w-[15px] lg:h-[15px]"
                   />
                 </a>
               ))}

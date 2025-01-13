@@ -98,7 +98,7 @@ const MySwiper = () => {
     <div className="swiper-container px-10 ">
       <div
         id="abp-news-coverage-section"
-        className="text-4xl mt-40  text-center text-[#6A302F] "
+        className="text-3xl lg:text-4xl mt-20 lg:mt-40  text-center text-[#6A302F] "
       >
         ABP News Coverage
       </div>
@@ -112,6 +112,18 @@ const MySwiper = () => {
         modules={[Navigation]}
         spaceBetween={20} // Space between slides
         slidesPerView={4} // Number of slides visible at a time
+        breakpoints={{
+          // Adjust slides per view based on screen width
+          0: {
+            slidesPerView: 1, // 1 slide on mobile
+          },
+          768: {
+            slidesPerView: 2, // 2 slides on tablets
+          },
+          1024: {
+            slidesPerView: 4, // 4 slides on laptops and larger screens
+          },
+        }}
         navigation={{
           nextEl: ".swiper-button-next-news",
           prevEl: ".swiper-button-prev-news",

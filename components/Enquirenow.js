@@ -3,11 +3,16 @@ import React from "react";
 const Enquirenow = () => {
   return (
     <div className="my-10">
-       
-       <img src="image 41.png"  className="absolute -z-10 right-0 translate-y-36 w-[40%]"/> 
-       <img src="image 40.svg"  className="absolute -z-10  w-[30%] translate-y-24"/> 
-    
-      <div className="flex flex-row justify-between items-center -z-10 px-10">
+      <img
+        src="image 41.png"
+        className="absolute -z-10 right-0 translate-y-[650px] w-[50%] lg:translate-y-36  lg:w-[40%]"
+      />
+      <img
+        src="image 40.svg"
+        className="absolute -z-10  w-[40%] translate-y-[600px] lg:w-[30%] lg:translate-y-24"
+      />
+
+      <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center -z-10 px-10">
         <div className="flex flex-row items-center gap-6">
           <img src="ABP.png" />
           <img className="h-20 w-20" src="new kumbh logo 1.svg" />
@@ -44,16 +49,7 @@ const Enquirenow = () => {
         </div>
       </div>
 
-
-     
-       
-         
-        
-      
-          {/* <img src="image 41.svg" /> */}
-      
-    
-
+      {/* <img src="image 41.svg" /> */}
     </div>
   );
 };

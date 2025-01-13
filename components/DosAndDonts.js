@@ -37,13 +37,21 @@ const DosAndDonts = () => {
 
   return (
     <div className="text-center py-10">
-      <div id="dos-and-donts-section" className="text-3xl mt-4  text-[#6A302F]">
-        Embrace the Gods (Do's) and Avoid the Demons (Don'ts)
+      <div
+        id="dos-and-donts-section"
+        className="flex justify-center text-2xl  lg:text-3xl mt-4  text-[#6A302F]"
+      >
+        <p className="w-[80%] lg:w-full">
+          {" "}
+          Embrace the Gods (Do's) and Avoid the Demons (Don'ts)
+        </p>
       </div>
 
-      <div className="text-center text-xs mt-4 font-lora">
-        The Sacred Do's and the Forbidden Don'ts : A Guide to Navigating
-        Prayagraj Mahakumbh 2025
+      <div className="flex justify-center text-center text-xs mt-4 font-lora">
+        <p className="w-[80%] lg:w-full">
+          The Sacred Do's and the Forbidden Don'ts : A Guide to Navigating
+          Prayagraj Mahakumbh 2025
+        </p>
       </div>
 
       <div className="w-fit m-auto my-10 px-2 py-2 rounded-md bg-[#FFF5E3] flex flex-row gap-4 font-medium">
@@ -75,7 +83,7 @@ const DosAndDonts = () => {
 
       <div className="my-10 px-10">
         {active ? (
-          <div className="grid grid-flow-row grid-cols-4 gap-10">
+          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-4 gap-10">
             {Dos.map((item, index) => {
               return (
                 <div
@@ -88,7 +96,7 @@ const DosAndDonts = () => {
             })}
           </div>
         ) : (
-          <div className="grid grid-flow-row grid-cols-4 gap-10">
+          <div className="grid grid-flow-row  grid-cols-1 lg:grid-cols-4 gap-10">
             {donts.map((item, index) => {
               return (
                 <div
@@ -104,8 +112,8 @@ const DosAndDonts = () => {
       </div>
 
       {/* <div className="bg-gradient-to-r from-[#FED7CF] via-white to-white absolute -z-40  h-[400px] w-full "></div> */}
-      <div className="absolute -z-[100] w-full h-[500px] -mt-36 -ml-60">
-        <div className="bg-radial-gradient  h-full w-[60%]  "></div>
+      <div className="absolute -z-[100] w-full h-[500px] -mt-20 -ml-40 lg:-mt-36 lg:-ml-60">
+        <div className="bg-radial-gradient  h-full w-[60%]"></div>
       </div>
       <div className="flex flex-row items-center justify-between z-30 mt-32">
         <Image
@@ -113,11 +121,11 @@ const DosAndDonts = () => {
           alt="snake-head"
           width={300}
           height={300}
-          className="z-30 absolute translate-y-[-250px] right-40 "
+          className="z-30 absolute translate-y-[-50px] w-[200px] right-14 lg:w-auto lg:h-auto lg:translate-y-[-250px] lg:right-40 "
         />
         <img
           src="/dondont1 1.svg"
-          className="z-30 absolute translate-y-[-90px]"
+          className="z-30 absolute translate-y-[-0px] lg:translate-y-[-90px]"
         />
         /
         <img

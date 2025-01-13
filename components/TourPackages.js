@@ -70,6 +70,18 @@ const TourPackages = () => {
         modules={[Navigation]}
         spaceBetween={20} // Space between slides
         slidesPerView={4} // Number of slides visible at a time
+        breakpoints={{
+          // Adjust slides per view based on screen width
+          0: {
+            slidesPerView: 1, // 1 slide on mobile
+          },
+          768: {
+            slidesPerView: 2, // 2 slides on tablets
+          },
+          1024: {
+            slidesPerView: 4, // 4 slides on laptops and larger screens
+          },
+        }}
         navigation={{
           nextEl: ".swiper-button-nextt",
           prevEl: ".swiper-button-prevv",
