@@ -550,8 +550,7 @@ export default function Home() {
               />
             </div>
 
-            <div
-                className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[60px] lg:pb-[200px]">
+            <div className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[60px] lg:pb-[200px]">
               <div className="flex flex-col items-center px-10 gap-10 justify-center text-center mt-10 lg:flex-row">
                 <div className="text-center">
                   <div className="uppercase text-[#6A302F] text-4xl">
@@ -589,7 +588,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div>
               <Image
                   src="/media room- tv.svg"

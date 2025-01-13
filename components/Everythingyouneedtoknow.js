@@ -1,19 +1,22 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Frame = ({ title, subtitle, icon }) => {
   return (
-    <div className="text-center flex justify-center z-50">
-      <img src="/frame1.png" alt="frame" className="h-48" />
-      <div className="absolute translate-y-[40px] text-[#FFF5E3]">
-        <div className="flex justify-center">
-          <Image src={icon} alt={title} width={50} height={50} />
+    <Link href="https://kumbh.gov.in/en/travelplanner" target="_blank">
+      <div className="text-center flex justify-center z-50">
+        <img src="/frame1.png" alt="frame" className="h-48" />
+        <div className="absolute translate-y-[40px] text-[#FFF5E3]">
+          <div className="flex justify-center">
+            <Image src={icon} alt={title} width={50} height={50} />
+          </div>
+          <div className="text-[20px]">{title}</div>
+          <div className="text-xs max-w-72 mt-2">{subtitle}</div>
         </div>
-        <div className="text-[20px]">{title}</div>
-        <div className="text-xs max-w-72 mt-2">{subtitle}</div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -156,7 +159,7 @@ const Everythingyouneedtoknow = () => {
           className="absolute translate-y-[-100px] right-0 w-52 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>
-      <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:py-36 ">
+      <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:py-36 lg:pb-12 ">
         <div className="font-semibold text-sm">|| Useful links ||</div>
         <div
           id="useful-links-section"

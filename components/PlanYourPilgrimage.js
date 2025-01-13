@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const PlanYourPilgrimage = () => {
@@ -134,9 +135,11 @@ const PlanYourPilgrimage = () => {
             Join us in this extraordinary journey and witness the confluence of
             tradition, devotion, and enlightenment.
           </div>
-          <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
-            Explore our service offerings
-          </button>
+          <Link href="#useful-links-section" passHref>
+            <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
+              Explore our service offerings
+            </button>
+          </Link>
 
           <div className="mt-20">
             <div className="flex flex-row items-center justify-center gap-5 ">
