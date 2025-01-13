@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import DosAndDonts from "@/components/DosAndDonts";
+// import DosAndDonts from "@/components/DosAndDonts";
 import Enquirenow from "@/components/Enquirenow";
 import Everythingyouneedtoknow from "@/components/Everythingyouneedtoknow";
 import Footer from "@/components/Footer";
-import MahaKumbh from "@/components/MahaKumbh";
+// import MahaKumbh from "@/components/MahaKumbh";
 import MahaKumbhGallery from "@/components/MahaKumbhGallery";
 import News from "@/components/News";
 import PlanYourPilgrimage from "@/components/PlanYourPilgrimage";
-import TimingSlider from "@/components/TimingSlider";
-import TourPackages from "@/components/TourPackages";
+// import TimingSlider from "@/components/TimingSlider";
+// import TourPackages from "@/components/TourPackages";
 import Image from "next/image";
 import Link from "next/link";
 
