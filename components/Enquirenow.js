@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Enquirenow = () => {
   return (
@@ -28,13 +29,15 @@ const Enquirenow = () => {
             height={100}
             className="w-full "
           />
-          <Image
-            src="/new kumbh logo 1.svg"
-            alt="kumbh-logo"
-            width={100}
-            height={100}
-            className="h-20 w-20"
-          />
+          <Link href="https://kumbh.gov.in" target="_blank">
+            <Image
+                src="/new kumbh logo 1.svg"
+                alt="kumbh-logo"
+                width={100}
+                height={100}
+                className="h-35 w-35 hover:scale-125 cursor-pointer"
+            />
+          </Link>
         </div>
 
         <div className="flex flex-row gap-10 items-center">

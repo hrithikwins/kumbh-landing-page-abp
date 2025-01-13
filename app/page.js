@@ -193,6 +193,7 @@ export default function Home() {
                 />
               </div>
               <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
+                <Link href="https://kumbh.gov.in" target="_blank">
                 <Image
                   src="/new kumbh logo 1.svg"
                   alt="Kumbh logo"
@@ -200,6 +201,7 @@ export default function Home() {
                   height={80}
                   className="object-contain w-full h-full hover:scale-125 cursor-pointer"
                 />
+                </Link>
               </div>
             </div>
 
