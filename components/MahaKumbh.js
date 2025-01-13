@@ -1,15 +1,23 @@
 import React from "react";
+import Image from "next/image";
 
 const MahaKumbh = () => {
   return (
-    <div className="">
+    <div>
       <div>
-        <img src="/image 21.svg" className="w-full" />
+        <Image
+          src="/image 21.svg"
+          alt="Maha Kumbh"
+          layout="responsive"
+          width={1920}
+          height={1080}
+          className="w-full"
+        />
       </div>
-      <div className="bg-[#FED7CF]  grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-20 px-10 py-20 ">
-        <div className="text-center ">
+      <div className="bg-[#FED7CF] grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-20 px-10 py-20">
+        <div className="text-center">
           <div className="text-sm text-[#B5441B] font-lora">#सुगम महाकुम्भ</div>
-          <div className="uppercase mt-4 text-3xl lg:text-4xl ">
+          <div className="uppercase mt-4 text-3xl lg:text-4xl">
             Sugam Maha <br /> Kumbh
           </div>
           <div className="mt-4 text-xs lg:text-sm font-lora">
@@ -21,13 +29,12 @@ const MahaKumbh = () => {
           </div>
         </div>
 
-        <div className="text-center ">
+        <div className="text-center">
           <div className="text-sm text-[#B5441B] font-lora">
             #सांस्कृतिक महाकुम्भ
           </div>
-          <div className="uppercase mt-4 text-3xl lg:text-4xl ">
-            Sanskritik
-            <br /> Maha Kumbh
+          <div className="uppercase mt-4 text-3xl lg:text-4xl">
+            Sanskritik <br /> Maha Kumbh
           </div>
           <div className="mt-4 text-xs lg:text-sm font-lora">
             Embark on a pilgrimage of spiritual enlightenment at Maha Kumbh Mela
@@ -38,13 +45,12 @@ const MahaKumbh = () => {
           </div>
         </div>
 
-        <div className="text-center ">
+        <div className="text-center">
           <div className="text-sm text-[#B5441B] font-lora">
             #स्वच्छ महाकुम्भ
           </div>
-          <div className="uppercase mt-4 text-3xl lg:text-4xl ">
-            Swachh Maha <br />
-            Kumbh
+          <div className="uppercase mt-4 text-3xl lg:text-4xl">
+            Swachh Maha <br /> Kumbh
           </div>
           <div className="mt-4 text-xs lg:text-sm font-lora">
             Immerse yourself in the spiritual purity of Maha Kumbh Mela 2025,
@@ -55,8 +61,12 @@ const MahaKumbh = () => {
         </div>
       </div>
       <div>
-        <img
+        <Image
           src="/image 21.svg"
+          alt="Maha Kumbh"
+          layout="responsive"
+          width={1920}
+          height={1080}
           className="rotate-180 w-full translate-y-[-20px]"
         />
       </div>

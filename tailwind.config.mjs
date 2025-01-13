@@ -15,6 +15,9 @@ export default {
         lora: ["Lora", "serif"],
         merriweather: ["Merriweather", "serif"],
       },
+      screens: {
+        xs: "375px",
+      },
     },
   },
   plugins: [],

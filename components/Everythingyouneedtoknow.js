@@ -156,7 +156,7 @@ const Everythingyouneedtoknow = () => {
           className="absolute translate-y-[-100px] right-0 w-52 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>
-      <div className="bg-[#FED7CF] text-center py-24 pt-36 lg:py-36 ">
+      <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:py-36 ">
         <div className="font-semibold text-sm">|| Useful links ||</div>
         <div
           id="useful-links-section"
@@ -175,8 +175,8 @@ const Everythingyouneedtoknow = () => {
         </div>
       </div>
 
-      <div className="bg-[#FED7CF] pt-2 lg:py-10">
-        <div className="w-fit m-auto px-2 py-2 rounded-md text-center bg-[#FFF5E3] grid grid-cols-2 lg:grid-cols-4 gap-4 font-medium">
+      <div className="bg-[#FED7CF] pt-0 lg:py-10">
+        <div className="w-fit m-auto px-2 py-2 rounded-md text-center bg-[#FFF5E3] grid grid-cols-2 lg:grid-cols-4 gap-2 font-medium">
           <div
             onClick={() => {
               setActive("All services");
@@ -231,7 +231,7 @@ const Everythingyouneedtoknow = () => {
           </div>
         </div>
 
-        <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-4 mt-10 gap-10 px-10 pb-16 lg:pb-0 z-50">
+        <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-4 mt-10 gap-5 px-10 pb-16 lg:pb-0 z-50">
           {active == "All services"
             ? services.map((item, index) => {
                 return (

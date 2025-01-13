@@ -64,8 +64,13 @@ const TimingSlider = () => {
     <>
       <div className="px-10 py-10 text-center overflow-x-hidden">
         <div className="text-center text-xs">|| Sarvsidhpradh Kumbh ||</div>
-        <div id="history-section" className="text-3xl mt-4  text-[#6A302F]">
-          History of (Spirituality+Humanity) Kumbh Mela
+        <div
+          id="history-section"
+          className="flex justify-center text-3xl mt-4  text-[#6A302F]"
+        >
+          <p className="w-[80%] lg:w-auto">
+            History of (Spirituality +Humanity) Kumbh Mela
+          </p>
         </div>
         <div className="mt-4 text-center text-xs font-lora">
           The Kumbh Mela has transformed from an ancient pilgrimage into a
@@ -81,7 +86,7 @@ const TimingSlider = () => {
         {/*For Mobile */}
         <div className="grid lg:hidden grid-flow-row gap-6 mt-10 text-left">
           {/* Frame Image Section */}
-          <div className="relative w-full h-[280px]">
+          <div className="relative w-full h-[250px]">
             {/* Frame Image */}
             <Image
               src="/images/history-frame.png"
@@ -197,7 +202,7 @@ const TimingSlider = () => {
         </div>
       </div>
       {/* Timing Slider */}
-      <div className="relative w-full mt-12 mb-12 lg:mb-32">
+      <div className="relative w-full lg:mt-12 mb-12 lg:mb-32">
         <Image
           src="/images/history-steps.svg"
           alt="steps"
@@ -231,7 +236,7 @@ const TimingSlider = () => {
         </div>
       </div>
       {/* Navigation Arrows */}
-      <div className="flex lg:hidden flex-row gap-6 items-center justify-center mb-14">
+      <div className="flex lg:hidden flex-row gap-6 items-center justify-center mb-10">
         <div
           onClick={() => {
             swiperFunction(false);

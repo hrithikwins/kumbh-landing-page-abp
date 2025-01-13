@@ -67,18 +67,22 @@ const MahaKumbhGallery = () => {
   return (
     <div className="swiper-container px-10 ">
       <div>
-        <img
+        <Image
           src="image 29.svg"
           alt="flower-left"
+          width={200}
+          height={200}
           className="absolute translate-y-[-150px] w-[200px] left-0 lg:w-auto lg:translate-y-[-300px]"
         />
-        <img
+        <Image
           src="image 30.svg"
           alt="flower-right"
+          width={200}
+          height={200}
           className="absolute translate-y-[-150px] w-[200px] right-0 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>
-      <div className="text-4xl  text-center text-[#6A302F] pt-40 mt-40 lg:pt-0">
+      <div className="text-4xl  text-center text-[#6A302F] pt-20 mt-40 lg:pt-0">
         Mahakumbh 2025 Gallery
       </div>
 
@@ -116,7 +120,7 @@ const MahaKumbhGallery = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="flex flex-row justify-between items-center mt-10 w-fit gap-10 m-auto">
+      <div className="flex flex-row justify-between items-center mb-14 lg:mb-0 mt-10 w-fit gap-10 m-auto">
         <div className="swiper-button-prev-gallery cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"

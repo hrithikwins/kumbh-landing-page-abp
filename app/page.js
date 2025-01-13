@@ -137,7 +137,7 @@ export default function Home() {
         </div>
       </div>
       <div className="overflow-x-hidden">
-        <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center h-screen">
+        <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen">
           {/*logo section for mobile */}
           <div className="flex w-full lg:hidden justify-between p-3">
             <div className="flex flex-row lg:items-center gap-2 lg:gap-6 ">
@@ -244,7 +244,7 @@ export default function Home() {
               alt="image 12"
               width={500}
               height={500}
-              className="w-[35%] translate-y-[-100px] lg:w-[25%] lg:translate-y-[-220px] absolute right-0"
+              className="w-[35%] xs:translate-y-[-50px] lg:w-[25%] lg:translate-y-[-220px] absolute right-0"
             />
             <div className="flex flex-row">
               <Image
@@ -310,7 +310,7 @@ export default function Home() {
                 height={500}
                 className="w-[48%] absolute right-0 translate-y-32 z-20 lg:-right-0 lg:translate-y-60 lg:z-0"
               />
-              <div className="w-[100%] lg:w-[52%] absolute top-[50%] lg:left-[25%]  lg:top-[26%]">
+              <div className="w-[100%] lg:w-[52%] absolute xs:top-[35%] lg:left-[25%]  lg:top-[26%]">
                 <Image
                   src="/saint frame.svg"
                   alt="saint frame"
@@ -325,7 +325,7 @@ export default function Home() {
 
         {/* About Section */}
 
-        <div className="bg-[#FFF5E3] py-10 pt-52 lg:pt-32 mt-0 lg:mt-32">
+        <div className="bg-[#FFF5E3] py-10 pt-16 lg:pt-32 mt-0 lg:mt-32">
           <Image
             src="/water-hand 1.svg"
             alt="water hand 1"
@@ -359,7 +359,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 z-50 mt-40 lg:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-10 z-50 mt-40 lg:mt-0">
             {framesData.map((frame, index) => (
               <Frame key={index} data={frame} />
             ))}
@@ -373,7 +373,7 @@ export default function Home() {
               height={32}
               className="w-8"
             />
-            <div className="text-[#6A302F] underline text-2xl">
+            <div className="text-[#6A302F] underline text-xl lg:text-2xl">
               BOOK YOUR SNAN DATES
             </div>
             <Image
@@ -385,7 +385,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[200px]">
+          <div className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[60px] lg:pb-[200px]">
             <div className="flex flex-col items-center px-10 gap-10 justify-center text-center mt-10 lg:flex-row">
               <div className="text-center">
                 <div className="uppercase text-[#6A302F] text-4xl">
@@ -430,20 +430,20 @@ export default function Home() {
               alt="media room tv"
               width={420}
               height={420}
-              className="absolute w-[350px] left-[9%] lg:w-[420px] lg:left-[38%] m-auto z-50 translate-y-[-30px] lg:translate-y-[-40px]"
+              className="absolute w-[250px] left-[12%] xs:w-[80%] xs:left-[10%] lg:w-[420px] lg:left-[38%] m-auto z-50 translate-y-[0px] xs:translate-y-[-10px] lg:translate-y-[-40px]"
             />
             <Image
               src="/sadhu 1.svg"
               alt="sadhu"
               width={250}
               height={250}
-              className="absolute w-[180px] left-[25%] translate-y-[10px] lg:w-[220px] lg:left-[42%] m-auto z-40 lg:translate-y-[-0px]"
+              className="absolute w-[130px] xs:w-[40%] left-[25%] translate-y-[30px] xs:translate-y-[30px] lg:w-[220px] lg:left-[42%] m-auto z-40 lg:translate-y-[-0px]"
             />
           </div>
         </div>
         <div>
           {/**To make the river cover div */}
-          <div className="block lg:hidden relative w-full h-64">
+          <div className="block -mt-10 lg:mt-0 lg:hidden relative w-full h-64 ">
             <Image
               src="/river.svg"
               alt="river"
@@ -464,7 +464,7 @@ export default function Home() {
             alt="mask"
             width={500}
             height={500}
-            className="absolute w-full z-50 translate-y-[-40px] lg:translate-y-[-130px]"
+            className="absolute w-full z-50 translate-y-[-30px] xs:translate-y-[-20px] lg:translate-y-[-130px]"
           />
         </div>
 

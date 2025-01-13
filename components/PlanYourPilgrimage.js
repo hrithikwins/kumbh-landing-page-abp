@@ -4,7 +4,13 @@ import React from "react";
 const PlanYourPilgrimage = () => {
   return (
     <div className=" mb-10">
-      <img src="/image 21.svg" className="w-full" />
+      <Image
+        src="/image 21.svg"
+        alt="image"
+        width={100}
+        height={100}
+        className="w-full"
+      />
       <div className="bg-[#FED7CF] pt-10 text-center">
         <div>|| Sarvsidhpradh Kumbh ||</div>
         <div></div>
@@ -40,13 +46,31 @@ const PlanYourPilgrimage = () => {
             </div>
           </div>
           <div className="flex  items-center justify-center gap-10">
-            <img className="w-40" src="Group 18.svg" alt="left-frame" />
-            <img className="w-40" src="Group 19.svg" alt="right-frame" />
+            <Image
+              width={100}
+              height={100}
+              className="w-40"
+              src="/Group 18.svg"
+              alt="left-frame"
+            />
+            <Image
+              width={100}
+              height={100}
+              className="w-40"
+              src="/Group 19.svg"
+              alt="right-frame"
+            />
           </div>
         </div>
         {/**For desktop frame section */}
         <div className="hidden lg:flex flex-row items-center mt-10 justify-center gap-20">
-          <img className="w-60" src="Group 18.svg" alt="left-frame" />
+          <Image
+            width={100}
+            height={100}
+            className="w-60"
+            src="/Group 18.svg"
+            alt="left-frame"
+          />
           <div className="relative w-[500px] h-[270px]">
             {/* Frame Image */}
             <Image
@@ -68,30 +92,42 @@ const PlanYourPilgrimage = () => {
               />
             </div>
           </div>
-          <img className="w-60" src="Group 19.svg" alt="right-frame" />
+          <Image
+            width={100}
+            height={100}
+            className="w-60"
+            src="/Group 19.svg"
+            alt="right-frame"
+          />
         </div>
 
         <div className="h-[350px]">
-          <img
-            src="image 25.svg"
+          <Image
+            width={100}
+            height={100}
+            src="/image 25.svg"
             className="absolute left-0 z-50 w-52 lg:w-auto"
             alt="left-flower"
           />
 
-          <img
-            src="kalash 1.svg"
+          <Image
+            width={100}
+            height={100}
+            src="/kalash 1.svg"
             className="absolute mt-40 left-[35%] z-50 w-40 lg:w-60 lg:left-[45%] lg:mt-20"
             alt="kalash"
           />
-          <img
-            src="image 26.svg"
+          <Image
+            width={100}
+            height={100}
+            src="/image 26.svg"
             className="absolute right-0 z-50 w-52 lg:w-auto"
             alt="right-flower"
           />
         </div>
 
-        <div className="flex pt-20 flex-col items-center justify-center mt-10 rounded-t-[931px] bg-gradient-to-b from-[#FFF] to-[#FCF2E7] w-full">
-          <div className="text-[#6A302F] text-3xl lg:text-4xl ">
+        <div className="flex pt-20 flex-col items-center justify-center mt-5 lg:mt-10 rounded-t-[931px] bg-gradient-to-b from-[#FFF] to-[#FCF2E7] w-full">
+          <div className="text-[#6A302F] text-3xl mt-7 lg:mt-0 lg:text-4xl ">
             Plan Your Pilgrimage
           </div>
           <div className="text-xs mt-4 font-lora lg:text-sm">
@@ -103,8 +139,24 @@ const PlanYourPilgrimage = () => {
           </button>
 
           <div className="mt-20">
-            <div className="uppercase text-3xl text-[#6A302F]  underline lg:text-4xl">
-              How to reach?
+            <div className="flex flex-row items-center justify-center gap-5 ">
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
+                How to reach?
+              </div>
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
               Prayagraj city is well connected to all major Cities in India via
@@ -114,8 +166,24 @@ const PlanYourPilgrimage = () => {
           </div>
 
           <div className="mt-10">
-            <div className="uppercase text-3xl text-[#6A302F]  underline lg:text-4xl">
-              Tourist guide
+            <div className="flex flex-row items-center justify-center gap-5 ">
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
+                Tourist guide
+              </div>
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
               The Tourism Department Uttar Pradesh has introduced 4 walks
@@ -124,8 +192,24 @@ const PlanYourPilgrimage = () => {
           </div>
 
           <div className="mt-10">
-            <div className="uppercase text-3xl text-[#6A302F]  underline lg:text-4xl">
-              where to stay?
+            <div className="flex flex-row items-center justify-center gap-5 ">
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
+              <div className="text-[#6A302F] underline text-3xl lg:text-4xl">
+                where to stay?
+              </div>
+              <Image
+                src="/diamond.svg"
+                alt="diamond"
+                width={32}
+                height={32}
+                className="w-8"
+              />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
               Tent city, hotels, public accommodations and home stay- Prayagraj{" "}
@@ -179,23 +263,29 @@ const PlanYourPilgrimage = () => {
               />
             </div>
             <div className="absolute top-1/2 left-20 transform -translate-y-1/2 -translate-x-1/2">
-              <img
-                src="sadhu new 1.svg"
+              <Image
+                width={100}
+                height={100}
+                src="/sadhu new 1.svg"
                 className="w-[200px] lg:w-[400px] z-50"
                 alt="sadhu"
               />
             </div>
 
             <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 ">
-              <img
-                src="sadhu new1 1.svg"
+              <Image
+                width={100}
+                height={100}
+                src="/sadhu new1 1.svg"
                 className="w-[200px] lg:w-[400px] z-50"
                 alt="sadhu"
               />
             </div>
             <div className="absolute top-1/2 right-20 transform -translate-y-1/2 translate-x-1/2">
-              <img
-                src="sadhu new3 1.svg"
+              <Image
+                width={100}
+                height={100}
+                src="/sadhu new3 1.svg"
                 className="w-[150px] lg:w-[280px] z-50"
                 alt="sadhu"
               />
@@ -205,7 +295,7 @@ const PlanYourPilgrimage = () => {
               alt="mask"
               width={500}
               height={500}
-              className="absolute w-full z-20 translate-y-[460px]"
+              className="absolute w-full z-20 translate-y-[470px]"
             />
           </div>
         </div>
