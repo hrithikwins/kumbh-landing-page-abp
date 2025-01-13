@@ -4,7 +4,11 @@ import React from "react";
 
 const PlanYourPilgrimage = () => {
   return (
-    <div className=" mb-10">
+    <div
+      //hiding temporary
+      //className="mb-10"
+      className=" -mb-5"
+    >
       <Image
         src="/image 21.svg"
         alt="image"
@@ -150,8 +154,12 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
-                   onClick={() => window.open("https://kumbh.gov.in/en/howtoreach", "_blank")}>
+              <div
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                onClick={() =>
+                  window.open("https://kumbh.gov.in/en/howtoreach", "_blank")
+                }
+              >
                 How to reach?
               </div>
               <Image
@@ -178,8 +186,12 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
-                   onClick={() => window.open("https://kumbh.gov.in/en/travelplanner", "_blank")}>
+              <div
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                onClick={() =>
+                  window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
+                }
+              >
                 Tourist guide
               </div>
               <Image
@@ -205,8 +217,12 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8"
               />
-              <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
-                   onClick={() => window.open("https://kumbh.gov.in/en/travelplanner", "_blank")}>
+              <div
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                onClick={() =>
+                  window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
+                }
+              >
                 Where to stay?
               </div>
               <Image
@@ -250,13 +266,14 @@ const PlanYourPilgrimage = () => {
               className="hidden lg:block w-full absolute  translate-y-[120px]"
               alt="water"
             />
-            <Image
+            {/**hiding temporary */}
+            {/* <Image
               src="/mask.svg"
               alt="mask"
               width={500}
               height={500}
               className="absolute w-full z-20 translate-y-[210px]"
-            />
+            /> */}
           </div>
           <div className="block lg:hidden relative w-full h-[500px] mt-40">
             <div className="absolute inset-0">

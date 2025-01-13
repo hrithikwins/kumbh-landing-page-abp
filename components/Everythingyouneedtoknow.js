@@ -144,7 +144,11 @@ const Everythingyouneedtoknow = () => {
   const [active, setActive] = useState("All services");
 
   return (
-    <div className="mt-32 lg:mt-0">
+    <div
+      //hiding temporary
+      //  className="mt-32 lg:mt-0"
+      className="mt-14 lg:mt-0"
+    >
       <div>
         <img src="/image 21.svg" className="w-full" />
       </div>
