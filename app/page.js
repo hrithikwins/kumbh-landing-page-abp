@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import DosAndDonts from "@/components/DosAndDonts";
 import Enquirenow from "@/components/Enquirenow";
 import Everythingyouneedtoknow from "@/components/Everythingyouneedtoknow";
@@ -24,6 +27,9 @@ const Frame = ({ data }) => {
 };
 
 export default function Home() {
+  const [youtubeLink, setYoutubeLink] = useState("");
+  const [isLiveClicked, setIsLiveClicked] = useState(false);
+
   const navBarItems = [
     {
       name: "About",
@@ -92,40 +98,102 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    const getYoutubeLink = async () => {
+      try {
+        const res = await fetch(
+          "https://cache.abplive.com/testfeeds_english_khumb2025_tv",
+          {
+            cache: "force-cache",
+          }
+        );
+        const data = await res.json();
+        setYoutubeLink(data.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getYoutubeLink();
+  }, []);
+
+  const handleLiveIconClick = () => {
+    setIsLiveClicked(!isLiveClicked);
+  };
+
   return (
     <>
       {/** nav bar */}
-      <div className="hidden lg:fixed lg:flex bottom-24 w-full justify-center items-center text-[#6A302F] font-lora md:text-xs xl:text-base  font-medium z-[999]">
-        <div className="bg-[#FFF5E3CC] flex md:gap-3 xl:gap-8 xl:w-auto h-auto rounded-2xl py-3 px-4 md:w-[85%]">
-          {navBarItems.map((item, index) => (
-            <div key={index} className="flex justify-center items-center">
-              <Link href={item.link}>{item.name}</Link>
+      <div className="hidden lg:fixed lg:flex flex-col gap-2 bottom-24 w-full justify-center items-center text-[#6A302F] font-lora md:text-xs xl:text-base  font-medium z-[999]">
+        <div
+          className={`w-full  justify-end items-center ${
+            isLiveClicked ? "flex" : "hidden"
+          }`}
+        >
+          {youtubeLink && (
+            <div
+              className={`w-56 h-40 mr-36 rounded-lg opacity-0 transition-opacity duration-500 ${
+                isLiveClicked ? "opacity-100" : ""
+              }`}
+            >
+              <iframe
+                src={youtubeLink}
+                width="100%"
+                height="100%"
+                allowFullScreen
+                className="rounded-lg"
+              ></iframe>
             </div>
-          ))}
-          <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
+          )}
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <div className="bg-[#FFF5E3CC] flex md:gap-3 xl:gap-8 xl:w-auto h-auto rounded-2xl py-3 px-4 md:w-[85%]">
+            {navBarItems.map((item, index) => (
+              <div key={index} className="flex justify-center items-center">
+                <Link href={item.link}>{item.name}</Link>
+              </div>
+            ))}
+            {/* <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
             {langOptions.map((item, index) => (
               <div key={index} className="flex justify-center items-center">
                 <Link href={item.link}>{item.name}</Link>
               </div>
             ))}
+          </div> */}
+            <div className="flex justify-center items-center ">
+              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">
+                Enter Mahakumbh Mela
+              </button>
+            </div>
           </div>
-          <div className="flex justify-center items-center ">
-            <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">
-              Enter Mahakumbh Mela
-            </button>
-          </div>
-        </div>
-        <div className="ml-2 flex">
-          <div className="md:w-12 md:h-12 xl:w-16 xl:h-16">
-            <Image
-              src="/icons/live-yt.svg"
-              alt="live-icon"
-              width={100}
-              height={100}
-              className="object-contain w-full h-full"
-            />
-          </div>
-          <div className="md:w-12 md:h-12 xl:w-16 xl:h-16">
+          <div className="ml-2 flex flex-row-reverse w-[10%]">
+            <div
+              className="md:w-12 md:h-12 xl:w-16 xl:h-16 hover:cursor-pointer"
+              onClick={handleLiveIconClick}
+            >
+              {isLiveClicked ? (
+                <Image
+                  src="/icons/close-live-yt.svg"
+                  alt="live-icon"
+                  width={100}
+                  height={100}
+                  className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
+                    isLiveClicked ? "opacity-100" : ""
+                  }`}
+                />
+              ) : (
+                <Image
+                  src="/icons/live-yt.svg"
+                  alt="live-icon"
+                  width={100}
+                  height={100}
+                  className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
+                    isLiveClicked ? "" : "opacity-100"
+                  }`}
+                />
+              )}
+            </div>
+            {/* <div className="md:w-12 md:h-12 xl:w-16 xl:h-16">
             <Image
               src="/icons/help.svg"
               alt="help-icon"
@@ -133,6 +201,7 @@ export default function Home() {
               height={100}
               className="object-contain w-full h-full"
             />
+          </div> */}
           </div>
         </div>
       </div>
