@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -11,8 +11,15 @@ import Image from "next/image";
 const Card = ({ data }) => {
   return (
     <div>
-      <Image src={data.image} alt={data.title} width={400} height={200} />
-
+      <div className="relative w-full h-[200px]">
+        <Image
+          src={data.thumbnail_image_url}
+          alt={data.title}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
+        />
+      </div>
       <div className="text-2xl py-2">{data.title}</div>
     </div>
   );
@@ -21,6 +28,7 @@ const Card = ({ data }) => {
 const MahaKumbhGallery = () => {
   const prevRef = useRef(null); // Ref for the previous button
   const nextRef = useRef(null); // Ref for the next button
+  const [dynamicGalleryData, setDynamicGalleryData] = useState([]);
 
   const galleryData = [
     {
@@ -52,6 +60,28 @@ const MahaKumbhGallery = () => {
       image: "/images/gallery-data/image-3.svg",
     },
   ];
+
+  //fetch data from API
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const resPics = await fetch(
+          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-gallery-subset30"
+        );
+        const resVideos = await fetch(
+          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-video-subset30"
+        );
+        const videosData = await resVideos.json();
+        const picsData = await resPics.json();
+        setDynamicGalleryData([...picsData.sections, ...videosData.sections]);
+      } catch (error) {
+        console.error("Error fetching data", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   useEffect(() => {
     // Delay assigning refs to ensure DOM elements are rendered
     const swiperParams = {
@@ -114,11 +144,12 @@ const MahaKumbhGallery = () => {
         loop={true} // Enable infinite loop
       >
         {/* Example slides */}
-        {galleryData.map((data, index) => (
-          <SwiperSlide key={index}>
-            <Card data={data} />
-          </SwiperSlide>
-        ))}
+        {dynamicGalleryData?.length > 0 &&
+          dynamicGalleryData?.map((data, index) => (
+            <SwiperSlide key={index}>
+              <Card data={data} />
+            </SwiperSlide>
+          ))}
       </Swiper>
       <div className="flex flex-row justify-between items-center mb-14 lg:mb-0 mt-10 w-fit gap-10 m-auto">
         <div className="swiper-button-prev-gallery cursor-pointer">

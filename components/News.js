@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -10,11 +10,16 @@ import Image from "next/image";
 const Card = ({ data }) => {
   return (
     <div>
-      <Image src={data.image} alt={data.title} width={400} height={200} />
+      <Image
+        src={data.thumbnail_image_url}
+        alt={data.title}
+        width={400}
+        height={200}
+      />
 
       <div className="text-2xl  py-2">{data.title}</div>
 
-      <div className="text-sm font-lora">{data.description}</div>
+      <div className="text-sm font-lora">{data.excerpt}</div>
     </div>
   );
 };
@@ -22,6 +27,7 @@ const Card = ({ data }) => {
 const MySwiper = () => {
   const prevRef = useRef(null); // Ref for the previous button
   const nextRef = useRef(null); // Ref for the next button
+  const [dynamicNewsData, setDynamicNewsData] = useState([]);
 
   const newsData = [
     {
@@ -82,6 +88,24 @@ const MySwiper = () => {
     },
   ];
 
+  //fetch data from the api
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetch(
+          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-news-subset30"
+        );
+        const newsData = await data.json();
+        setDynamicNewsData(newsData);
+        console.log(newsData);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   useEffect(() => {
     // Delay assigning refs to ensure DOM elements are rendered
     const swiperParams = {
@@ -131,11 +155,12 @@ const MySwiper = () => {
         loop={true} // Enable infinite loop
       >
         {/* Example slides */}
-        {newsData.map((data, index) => (
-          <SwiperSlide key={index}>
-            <Card data={data} />
-          </SwiperSlide>
-        ))}
+        {dynamicNewsData?.sections?.length > 0 &&
+          dynamicNewsData?.sections?.map((data, index) => (
+            <SwiperSlide key={index}>
+              <Card data={data} />
+            </SwiperSlide>
+          ))}
       </Swiper>
       <div className="flex flex-row justify-between items-center mt-10 w-fit gap-10 m-auto">
         <div className="swiper-button-prev-news cursor-pointer">
