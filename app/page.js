@@ -28,7 +28,8 @@ const Frame = ({ data }) => {
 
 export default function Home() {
   const [youtubeLink, setYoutubeLink] = useState("");
-  const [isLiveClicked, setIsLiveClicked] = useState(false);
+  const [isLiveOpen, setIsLiveOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navBarItems = [
     {
@@ -118,22 +119,88 @@ export default function Home() {
   }, []);
 
   const handleLiveIconClick = () => {
-    setIsLiveClicked(!isLiveClicked);
+    setIsLiveOpen(!isLiveOpen);
+  };
+
+  const handleMenuIconClick = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
+      {/**Mobile navBar */}
+      <div className="flex fixed sm:hidden flex-col gap-2 bottom-0 left-0 right-0 w-full justify-center items-center text-[#6A302F] font-lora font-medium z-[999]">
+        <div className={`w-full ${isMenuOpen ? "flex" : "hidden"}`}>
+          <div
+            className={`w-[100%] flex flex-col gap-3 py-3 bg-[#FFF5E3] rounded-lg opacity-0 transition-opacity duration-500 ${
+              isMenuOpen ? "opacity-100" : ""
+            }`}
+          >
+            {navBarItems.map((item, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Link href={item.link}>{item.name}</Link>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <div className="bg-[#FFF5E3] flex items-center w-full gap-3 h-auto rounded-t-2xl py-3 px-4">
+            <div className="flex justify-center items-center ">
+              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">
+                Enter Mahakumbh Mela
+              </button>
+            </div>
+
+            <div
+              className="h-14 w-14 hover:cursor-pointer"
+              // onClick={handleLiveIconClick}
+            >
+              {false ? (
+                <Image
+                  src="/icons/close-live-yt.svg"
+                  alt="live-icon"
+                  width={100}
+                  height={100}
+                  className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
+                    false ? "opacity-100" : ""
+                  }`}
+                />
+              ) : (
+                <Image
+                  src="/icons/live-yt.svg"
+                  alt="live-icon"
+                  width={100}
+                  height={100}
+                  className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
+                    false ? "" : "opacity-100"
+                  }`}
+                />
+              )}
+            </div>
+            <div
+              className="text-xl hover:cursor-pointer"
+              onClick={handleMenuIconClick}
+            >
+              <p>{isMenuOpen ? "Close" : "Menu"}</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/** nav bar */}
       <div className="hidden lg:fixed lg:flex flex-col gap-2 bottom-24 w-full justify-center items-center text-[#6A302F] font-lora md:text-xs xl:text-base  font-medium z-[999]">
         <div
           className={`w-full  justify-end items-center ${
-            isLiveClicked ? "flex" : "hidden"
+            isLiveOpen ? "flex" : "hidden"
           }`}
         >
           {youtubeLink && (
             <div
               className={`w-56 h-40 mr-36 rounded-lg opacity-0 transition-opacity duration-500 ${
-                isLiveClicked ? "opacity-100" : ""
+                isLiveOpen ? "opacity-100" : ""
               }`}
             >
               <iframe
@@ -171,14 +238,14 @@ export default function Home() {
               className="md:w-12 md:h-12 xl:w-16 xl:h-16 hover:cursor-pointer"
               onClick={handleLiveIconClick}
             >
-              {isLiveClicked ? (
+              {isLiveOpen ? (
                 <Image
                   src="/icons/close-live-yt.svg"
                   alt="live-icon"
                   width={100}
                   height={100}
                   className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
-                    isLiveClicked ? "opacity-100" : ""
+                    isLiveOpen ? "opacity-100" : ""
                   }`}
                 />
               ) : (
@@ -188,7 +255,7 @@ export default function Home() {
                   width={100}
                   height={100}
                   className={`object-contain w-full h-full opacity-0 transition-opacity duration-500 ${
-                    isLiveClicked ? "" : "opacity-100"
+                    isLiveOpen ? "" : "opacity-100"
                   }`}
                 />
               )}
