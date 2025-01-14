@@ -6,234 +6,237 @@ const Footer = () => {
   const footerLists = {
     list1: [
       {
-        name: "Latest Hindi News",
-        hindiName: "नवीनतम हिंदी समाचार",
-        link: "#",
+        name: "Latest News Today",
+
+        link: "https://news.abplive.com/",
       },
       {
-        name: "State",
-        hindiName: "राज्य",
-        link: "#",
+        name: "Latest News",
+
+        link: "https://news.abplive.com/404.html",
       },
       {
-        name: "India",
-        hindiName: "भारत",
-        link: "#",
-      },
-      { name: "Photo Gallery", hindiName: "फोटो गैलरी", link: "#" },
-      {
-        name: "World",
-        hindiName: "दुनिया",
-        link: "#",
+        name: "Education",
+
+        link: "https://news.abplive.com/education",
       },
       {
-        name: "Technology",
-        hindiName: "तकनीकी",
-        link: "#",
+        name: "Sports",
+
+        link: "https://news.abplive.com/sports",
+      },
+      {
+        name: "Mahakumbh",
+
+        link: "https://news.abplive.com/topic/mahakumbh-2025",
+      },
+      {
+        name: "Delhi Election",
+
+        link: "https://news.abplive.com/elections/delhi-assembly-election-2025",
+      },
+      {
+        name: "Republic Day",
+
+        link: "https://news.abplive.com/topic/republic-day-2025",
       },
       {
         name: "Auto",
-        hindiName: "ऑटो",
-        link: "#",
+
+        link: "https://news.abplive.com/auto",
       },
       {
-        name: "Podcasts",
-        hindiName: "पॉडकास्ट",
-        link: "#",
+        name: "Health",
+        link: "https://news.abplive.com/health",
+      },
+      {
+        name: "Business",
+        link: "https://news.abplive.com/business",
+      },
+      {
+        name: "Latest Mobile Phones",
+        link: "https://news.abplive.com/mobiles.html",
       },
     ],
     list2: [
       {
         name: "Entertainment News",
-        hindiName: "मनोरंजन समाचार",
-        link: "#",
+        link: "https://news.abplive.com/entertainment",
       },
       {
         name: "Visual Stories",
-        hindiName: "दृश्य कहानियाँ",
-        link: "#",
+        link: "https://news.abplive.com/web-stories",
       },
       {
-        name: "Bollywood",
-        hindiName: "बॉलीवुड",
-        link: "#",
+        name: "OTT",
+        link: "https://news.abplive.com/entertainment/ott",
       },
       {
-        name: "TV News",
-        hindiName: "टी वी समाचार",
-        link: "#",
+        name: "Celebrities",
+        link: "https://news.abplive.com/entertainment/celebrities",
       },
       {
-        name: "OTT News",
-        hindiName: "ओटीटी समाचार",
-        link: "#",
+        name: "Movie Review",
+        link: "https://news.abplive.com/entertainment/movie-review",
       },
       {
-        name: "Bhojpuri Cinema",
-        hindiName: "भोजपुरी सिनेमा",
-        link: "#",
+        name: "Web Series",
+        link: "https://news.abplive.com/entertainment/web-series",
       },
       {
-        name: "Movie Reviews",
-        hindiName: "फिल्म समीक्षा",
-        link: "#",
-      },
-      {
-        name: "Tamil Cinema",
-        hindiName: "तमिल सिनेमा",
-        link: "#",
+        name: "Movies",
+        link: "https://news.abplive.com/entertainment/movies",
       },
     ],
     list3: [
       {
-        name: "Sports News",
-        hindiName: "खेल समाचार",
-        link: "#",
-      },
-      {
-        name: "T20 World Cup",
-        hindiName: "टी20 वर्ल्ड कप",
-        link: "#",
+        name: "Sports",
+        link: "https://news.abplive.com/",
       },
       {
         name: "Cricket",
-        hindiName: "क्रिकेट",
-        link: "#",
+        link: "https://news.abplive.com/sports/cricket",
       },
       {
-        name: "IPL",
-        hindiName: "आईपीएल",
-        link: "#",
+        name: "ICC Ranking",
+        link: "https://news.abplive.com/sports/cricket/icc-ranking.html",
+      },
+      {
+        name: "Virat Kholi",
+        link: "https://news.abplive.com/topic/virat-kohli",
+      },
+      {
+        name: "Champions Trophy",
+        link: "https://news.abplive.com/topic/champions-trophy",
       },
     ],
     list4: [
       {
-        name: "Astro",
-        hindiName: "एस्ट्रो",
-        link: "#",
+        name: "Pin Code Finder",
+        link: "https://news.abplive.com/pincode/uttar-pradesh.html",
       },
       {
-        name: "Today's horoscope",
-        hindiName: "आज का राशिफल",
-        link: "#",
+        name: "UP Pin Codes",
+        link: "https://news.abplive.com/",
       },
       {
-        name: "Religion",
-        hindiName: "धर्म",
-        link: "#",
+        name: "Maharashtra Pin Codes",
+        link: "https://news.abplive.com/pincode/maharashtra.html",
       },
     ],
     list5: [
       {
-        name: "Season",
-        hindiName: "मौसम",
-        link: "#",
+        name: "Weather",
+        link: "https://news.abplive.com/weather",
+      },
+      {
+        name: "Delhi Weather",
+        link: "https://news.abplive.com/weather/delhi",
+      },
+      {
+        name: "Hyderabad Weather",
+        link: "https://news.abplive.com/weather/hyderabad",
       },
       {
         name: "Mumbai Weather",
-        hindiName: "मुंबई का मौसम",
-        link: "#",
+        link: "https://news.abplive.com/weather/mumbai",
       },
       {
-        name: "Jaipur Weather",
-        hindiName: "जयपुर का मौसम",
-        link: "#",
+        name: "Kolkata Weather",
+        link: "https://news.abplive.com/weather/kolkata",
       },
       {
-        name: "New Delhi Weather",
-        hindiName: "नई दिल्ली मौसम",
-        link: "#",
-      },
-      {
-        name: "Lucknow Weather",
-        hindiName: "लखनऊ का मौसम",
-        link: "#",
+        name: "Chennai Weather",
+        link: "https://news.abplive.com/weather/chennai",
       },
       {
         name: "Noida Weather",
-        hindiName: "नोएडा का मौसम",
-        link: "#",
+        link: "https://news.abplive.com/weather/noida",
+      },
+      {
+        name: "Nagpur Weather",
+        link: "https://news.abplive.com/weather/nagpur",
       },
     ],
-    list6: [
-      {
-        name: "Lifestyle",
-        hindiName: "जीवन शैली",
-        link: "#",
-      },
-      {
-        name: "Utitlity News",
-        hindiName: "उपयोगिता समाचार",
-        link: "#",
-      },
-      {
-        name: "Travel",
-        hindiName: "यात्रा",
-        link: "#",
-      },
-      {
-        name: "General Knowledge",
-        hindiName: "सामान्य ज्ञान",
-        link: "#",
-      },
-      {
-        name: "Fashion",
-        hindiName: "पहनावा",
-        link: "#",
-      },
-      {
-        name: "Agriculture",
-        hindiName: "कृषि",
-        link: "#",
-      },
-      {
-        name: "Health",
-        hindiName: "स्वास्थ्य",
-        link: "#",
-      },
-    ],
-    list7: [
-      {
-        name: "Gold Price",
-        hindiName: "सोने की कीमत",
-        link: "#",
-      },
-    ],
-    list8: [{ name: "Silver Price", hindiName: "चाँदी की कीमत", link: "#" }],
+    // list6: [
+    //   {
+    //     name: "Lifestyle",
+    //     hindiName: "जीवन शैली",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "Utitlity News",
+    //     hindiName: "उपयोगिता समाचार",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "Travel",
+    //     hindiName: "यात्रा",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "General Knowledge",
+    //     hindiName: "सामान्य ज्ञान",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "Fashion",
+    //     hindiName: "पहनावा",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "Agriculture",
+    //     hindiName: "कृषि",
+    //     link: "#",
+    //   },
+    //   {
+    //     name: "Health",
+    //     hindiName: "स्वास्थ्य",
+    //     link: "#",
+    //   },
+    // ],
+    // list7: [
+    //   {
+    //     name: "Gold Price",
+    //     hindiName: "सोने की कीमत",
+    //     link: "#",
+    //   },
+    // ],
+    // list8: [{ name: "Silver Price", hindiName: "चाँदी की कीमत", link: "#" }],
   };
 
   const footerLinks = [
     {
       name: "About Us",
-      link: "#",
+      link: "https://www.abpnetwork.com/aboutus",
     },
     {
       name: "Feedback",
-      link: "#",
+      link: "https://news.abplive.com/feedback",
     },
     {
       name: "Careers",
-      link: "#",
+      link: "https://www.abpnetwork.com/careers",
     },
     {
       name: "Advertise with us",
-      link: "#",
+      link: "https://news.abplive.com/advertisement",
     },
     {
       name: "Sitemap",
-      link: "#",
+      link: "https://news.abplive.com/sitemap",
     },
     {
       name: "Disclaimer",
-      link: "#",
+      link: "https://news.abplive.com/disclaimer",
     },
     {
       name: "Privacy Policy",
-      link: "#",
+      link: "https://news.abplive.com/privacy-policy",
     },
     {
       name: "Contact Us",
-      link: "#",
+      link: "https://news.abplive.com/contact-us",
     },
   ];
 
@@ -253,15 +256,43 @@ const Footer = () => {
     listOfWebsites: [
       {
         name: "ABP Network",
-        link: "#",
+        link: "https://www.abpnetwork.com/",
       },
       {
         name: "ABP Live",
-        link: "#",
+        link: "https://news.abplive.com/",
+      },
+      {
+        name: "ABP न्यूज़",
+        link: "https://www.abplive.com/",
+      },
+      {
+        name: "ABP আনন্দ",
+        link: "https://bengali.abplive.com/",
+      },
+      {
+        name: "ABP माझा",
+        link: "https://marathi.abplive.com/",
+      },
+      {
+        name: "ABP અસ્મિતા",
+        link: "https://gujarati.abplive.com/",
       },
       {
         name: "ABP Ganga",
-        link: "#",
+        link: "https://www.abplive.com/states/up-uk",
+      },
+      {
+        name: "ABP ਸਾਂਝਾ",
+        link: "https://punjabi.abplive.com/",
+      },
+      {
+        name: "ABP நாடு",
+        link: "https://tamil.abplive.com/",
+      },
+      {
+        name: "ABP దేశం",
+        link: "https://telugu.abplive.com/",
       },
     ],
   };
@@ -271,38 +302,43 @@ const Footer = () => {
     links: [
       {
         name: "Twitter",
-        link: "#",
+        link: "https://x.com/abplive",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/x-twitter.svg",
       },
       {
         name: "Facebook",
-        link: "#",
+        link: "https://www.facebook.com/abplive",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/facebook.svg",
       },
       {
         name: "Threads",
-        link: "#",
+        link: "https://www.threads.net/@abplivenews",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/threads.svg",
       },
       {
         name: "YouTube",
-        link: "#",
+        link: "https://www.youtube.com/@abp_live",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/youtube.svg",
       },
       {
         name: "Instagram",
-        link: "#",
+        link: "https://www.instagram.com/abplivenews/",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/instagram.svg",
       },
       {
         name: "Pinterest",
-        link: "#",
+        link: "https://in.pinterest.com/abplive_english/",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/pinterest.svg",
       },
       {
         name: "Telegram",
-        link: "#",
+        link: "https://t.me/officialabplive",
         icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/telegram.svg",
+      },
+      {
+        name: "WhatsApp",
+        link: "https://www.whatsapp.com/channel/0029Va9fHab8aKvGCiJutv3B",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/whatsapp.svg",
       },
     ],
   };
@@ -339,13 +375,15 @@ const Footer = () => {
                 {footerLists[listKey].map((item, itemIndex) => (
                   <li
                     key={itemIndex}
-                    className={`text-white font-lora text-md my-5 w-26 ${
+                    className={` font-lora text-md my-5 w-26 ${
                       itemIndex === 0
                         ? "text-[#FBB900] font-semibold uppercase"
-                        : ""
+                        : "text-white"
                     }`}
                   >
-                    {item.name}
+                    <Link href={item.link} target="_blank">
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -353,27 +391,31 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-full bg-black text-white py-10 px-5 text-sm lg:px-32 lg:text-base flex flex-col gap-2">
+      <div className="relative w-full bg-black text-white py-10 pb-28 px-5 text-sm lg:px-32 lg:text-base flex flex-col gap-2">
         {/* Links of the website */}
         <div className="w-full font-semibold">
-          <ul className="flex flex-wrap gap-2 uppercase lg:flex-nowrap lg:justify-between">
+          <ul className="flex flex-wrap gap-3 uppercase lg:flex-nowrap lg:justify-between">
             {footerLinks.map((item, index) => (
               <li key={index} className="text-white text-sm lg:text-xl">
-                <a href={item.link}>{item.name}</a>
+                <Link href={item.link} target="_blank">
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="w-full flex justify-between mt-5 font-lora">
+        <div className="w-full flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between mt-5 font-lora">
           {/*News websites */}
           <div className="flex flex-col gap-5">
             <h3 className="text-[#FBB900] text-sm lg:text-xl uppercase">
               {footerNewsLinks.title}
             </h3>
-            <ul className="flex gap-5">
+            <ul className="flex gap-3 lg:gap-5 flex-wrap lg:flex-nowrap">
               {footerNewsLinks.listOfWebsites.map((item, index) => (
                 <li key={index} className="text-white text-xs lg:text-base">
-                  <a href={item.link}>{item.name}</a>
+                  <Link href={item.link} target="_blank">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -385,9 +427,10 @@ const Footer = () => {
             </h3>
             <div className="flex gap-1 lg:gap-3">
               {footerSocialLinks.links.map((item, index) => (
-                <a
+                <Link
                   key={index}
                   href={item.link}
+                  target="_blank"
                   className="bg-white w-4 h-4 lg:w-7 lg:h-7 flex justify-center items-center  rounded-[50%]"
                 >
                   <Image
@@ -397,18 +440,37 @@ const Footer = () => {
                     height={15}
                     className="w-2 h-2 lg:w-[15px] lg:h-[15px]"
                   />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
         </div>
         {/*Rights of the website */}
-        <div className="w-full">
+        <div className="w-full mt-3 lg:mt-0">
           <p>
             This website follows the{" "}
-            <span className="underline">DNPA Code of Ethics.</span>{" "}
+            <Link
+              href="https://news.abplive.com/code-of-ethics"
+              target="_blank"
+            >
+              <span className="underline">DNPA Code of Ethics.</span>
+            </Link>{" "}
             Copyright@2025. All rights reserved.
           </p>
+        </div>
+        {/*Button to scroll to top */}
+        <div className="absolute bottom-40 right-5 lg:bottom-24 lg:right-10">
+          <Link href="#top">
+            <div className="bg-[#F00000] w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center  rounded-[50%]">
+              <Image
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/up-arrow.svg"
+                alt="up-arrow"
+                width={15}
+                height={15}
+                className="w-8 h-8 lg:w-8 lg:h-8 rounded-[50%]"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </footer>

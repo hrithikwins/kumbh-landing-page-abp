@@ -14,7 +14,8 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Maha Kumbh 2025",
-  description: "2025 Maha Kumbh Mela | Registration Links, Important Details for Tourist at Prayagraj, UP | ABPLIVE",
+  description:
+    "2025 Maha Kumbh Mela | Registration Links, Important Details for Tourist at Prayagraj, UP | ABPLIVE",
 };
 
 export default function RootLayout({ children }) {

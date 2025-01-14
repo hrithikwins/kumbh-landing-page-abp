@@ -318,7 +318,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="overflow-x-hidden">
+      <div id="top" className="overflow-x-hidden">
         <div
           id="hero-section"
           className="bg-[url('https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen"
