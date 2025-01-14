@@ -139,7 +139,7 @@ export default function Home() {
           <div
             className={`w-full flex flex-col gap-3 ${
               isLiveOpen ? "" : "py-3"
-            } bg-[#FFF5E3] rounded-lg  transition-opacity duration-500 ${
+            } bg-[#FFF5E3] rounded-lg  transition-opacity duration-500 z-50 bg-slate-300 ${
               isMenuOpen || isLiveOpen ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </div>
       {/** nav bar */}
-      <div className="hidden lg:fixed lg:flex flex-col gap-2 bottom-24 w-full justify-center items-center text-[#6A302F] font-lora md:text-xs xl:text-base  font-medium z-[999]">
+      <div className="hidden lg:fixed lg:flex flex-col gap-2 bottom-8 w-full justify-center items-center text-[#6A302F] font-lora md:text-xs xl:text-base  font-medium z-[999]">
         <div
           className={`w-full  justify-end items-center ${
             isLiveOpen ? "flex" : "hidden"
@@ -220,7 +220,7 @@ export default function Home() {
         >
           {youtubeLink && (
             <div
-              className={`w-56 h-40 mr-36 rounded-lg opacity-0 transition-opacity duration-500 ${
+              className={`w-56 h-40  mr-36 rounded-lg opacity-0 transition-opacity duration-500 ${
                 isLiveOpen ? "opacity-100" : ""
               }`}
             >
