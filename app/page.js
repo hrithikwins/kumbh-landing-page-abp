@@ -51,7 +51,7 @@ export default function Home() {
     },
     {
       name: "ABP Coverage",
-      link: "#abp-news-coverage",
+      link: "#hero-section",
     },
     //hiding temporary
     // {
@@ -124,6 +124,13 @@ export default function Home() {
     getYoutubeLink();
   }, []);
 
+  useEffect(() => {
+    // Automatically open the YouTube video on laptops or desktops
+    if (window.innerWidth >= 1024) {
+      setIsLiveOpen(true);
+    }
+  }, []);
+
   const handleLiveIconClick = () => {
     setIsLiveOpen((prev) => !prev);
     setIsMenuOpen(false); // Ensure menu closes when live opens
@@ -151,7 +158,8 @@ export default function Home() {
             {isLiveOpen && youtubeLink && (
               <div className="w-full h-40 rounded-lg overflow-hidden pointer-events-auto">
                 <iframe
-                  src={youtubeLink}
+                  // src={youtubeLink}
+                  src="https://www.youtube.com/embed/azf-NwTX364?si=Fi3RDOZYEJQt2DqU"
                   width="100%"
                   height="100%"
                   allow="autoplay; encrypted-media"
@@ -230,7 +238,8 @@ export default function Home() {
               }`}
             >
               <iframe
-                src={'https://www.youtube.com/embed/azf-NwTX364?si=Fi3RDOZYEJQt2DqU'}
+                // src={youtubeLink}
+                src="https://www.youtube.com/embed/azf-NwTX364?si=Fi3RDOZYEJQt2DqU"
                 width="100%"
                 height="100%"
                 allowFullScreen
@@ -299,7 +308,10 @@ export default function Home() {
         </div>
       </div>
       <div className="overflow-x-hidden">
-        <div className="bg-[url('https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen">
+        <div
+          id="hero-section"
+          className="bg-[url('https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen"
+        >
           {/*logo section for mobile */}
           <div className="flex w-full lg:hidden justify-between p-3">
             <div className="flex flex-row lg:items-center gap-2 lg:gap-6 ">
@@ -425,42 +437,42 @@ export default function Home() {
                 alt="image 7"
                 width={500}
                 height={500}
-                className="w-[58%] absolute translate-y-32 z-20 -left-14 lg:-left-0 lg:w-[38%] lg:translate-y-72"
+                className="w-[58%] absolute translate-y-32 z-20 -left-14 lg:left-0 lg:w-[38%] lg:translate-y-64"
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 7.svg"
                 alt="image 7"
                 width={500}
                 height={500}
-                className="w-[32%] left-[14%] absolute translate-y-72"
+                className="w-[32%] left-[14%] absolute translate-y-52"
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 6.svg"
                 alt="image 6"
                 width={500}
                 height={500}
-                className="w-[45%] left-[15%] z-40 absolute translate-y-[275px] lg:left-[40%] lg:w-[35%] lg:translate-y-[450px]"
+                className="w-[45%] left-[15%] z-40 absolute translate-y-[275px] lg:left-[40%] lg:w-[35%] lg:translate-y-[370px]"
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 8.svg"
                 alt="image 8"
                 width={500}
                 height={500}
-                className="w-[42%] left-[30%] z-30 absolute translate-y-[250px] lg:w-[32%] lg:translate-y-[400px]"
+                className="w-[42%] left-[30%] z-30 absolute translate-y-[250px] lg:w-[32%] lg:translate-y-[320px]"
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/flower left.svg"
                 alt="flower left"
                 width={500}
                 height={500}
-                className="w-[60%] absolute z-30 translate-y-32 -left-20 lg:translate-y-60 lg:w-[30%] lg:-left-0"
+                className="w-[60%] absolute z-30 translate-y-32 -left-20 lg:translate-y-44 lg:w-[30%] lg:-left-0"
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/flower right.svg"
                 alt="flower right"
                 width={500}
                 height={500}
-                className="w-[60%] absolute translate-y-28 right-0 z-40 lg:w-[30%] lg:translate-y-48 "
+                className="w-[60%] absolute translate-y-28 right-0 z-40 lg:w-[30%] lg:translate-y-40 "
               />
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/land 2.svg"
@@ -474,9 +486,9 @@ export default function Home() {
                 alt="image 12"
                 width={500}
                 height={500}
-                className="w-[48%] absolute right-0 translate-y-32 z-20 lg:-right-0 lg:translate-y-60 lg:z-0"
+                className="w-[48%] absolute right-0 translate-y-32 z-20 lg:-right-0 lg:translate-y-40 lg:z-0"
               />
-              <div className="w-[100%] lg:w-[52%] absolute xs:top-[35%] lg:left-[25%]  lg:top-[26%]">
+              <div className="w-[100%] lg:w-[52%] absolute xs:top-[35%] lg:left-[25%]  lg:top-[15%]">
                 <Image
                   src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/saint_frame.webp"
                   alt="saint frame"
@@ -491,7 +503,7 @@ export default function Home() {
 
         {/* About Section */}
 
-        <div className="bg-[#FFF5E3] py-10 pt-16 lg:pt-32 mt-0 lg:mt-32">
+        <div className="bg-[#FFF5E3] py-10 pt-8 lg:pt-32 lg:pb-0 mt-0 lg:mt-16">
           <Image
             src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water-hand 1.svg"
             alt="water hand 1"
@@ -543,7 +555,7 @@ export default function Home() {
               alt="diamond"
               width={32}
               height={32}
-              className="w-8"
+              className="w-8 rotate-90-wait"
             />
             <div
               className="text-[#6A302F] underline text-xl lg:text-2xl cursor-pointer"
@@ -558,7 +570,7 @@ export default function Home() {
               alt="diamond"
               width={32}
               height={32}
-              className="w-8"
+              className="w-8 rotate-90-wait"
             />
           </div>
 
@@ -607,14 +619,14 @@ export default function Home() {
               alt="media room tv"
               width={420}
               height={420}
-              className="absolute w-[250px] left-[12%] xs:w-[80%] xs:left-[10%] lg:w-[420px] lg:left-[38%] m-auto z-50 translate-y-[0px] xs:translate-y-[-10px] lg:translate-y-[-40px]"
+              className="absolute w-[250px] left-[12%] xs:w-[80%] xs:left-[10%] lg:w-[420px] lg:left-[38%] m-auto z-50 translate-y-[0px] xs:translate-y-[-10px] lg:translate-y-[-100px]"
             />
             <Image
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu 1.svg"
               alt="sadhu"
               width={250}
               height={250}
-              className="absolute w-[130px] xs:w-[40%] left-[25%] translate-y-[30px] xs:translate-y-[30px] lg:w-[220px] lg:left-[42%] m-auto z-40 lg:translate-y-[-0px]"
+              className="absolute w-[130px] xs:w-[40%] left-[25%] translate-y-[30px] xs:translate-y-[30px] lg:w-[220px] lg:left-[42%] m-auto z-40 lg:translate-y-[-40px]"
             />
           </div>
         </div>
@@ -634,7 +646,7 @@ export default function Home() {
             alt="river"
             width={500}
             height={500}
-            className="translate-y-[-10px] w-full hidden lg:block"
+            className="translate-y-[-10px] w-full h-[17.813rem] object-cover hidden lg:block"
           />
           <Image
             src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/mask.svg"

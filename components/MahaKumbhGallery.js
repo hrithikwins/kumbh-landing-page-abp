@@ -105,14 +105,14 @@ const MahaKumbhGallery = () => {
           alt="flower-left"
           width={200}
           height={200}
-          className="absolute translate-y-[-150px] w-[200px] left-0 lg:w-auto lg:translate-y-[-300px]"
+          className="absolute translate-y-[-150px] w-[12.5rem] left-0 lg:w-[20.5rem] lg:translate-y-[-12.5rem]"
         />
         <Image
           src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 30.svg"
           alt="flower-right"
           width={200}
           height={200}
-          className="absolute translate-y-[-150px] w-[200px] right-0 lg:w-auto lg:translate-y-[-300px]"
+          className="absolute translate-y-[-150px] w-[12.5rem] right-0 lg:w-[20.5rem] lg:translate-y-[-12.5rem]"
         />
       </div>
       <div className="text-4xl  text-center text-[#6A302F] pt-20 mt-40 lg:pt-0">

@@ -152,10 +152,10 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
               <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
                 onClick={() =>
                   window.open("https://kumbh.gov.in/en/howtoreach", "_blank")
                 }
@@ -167,7 +167,7 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
@@ -184,10 +184,10 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
               <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
                 onClick={() =>
                   window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
                 }
@@ -199,7 +199,7 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
@@ -215,10 +215,10 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
               <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer"
+                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
                 onClick={() =>
                   window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
                 }
@@ -230,7 +230,7 @@ const PlanYourPilgrimage = () => {
                 alt="diamond"
                 width={32}
                 height={32}
-                className="w-8"
+                className="w-8 rotate-90-wait"
               />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
@@ -240,16 +240,20 @@ const PlanYourPilgrimage = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex lg:flex-row lg:justify-center   mt-10 lg:gap-80 w-full items-center">
-            <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new 1.svg" className="w-[400px] z-50" alt="sadhu" />
+          <div className="hidden lg:flex lg:flex-row lg:justify-between mt-10 lg:gap-0 w-full items-center">
+            <img
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new 1.svg"
+              className="w-[25rem] z-50"
+              alt="sadhu"
+            />
             <img
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new1 1.svg"
-              className="w-[200px] h-[200px] lg:w-[400px] lg:h-auto z-50"
+              className="w-[12.5rem] h-[12.5rem] lg:w-[25rem] lg:h-auto z-50 "
               alt="sadhu"
             />
             <img
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new3 1.svg"
-              className="w-[280px] z-50"
+              className="w-[17.5rem] z-50 lg:mr-28"
               alt="sadhu"
             />
             <div className="block lg:hidden relative w-full h-64">
@@ -323,7 +327,6 @@ const PlanYourPilgrimage = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

@@ -111,7 +111,7 @@ const Enquirenow = () => {
             alt="diamond"
             width={32}
             height={32}
-            className="w-8"
+            className="w-8 rotate-90-wait"
           />
           <Link href="https://kumbh.gov.in/" target="_blank">
             <div className="text-[#6A302F] uppercase underline text-xl lg:text-4xl">
@@ -123,7 +123,7 @@ const Enquirenow = () => {
             alt="diamond"
             width={32}
             height={32}
-            className="w-8"
+            className="w-8 rotate-90-wait"
           />
         </div>
 

@@ -43,3 +43,25 @@ html {
     white 70%
   );
 }
+
+@keyframes rotate-90-wait {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-90-wait {
+  animation: rotate-90-wait 4s linear infinite;
+}
