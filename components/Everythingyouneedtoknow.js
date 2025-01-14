@@ -25,46 +25,46 @@ const services = [
     title: "How to Reach",
     subtitle:
       "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/how-to-reach.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/how-to-reach.svg",
   },
   {
     title: "Where to Stay",
     subtitle: "Details about Tent City and Hotels.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Direction to Ghats",
     subtitle:
       "Discover the different ghats in Prayagraj and find their locations on Google Maps.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/direction-to-ghat.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/direction-to-ghat.svg",
   },
   {
     title: "Tourist Guide",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/tourist-guide.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/tourist-guide.svg",
   },
   {
     title: "Visitor's Guide",
     subtitle: "How to reach Prayagraj from other major cities of India.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/visitor-guide.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/visitor-guide.svg",
   },
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
     title: "Food and Things",
     subtitle:
       "Discover the culinary delights offered in Prayagraj, and in the Kumbh Mela.",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/food-and-thing.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/food-and-thing.svg",
   },
 ];
 
@@ -73,31 +73,31 @@ const travel = [
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
     title: "Where to Stay",
     subtitle:
       "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
 ];
 
@@ -105,17 +105,17 @@ const food = [
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Mela Attractions",
     subtitle: "All the list of attractions you will find in Kumbh Mela area",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
 ];
 
@@ -124,19 +124,19 @@ const allThings = [
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
       "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
-    icon: "https://abp-mahakumbh-english.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
 ];
 
