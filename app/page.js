@@ -471,7 +471,7 @@ export default function Home() {
               />
               <div className="w-[100%] lg:w-[52%] absolute xs:top-[35%] lg:left-[25%]  lg:top-[26%]">
                 <Image
-                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/saint frame.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/saint_frame.webp"
                   alt="saint frame"
                   width={500}
                   height={500}
