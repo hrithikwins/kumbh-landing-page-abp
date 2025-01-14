@@ -36,17 +36,17 @@ export default function Home() {
       name: "About",
       link: "#about-section",
     },
+    // {
+    //   name: "History",
+    //   link: "#history-section",
+    // },
     {
-      name: "History",
-      link: "#history-section",
-    },
-    {
-      name: "Plane Your Pilgrimage",
-      link: "#plane-your-pilgrimage-section",
+      name: "Plan Your Pilgrimage",
+      link: "#plan-your-pilgrimage",
     },
     {
       name: "ABP Coverage",
-      link: "#abp-news-coverage-section",
+      link: "#abp-news-coverage",
     },
     //hiding temporary
     // {

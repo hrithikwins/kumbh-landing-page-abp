@@ -20,7 +20,7 @@ const PlanYourPilgrimage = () => {
         <div>|| Sarvsidhpradh Kumbh ||</div>
         <div></div>
         <div
-          id="plane-your-pilgrimage-section"
+          id="plan-your-pilgrimage"
           className="text-4xl  text-center text-[#6A302F] mt-4 "
         >
           Majestic Acknowledgements & Testimonials
