@@ -271,37 +271,37 @@ const Footer = () => {
       {
         name: "Twitter",
         link: "#",
-        icon: "/icons/footer/x-twitter.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/x-twitter.svg",
       },
       {
         name: "Facebook",
         link: "#",
-        icon: "/icons/footer/facebook.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/facebook.svg",
       },
       {
         name: "Threads",
         link: "#",
-        icon: "/icons/footer/threads.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/threads.svg",
       },
       {
         name: "YouTube",
         link: "#",
-        icon: "/icons/footer/youtube.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/youtube.svg",
       },
       {
         name: "Instagram",
         link: "#",
-        icon: "/icons/footer/instagram.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/instagram.svg",
       },
       {
         name: "Pinterest",
         link: "#",
-        icon: "/icons/footer/pinterest.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/pinterest.svg",
       },
       {
         name: "Telegram",
         link: "#",
-        icon: "/icons/footer/telegram.svg",
+        icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/telegram.svg",
       },
     ],
   };
@@ -311,7 +311,7 @@ const Footer = () => {
       <div className="hidden lg:flex w-full bg-[#4B0505] py-10 px-32   flex-col gap-5">
         <div className="flex gap-10">
           {/**Logo */}
-          <Image src="/ABP.png" alt="abp-logo" width={100} height={100} />
+          <Image src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png" alt="abp-logo" width={100} height={100} />
           {/*language dropdown */}
           <div>
             <select className="bg-[#F00000] text-white min-w-24 h-8 px-1 rounded-md">

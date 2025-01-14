@@ -117,27 +117,27 @@ const DosAndDonts = () => {
       </div>
       <div className="flex flex-row items-center justify-between z-30 mt-32">
         <Image
-          src="/images/do-and-dont/snake-head.png"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/do-and-dont/snake-head.png"
           alt="snake-head"
           width={300}
           height={300}
           className="z-30 absolute translate-y-[-50px] w-[200px] right-14 lg:w-auto lg:h-auto lg:translate-y-[-250px] lg:right-40 "
         />
         <img
-          src="/dondont1 1.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/dondont1 1.svg"
           className="z-30 absolute translate-y-[-0px] lg:translate-y-[-90px]"
         />
         /
         <img
-          src="/image 31.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 31.svg"
           className="z-40 translate-y-[60px] -left-60 absolute"
         />
         <img
-          src="/image 33.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 33.svg"
           className="z-40 translate-y-[60px] -right-10"
         />
         <img
-          src="water1 1.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water1 1.svg"
           className="w-full absolute  translate-y-[60px] z-20"
         />
       </div>

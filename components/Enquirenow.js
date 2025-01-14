@@ -6,14 +6,14 @@ const Enquirenow = () => {
   return (
     <div className="my-10">
       <Image
-        src="/image 41.png"
+        src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 41.png"
         alt="right-flower"
         width={200}
         height={200}
         className="absolute -z-10 right-0 translate-y-[600px] w-[50%] lg:translate-y-36  lg:w-[40%]"
       />
       <Image
-        src="/image 40.svg"
+        src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 40.svg"
         alt="left-flower"
         width={200}
         height={200}
@@ -23,7 +23,7 @@ const Enquirenow = () => {
       <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center -z-10 px-10">
         <div className="flex flex-row items-center gap-6">
           <Image
-            src="/ABP.png"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
             alt="abp-logo"
             width={100}
             height={100}
@@ -31,7 +31,7 @@ const Enquirenow = () => {
           />
           <Link href="https://kumbh.gov.in" target="_blank">
             <Image
-              src="/new kumbh logo 1.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
               alt="kumbh-logo"
               width={100}
               height={100}
@@ -43,7 +43,7 @@ const Enquirenow = () => {
         <div className="flex flex-row gap-10 items-center">
           <Link href="https://x.com/MahaKumbh_2025" target="_blank">
             <Image
-              src="/Group 49.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 49.svg"
               alt="social-1"
               width={100}
               height={100}
@@ -52,7 +52,7 @@ const Enquirenow = () => {
           </Link>
           <Link href="https://www.facebook.com/upmahakumbh" target="_blank">
             <Image
-              src="/Group 48.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 48.svg"
               alt="social-2"
               width={100}
               height={100}
@@ -61,7 +61,7 @@ const Enquirenow = () => {
           </Link>
           <Link href="https://www.instagram.com/mahakumbh_25/" target="_blank">
             <Image
-              src="/Group 47.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 47.svg"
               alt="social-3"
               width={100}
               height={100}
@@ -76,7 +76,7 @@ const Enquirenow = () => {
             target="_blank"
           >
             <Image
-              src="/image 42.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 42.svg"
               alt="download-1"
               width={100}
               height={100}
@@ -88,7 +88,7 @@ const Enquirenow = () => {
             target="_blank"
           >
             <Image
-              src="/image 43.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 43.svg"
               alt="download-2"
               width={100}
               height={100}
@@ -101,7 +101,7 @@ const Enquirenow = () => {
       <div className="text-center flex flex-col items-center justify-center mt-10">
         <div className="flex flex-row items-center justify-center gap-5 px-2">
           <Image
-            src="/diamond.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
             alt="diamond"
             width={32}
             height={32}
@@ -113,7 +113,7 @@ const Enquirenow = () => {
             </div>
           </Link>
           <Image
-            src="/diamond.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
             alt="diamond"
             width={32}
             height={32}
@@ -136,7 +136,7 @@ const Enquirenow = () => {
 
         <div className="mt-10 lg:mt-20">
           <Image
-            src="/Frame 10.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Frame 10.svg"
             alt="frame"
             width={100}
             height={100}
@@ -145,7 +145,6 @@ const Enquirenow = () => {
         </div>
       </div>
 
-      {/* <img src="image 41.svg" /> */}
     </div>
   );
 };

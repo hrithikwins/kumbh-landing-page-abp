@@ -6,7 +6,7 @@ const MahaKumbh = () => {
     <div>
       <div>
         <Image
-          src="/image 21.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg"
           alt="Maha Kumbh"
           layout="responsive"
           width={1920}
@@ -62,7 +62,7 @@ const MahaKumbh = () => {
       </div>
       <div>
         <Image
-          src="/image 21.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg"
           alt="Maha Kumbh"
           layout="responsive"
           width={1920}
