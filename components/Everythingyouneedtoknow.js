@@ -7,7 +7,7 @@ const Frame = ({ title, subtitle, icon }) => {
   return (
     <Link href="https://kumbh.gov.in/en/travelplanner" target="_blank">
       <div className="text-center flex justify-center z-50">
-        <img src="/frame1.png" alt="frame" className="h-48" />
+        <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png" alt="frame" className="h-48" />
         <div className="absolute translate-y-[40px] text-[#FFF5E3]">
           <div className="flex justify-center">
             <Image src={icon} alt={title} width={50} height={50} />
@@ -150,7 +150,7 @@ const Everythingyouneedtoknow = () => {
       className="mt-14 lg:mt-0"
     >
       <div>
-        <img src="/image 21.svg" className="w-full" />
+        <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg" className="w-full" />
       </div>
 
       <div>
@@ -295,7 +295,7 @@ const Everythingyouneedtoknow = () => {
 
       <div>
         <img
-          src="/image 21.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg"
           className="rotate-180 w-full translate-y-[-10px]"
         />
       </div>

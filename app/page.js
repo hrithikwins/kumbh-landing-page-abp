@@ -17,7 +17,7 @@ import Link from "next/link";
 const Frame = ({ data }) => {
   return (
     <div className="text-center flex justify-center z-50">
-      <Image src="/frame1.png" alt="frame1" width={500} height={500} />
+      <Image src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png" alt="frame1" width={500} height={500} />
       <div className="absolute translate-y-[40px] text-[#FFF5E3] lg:translate-y-[80px]">
         <div className="text-[20px]">{data.title}</div>
         <div className="font-semibold text-2xl font-lora">{data.date}</div>
@@ -182,7 +182,7 @@ export default function Home() {
             >
               {isLiveOpen ? (
                 <Image
-                  src="/icons/close-live-yt.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/close-live-yt.svg"
                   alt="live-icon"
                   width={100}
                   height={100}
@@ -192,7 +192,7 @@ export default function Home() {
                 />
               ) : (
                 <Image
-                  src="/icons/live-yt.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/live-yt.svg"
                   alt="live-icon"
                   width={100}
                   height={100}
@@ -261,7 +261,7 @@ export default function Home() {
             >
               {isLiveOpen ? (
                 <Image
-                  src="/icons/close-live-yt.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/close-live-yt.svg"
                   alt="live-icon"
                   width={100}
                   height={100}
@@ -271,7 +271,7 @@ export default function Home() {
                 />
               ) : (
                 <Image
-                  src="/icons/live-yt.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/live-yt.svg"
                   alt="live-icon"
                   width={100}
                   height={100}
@@ -283,7 +283,7 @@ export default function Home() {
             </div>
             {/* <div className="md:w-12 md:h-12 xl:w-16 xl:h-16">
             <Image
-              src="/icons/help.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/help.svg"
               alt="help-icon"
               width={100}
               height={100}
@@ -300,7 +300,7 @@ export default function Home() {
             <div className="flex flex-row lg:items-center gap-2 lg:gap-6 ">
               <div className="z-10 w-24 h-12 lg:h-auto lg:w-24">
                 <Image
-                  src="/ABP.png"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
                   alt="ABP logo"
                   width={80}
                   height={80}
@@ -309,7 +309,7 @@ export default function Home() {
               </div>
               <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
                 <Image
-                  src="/new kumbh logo 1.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
                   alt="Kumbh logo"
                   width={80}
                   height={80}
@@ -320,7 +320,7 @@ export default function Home() {
             <div className="relative w-32 h-20 lg:w-40 lg:h-32">
               <div className="absolute inset-0">
                 <Image
-                  src="/icons/day-to-go.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/day-to-go.svg"
                   alt="day-to-go-icon"
                   width={100}
                   height={100}
@@ -329,7 +329,7 @@ export default function Home() {
               </div>
               <div className="absolute inset-0">
                 <Image
-                  src="/gifs/stars.gif"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/gifs/stars.gif"
                   alt="overlay-gif"
                   width={100}
                   height={100}
@@ -342,7 +342,7 @@ export default function Home() {
             <div className="hidden lg:flex flex-row lg:items-center gap-2 lg:gap-6 ">
               <div className="z-10 w-14 h-12 lg:h-auto lg:w-24">
                 <Image
-                  src="/ABP.png"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
                   alt="ABP logo"
                   width={80}
                   height={80}
@@ -352,7 +352,7 @@ export default function Home() {
               <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
                 <Link href="https://kumbh.gov.in" target="_blank">
                   <Image
-                    src="/new kumbh logo 1.svg"
+                    src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
                     alt="Kumbh logo"
                     width={80}
                     height={80}
@@ -371,7 +371,7 @@ export default function Home() {
             <div className="hidden lg:block relative w-40 h-32">
               <div className="absolute inset-0">
                 <Image
-                  src="/icons/day-to-go.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/day-to-go.svg"
                   alt="day-to-go-icon"
                   width={100}
                   height={100}
@@ -380,7 +380,7 @@ export default function Home() {
               </div>
               <div className="absolute inset-0">
                 <Image
-                  src="/gifs/stars.gif"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/gifs/stars.gif"
                   alt="overlay-gif"
                   width={100}
                   height={100}
@@ -392,14 +392,14 @@ export default function Home() {
 
           <div>
             <Image
-              src="/cloud.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/cloud.svg"
               alt="cloud"
               width={500}
               height={500}
               className="w-[20%]"
             />
             <Image
-              src="/image 12.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 12.svg"
               alt="image 12"
               width={500}
               height={500}
@@ -407,63 +407,63 @@ export default function Home() {
             />
             <div className="flex flex-row">
               <Image
-                src="/land 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/land 1.svg"
                 alt="land 1"
                 width={500}
                 height={500}
                 className="w-[75%] absolute translate-y-10 lg:w-[45%] "
               />
               <Image
-                src="/image 7.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 7.svg"
                 alt="image 7"
                 width={500}
                 height={500}
                 className="w-[58%] absolute translate-y-32 z-20 -left-14 lg:-left-0 lg:w-[38%] lg:translate-y-72"
               />
               <Image
-                src="/image 7.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 7.svg"
                 alt="image 7"
                 width={500}
                 height={500}
                 className="w-[32%] left-[14%] absolute translate-y-72"
               />
               <Image
-                src="/image 6.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 6.svg"
                 alt="image 6"
                 width={500}
                 height={500}
                 className="w-[45%] left-[15%] z-40 absolute translate-y-[275px] lg:left-[40%] lg:w-[35%] lg:translate-y-[450px]"
               />
               <Image
-                src="/image 8.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 8.svg"
                 alt="image 8"
                 width={500}
                 height={500}
                 className="w-[42%] left-[30%] z-30 absolute translate-y-[250px] lg:w-[32%] lg:translate-y-[400px]"
               />
               <Image
-                src="/flower left.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/flower left.svg"
                 alt="flower left"
                 width={500}
                 height={500}
                 className="w-[60%] absolute z-30 translate-y-32 -left-20 lg:translate-y-60 lg:w-[30%] lg:-left-0"
               />
               <Image
-                src="/flower right.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/flower right.svg"
                 alt="flower right"
                 width={500}
                 height={500}
                 className="w-[60%] absolute translate-y-28 right-0 z-40 lg:w-[30%] lg:translate-y-48 "
               />
               <Image
-                src="/land 2.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/land 2.svg"
                 alt="land 2"
                 width={500}
                 height={500}
                 className="w-[75%] absolute right-0 translate-y-10  lg:translate-y-auto lg:w-[45%]"
               />
               <Image
-                src="/image 12.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 12.svg"
                 alt="image 12"
                 width={500}
                 height={500}
@@ -471,7 +471,7 @@ export default function Home() {
               />
               <div className="w-[100%] lg:w-[52%] absolute xs:top-[35%] lg:left-[25%]  lg:top-[26%]">
                 <Image
-                  src="/saint frame.svg"
+                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/saint frame.svg"
                   alt="saint frame"
                   width={500}
                   height={500}
@@ -486,14 +486,14 @@ export default function Home() {
 
         <div className="bg-[#FFF5E3] py-10 pt-16 lg:pt-32 mt-0 lg:mt-32">
           <Image
-            src="/water-hand 1.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water-hand 1.svg"
             alt="water hand 1"
             width={500}
             height={500}
             className="absolute w-[40%] right-0 mt-96 z-40 lg:w-[20%] lg:mt-40"
           />
           <Image
-            src="/water-hand 2.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water-hand 2.svg"
             alt="water hand 2"
             width={500}
             height={500}
@@ -507,7 +507,7 @@ export default function Home() {
               target="_blank"
             >
               <Image
-                src="/new kumbh logo 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
                 alt="new kumbh logo"
                 width={500}
                 height={500}
@@ -532,7 +532,7 @@ export default function Home() {
 
           <div className="flex flex-row items-center justify-center gap-5 mt-10">
             <Image
-              src="/diamond.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
               alt="diamond"
               width={32}
               height={32}
@@ -547,7 +547,7 @@ export default function Home() {
               BOOK YOUR SNAN DATES
             </div>
             <Image
-              src="/diamond.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
               alt="diamond"
               width={32}
               height={32}
@@ -596,14 +596,14 @@ export default function Home() {
 
           <div>
             <Image
-              src="/media room- tv.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/media room- tv.svg"
               alt="media room tv"
               width={420}
               height={420}
               className="absolute w-[250px] left-[12%] xs:w-[80%] xs:left-[10%] lg:w-[420px] lg:left-[38%] m-auto z-50 translate-y-[0px] xs:translate-y-[-10px] lg:translate-y-[-40px]"
             />
             <Image
-              src="/sadhu 1.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu 1.svg"
               alt="sadhu"
               width={250}
               height={250}
@@ -615,7 +615,7 @@ export default function Home() {
           {/**To make the river cover div */}
           <div className="block -mt-10 lg:mt-0 lg:hidden relative w-full h-64 ">
             <Image
-              src="/river.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/river.svg"
               alt="river"
               layout="fill"
               objectFit="cover"
@@ -623,14 +623,14 @@ export default function Home() {
             />
           </div>
           <Image
-            src="/river.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/river.svg"
             alt="river"
             width={500}
             height={500}
             className="translate-y-[-10px] w-full hidden lg:block"
           />
           <Image
-            src="/mask.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/mask.svg"
             alt="mask"
             width={500}
             height={500}

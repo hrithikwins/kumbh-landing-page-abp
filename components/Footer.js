@@ -311,7 +311,7 @@ const Footer = () => {
       <div className="hidden lg:flex w-full bg-[#4B0505] py-10 px-32   flex-col gap-5">
         <div className="flex gap-10">
           {/**Logo */}
-          <Image src="/ABP.png" alt="abp-logo" width={100} height={100} />
+          <Image src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png" alt="abp-logo" width={100} height={100} />
           {/*language dropdown */}
           <div>
             <select className="bg-[#F00000] text-white min-w-24 h-8 px-1 rounded-md">

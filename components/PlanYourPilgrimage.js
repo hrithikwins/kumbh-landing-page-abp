@@ -10,7 +10,7 @@ const PlanYourPilgrimage = () => {
       className=" -mb-5"
     >
       <Image
-        src="/image 21.svg"
+        src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg"
         alt="image"
         width={100}
         height={100}
@@ -32,7 +32,7 @@ const PlanYourPilgrimage = () => {
           <div className="relative w-[390px] h-[205px]">
             {/* Frame Image */}
             <Image
-              src="/images/big-frame.png"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/big-frame.png"
               alt="frame"
               layout="fill"
               objectFit="contain"
@@ -42,7 +42,7 @@ const PlanYourPilgrimage = () => {
             {/* Inner Image */}
             <div className="absolute inset-0 flex justify-center z-0">
               <Image
-                src="/images/main-image.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/main-image.svg"
                 alt="main-image"
                 width={380}
                 height={220}
@@ -55,14 +55,14 @@ const PlanYourPilgrimage = () => {
               width={100}
               height={100}
               className="w-40"
-              src="/Group 18.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 18.svg"
               alt="left-frame"
             />
             <Image
               width={100}
               height={100}
               className="w-40"
-              src="/Group 19.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 19.svg"
               alt="right-frame"
             />
           </div>
@@ -73,13 +73,13 @@ const PlanYourPilgrimage = () => {
             width={100}
             height={100}
             className="w-60"
-            src="/Group 18.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 18.svg"
             alt="left-frame"
           />
           <div className="relative w-[500px] h-[270px]">
             {/* Frame Image */}
             <Image
-              src="/images/big-frame.png"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/big-frame.png"
               alt="frame"
               layout="fill"
               objectFit="contain"
@@ -89,7 +89,7 @@ const PlanYourPilgrimage = () => {
             {/* Inner Image */}
             <div className="absolute inset-0 flex justify-center z-0">
               <Image
-                src="/images/main-image.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/main-image.svg"
                 alt="main-image"
                 width={490}
                 height={300}
@@ -101,7 +101,7 @@ const PlanYourPilgrimage = () => {
             width={100}
             height={100}
             className="w-60"
-            src="/Group 19.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/Group 19.svg"
             alt="right-frame"
           />
         </div>
@@ -110,7 +110,7 @@ const PlanYourPilgrimage = () => {
           <Image
             width={100}
             height={100}
-            src="/image 25.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 25.svg"
             className="absolute left-0 z-50 w-52 lg:w-auto"
             alt="left-flower"
           />
@@ -118,14 +118,14 @@ const PlanYourPilgrimage = () => {
           <Image
             width={100}
             height={100}
-            src="/kalash 1.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/kalash 1.svg"
             className="absolute mt-40 left-[35%] z-50 w-40 lg:w-60 lg:left-[45%] lg:mt-20"
             alt="kalash"
           />
           <Image
             width={100}
             height={100}
-            src="/image 26.svg"
+            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 26.svg"
             className="absolute right-0 z-50 w-52 lg:w-auto"
             alt="right-flower"
           />
@@ -148,7 +148,7 @@ const PlanYourPilgrimage = () => {
           <div className="mt-20">
             <div className="flex flex-row items-center justify-center gap-5 ">
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -163,7 +163,7 @@ const PlanYourPilgrimage = () => {
                 How to reach?
               </div>
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -180,7 +180,7 @@ const PlanYourPilgrimage = () => {
           <div className="mt-10">
             <div className="flex flex-row items-center justify-center gap-5 ">
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -195,7 +195,7 @@ const PlanYourPilgrimage = () => {
                 Tourist guide
               </div>
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -211,7 +211,7 @@ const PlanYourPilgrimage = () => {
           <div className="mt-10">
             <div className="flex flex-row items-center justify-center gap-5 ">
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -226,7 +226,7 @@ const PlanYourPilgrimage = () => {
                 Where to stay?
               </div>
               <Image
-                src="/diamond.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
                 width={32}
                 height={32}
@@ -268,7 +268,7 @@ const PlanYourPilgrimage = () => {
             />
             {/**hiding temporary */}
             {/* <Image
-              src="/mask.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/mask.svg"
               alt="mask"
               width={500}
               height={500}
@@ -289,7 +289,7 @@ const PlanYourPilgrimage = () => {
               <Image
                 width={100}
                 height={100}
-                src="/sadhu new 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new 1.svg"
                 className="w-[200px] lg:w-[400px] z-50"
                 alt="sadhu"
               />
@@ -299,7 +299,7 @@ const PlanYourPilgrimage = () => {
               <Image
                 width={100}
                 height={100}
-                src="/sadhu new1 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new1 1.svg"
                 className="w-[200px] lg:w-[400px] z-50"
                 alt="sadhu"
               />
@@ -308,13 +308,13 @@ const PlanYourPilgrimage = () => {
               <Image
                 width={100}
                 height={100}
-                src="/sadhu new3 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new3 1.svg"
                 className="w-[150px] lg:w-[280px] z-50"
                 alt="sadhu"
               />
             </div>
             <Image
-              src="/mask.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/mask.svg"
               alt="mask"
               width={500}
               height={500}

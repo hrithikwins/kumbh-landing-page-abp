@@ -89,7 +89,7 @@ const TimingSlider = () => {
           <div className="relative w-full h-[250px]">
             {/* Frame Image */}
             <Image
-              src="/images/history-frame.png"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/history-frame.png"
               alt="frame"
               layout="fill"
               objectFit="contain"
@@ -139,7 +139,7 @@ const TimingSlider = () => {
           <div className="relative w-[500px] h-[400px]">
             {/* Frame Image */}
             <Image
-              src="/images/history-frame.png"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/history-frame.png"
               alt="frame"
               layout="fill"
               objectFit="contain"
@@ -204,7 +204,7 @@ const TimingSlider = () => {
       {/* Timing Slider */}
       <div className="relative w-full lg:mt-12 mb-12 lg:mb-32">
         <Image
-          src="/images/history-steps.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/history-steps.svg"
           alt="steps"
           layout="fill"
           objectFit="contain"
