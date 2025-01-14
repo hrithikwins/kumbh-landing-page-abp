@@ -155,11 +155,11 @@ const Everythingyouneedtoknow = () => {
 
       <div>
         <img
-          src="image 29.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 29.svg"
           className="absolute translate-y-[-100px] left-0 w-52 lg:w-auto lg:translate-y-[-300px]"
         />
         <img
-          src="image 30.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 30.svg"
           className="absolute translate-y-[-100px] right-0 w-52 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>

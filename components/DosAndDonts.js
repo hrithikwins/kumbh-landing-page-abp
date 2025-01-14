@@ -137,7 +137,7 @@ const DosAndDonts = () => {
           className="z-40 translate-y-[60px] -right-10"
         />
         <img
-          src="water1 1.svg"
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water1 1.svg"
           className="w-full absolute  translate-y-[60px] z-20"
         />
       </div>

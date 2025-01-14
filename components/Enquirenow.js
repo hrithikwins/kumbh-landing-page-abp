@@ -145,7 +145,6 @@ const Enquirenow = () => {
         </div>
       </div>
 
-      {/* <img src="image 41.svg" /> */}
     </div>
   );
 };

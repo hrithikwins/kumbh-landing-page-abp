@@ -241,20 +241,20 @@ const PlanYourPilgrimage = () => {
           </div>
 
           <div className="hidden lg:flex lg:flex-row lg:justify-center   mt-10 lg:gap-80 w-full items-center">
-            <img src="sadhu new 1.svg" className="w-[400px] z-50" alt="sadhu" />
+            <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new 1.svg" className="w-[400px] z-50" alt="sadhu" />
             <img
-              src="sadhu new1 1.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new1 1.svg"
               className="w-[200px] h-[200px] lg:w-[400px] lg:h-auto z-50"
               alt="sadhu"
             />
             <img
-              src="sadhu new3 1.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new3 1.svg"
               className="w-[280px] z-50"
               alt="sadhu"
             />
             <div className="block lg:hidden relative w-full h-64">
               <Image
-                src="water1 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water1 1.svg"
                 alt="water"
                 layout="fill"
                 objectFit="cover"
@@ -262,7 +262,7 @@ const PlanYourPilgrimage = () => {
               />
             </div>
             <img
-              src="water1 1.svg"
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water1 1.svg"
               className="hidden lg:block w-full absolute  translate-y-[120px]"
               alt="water"
             />
@@ -278,7 +278,7 @@ const PlanYourPilgrimage = () => {
           <div className="block lg:hidden relative w-full h-[500px] mt-40">
             <div className="absolute inset-0">
               <Image
-                src="water1 1.svg"
+                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/water1 1.svg"
                 alt="water"
                 layout="fill"
                 objectFit="cover"
@@ -324,7 +324,6 @@ const PlanYourPilgrimage = () => {
         </div>
       </div>
 
-      {/* <div><img src='/image 21.svg' className='rotate-180 translate-y-[-20px]' /></div> */}
     </div>
   );
 };
