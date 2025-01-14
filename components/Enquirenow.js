@@ -22,13 +22,19 @@ const Enquirenow = () => {
 
       <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center -z-10 px-10">
         <div className="flex flex-row items-center gap-6">
-          <Image
-            src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
-            alt="abp-logo"
-            width={100}
-            height={100}
-            className="w-full "
-          />
+          <Link
+            href="https://news.abplive.com/"
+            target="_blank"
+            className="w-28"
+          >
+            <Image
+              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
+              alt="abp-logo"
+              width={100}
+              height={100}
+              className="w-full "
+            />
+          </Link>
           <Link href="https://kumbh.gov.in" target="_blank">
             <Image
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
@@ -144,7 +150,6 @@ const Enquirenow = () => {
           />
         </div>
       </div>
-
     </div>
   );
 };

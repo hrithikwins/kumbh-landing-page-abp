@@ -17,7 +17,12 @@ import Link from "next/link";
 const Frame = ({ data }) => {
   return (
     <div className="text-center flex justify-center z-50">
-      <Image src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png" alt="frame1" width={500} height={500} />
+      <Image
+        src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png"
+        alt="frame1"
+        width={500}
+        height={500}
+      />
       <div className="absolute translate-y-[40px] text-[#FFF5E3] lg:translate-y-[80px]">
         <div className="text-[20px]">{data.title}</div>
         <div className="font-semibold text-2xl font-lora">{data.date}</div>
@@ -139,7 +144,7 @@ export default function Home() {
           <div
             className={`w-full flex flex-col gap-3 ${
               isLiveOpen ? "" : "py-3"
-            } bg-[#FFF5E3] rounded-lg  transition-opacity duration-500 z-50 bg-slate-300 ${
+            } bg-[#FFF5E3] rounded-lg  transition-opacity duration-500 z-50 ${
               isMenuOpen || isLiveOpen ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -340,15 +345,17 @@ export default function Home() {
           </div>
           <div className="flex flex-row justify-between px-3 lg:px-6 py-5">
             <div className="hidden lg:flex flex-row lg:items-center gap-2 lg:gap-6 ">
-              <div className="z-10 w-14 h-12 lg:h-auto lg:w-24">
-                <Image
-                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
-                  alt="ABP logo"
-                  width={80}
-                  height={80}
-                  className="object-contain w-full h-full"
-                />
-              </div>
+              <Link href="https://news.abplive.com/" target="_blank">
+                <div className="z-10 w-14 h-12 lg:h-auto lg:w-28">
+                  <Image
+                    src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
+                    alt="ABP logo"
+                    width={80}
+                    height={80}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+              </Link>
               <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
                 <Link href="https://kumbh.gov.in" target="_blank">
                   <Image
