@@ -182,17 +182,14 @@ const MySwiper = () => {
         </div>
 
         <div>
-          <button
-            className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl"
-            onClick={() =>
-              window.open(
-                "https://www.abplive.com/topic/mahakumbh-2025",
-                "_blank"
-              )
-            }
+          <Link
+            href="https://www.abplive.com/topic/mahakumbh-2025"
+            target="_blank"
           >
-            View all latest news
-          </button>
+            <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
+              View all latest news
+            </button>
+          </Link>
         </div>
         <div className="swiper-button-next-news cursor-pointer ">
           <svg

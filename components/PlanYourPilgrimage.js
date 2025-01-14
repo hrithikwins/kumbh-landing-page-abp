@@ -154,14 +154,11 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8 rotate-90-wait"
               />
-              <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
-                onClick={() =>
-                  window.open("https://kumbh.gov.in/en/howtoreach", "_blank")
-                }
-              >
-                How to reach?
-              </div>
+              <Link href="https://kumbh.gov.in/en/howtoreach" target="_blank">
+                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
+                  How to reach?
+                </div>
+              </Link>
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
@@ -186,14 +183,14 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8 rotate-90-wait"
               />
-              <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
-                onClick={() =>
-                  window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
-                }
+              <Link
+                href="https://kumbh.gov.in/en/travelplanner"
+                target="_blank"
               >
-                Tourist guide
-              </div>
+                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
+                  Tourist guide
+                </div>
+              </Link>
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"
@@ -217,14 +214,14 @@ const PlanYourPilgrimage = () => {
                 height={32}
                 className="w-8 rotate-90-wait"
               />
-              <div
-                className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase"
-                onClick={() =>
-                  window.open("https://kumbh.gov.in/en/travelplanner", "_blank")
-                }
+              <Link
+                href="https://kumbh.gov.in/en/travelplanner"
+                target="_blank"
               >
-                Where to stay?
-              </div>
+                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
+                  Where to stay?
+                </div>
+              </Link>
               <Image
                 src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
                 alt="diamond"

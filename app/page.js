@@ -50,7 +50,7 @@ export default function Home() {
       link: "#plan-your-pilgrimage",
     },
     {
-      name: "ABP Coverage",
+      name: "ABPlive Coverage",
       link: "#hero-section",
     },
     //hiding temporary
@@ -126,9 +126,20 @@ export default function Home() {
 
   useEffect(() => {
     // Automatically open the YouTube video on laptops or desktops
-    if (window.innerWidth >= 1024) {
-      setIsLiveOpen(true);
-    }
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsLiveOpen(true);
+      } else {
+        setIsLiveOpen(false);
+      }
+    };
+
+    handleResize(); // Check on initial load
+    window.addEventListener("resize", handleResize); // Add event listener
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up event listener
+    };
   }, []);
 
   const handleLiveIconClick = () => {

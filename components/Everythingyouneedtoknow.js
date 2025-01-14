@@ -7,7 +7,11 @@ const Frame = ({ title, subtitle, icon }) => {
   return (
     <Link href="https://kumbh.gov.in/en/travelplanner" target="_blank">
       <div className="text-center flex justify-center z-50">
-        <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png" alt="frame" className="h-48" />
+        <img
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/frame1.png"
+          alt="frame"
+          className="h-48"
+        />
         <div className="absolute translate-y-[40px] text-[#FFF5E3]">
           <div className="flex justify-center">
             <Image src={icon} alt={title} width={50} height={50} />
@@ -70,72 +74,65 @@ const services = [
 
 const travel = [
   {
-    title: "Where to Stay",
+    title: "How to Reach",
     subtitle:
-      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+      "Find detailed information on how to travel to Prayagraj using trains, flights, and buses.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/how-to-reach.svg",
   },
   {
     title: "Where to Stay",
-    subtitle:
-      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
+    subtitle: "Details about Tent City and Hotels.",
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
-    title: "Where to Stay",
+    title: "Direction to Ghats",
     subtitle:
-      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+      "Discover the different ghats in Prayagraj and find their locations on Google Maps.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/direction-to-ghat.svg",
   },
   {
-    title: "Where to Stay",
+    title: "Tourist Guide",
     subtitle:
-      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/tourist-guide.svg",
   },
   {
-    title: "Where to Stay",
-    subtitle:
-      "Displaying the rich heritage and spirituality of Prayagraj for pilgrims and visitors",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
+    title: "Visitor's Guide",
+    subtitle: "How to reach Prayagraj from other major cities of India.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/visitor-guide.svg",
   },
 ];
 
 const food = [
   {
     title: "Mela Attractions",
-    subtitle: "All the list of attractions you will find in Kumbh Mela area",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area.",
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
-    title: "Mela Attractions",
-    subtitle: "All the list of attractions you will find in Kumbh Mela area",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    title: "Nearby Attractions",
+    subtitle:
+      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
-    title: "Mela Attractions",
-    subtitle: "All the list of attractions you will find in Kumbh Mela area",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
+    title: "Food and Things",
+    subtitle:
+      "Discover the culinary delights offered in Prayagraj, and in the Kumbh Mela.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/food-and-thing.svg",
   },
 ];
 
 const allThings = [
   {
-    title: "Nearby Attractions",
-    subtitle:
-      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
+    title: "Mela Attractions",
+    subtitle: "All the list of attractions you will find in Kumbh Mela area.",
+    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
     title: "Nearby Attractions",
     subtitle:
-      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
-    icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
-  },
-  {
-    title: "Nearby Attractions",
-    subtitle:
-      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela",
+      "Explore nearby destinations to visit while you are in Prayagraj for the Maha Kumbh Mela.",
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
 ];
@@ -150,7 +147,10 @@ const Everythingyouneedtoknow = () => {
       className="mt-14 lg:mt-0"
     >
       <div>
-        <img src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg" className="w-full" />
+        <img
+          src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/image 21.svg"
+          className="w-full"
+        />
       </div>
 
       <div>
