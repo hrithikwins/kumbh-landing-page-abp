@@ -294,7 +294,7 @@ export default function Home() {
         </div>
       </div>
       <div className="overflow-x-hidden">
-        <div className="bg-[url('/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen">
+        <div className="bg-[url('https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/hero-bg.svg')] bg-cover bg-center xs:h-[80vh] lg:h-screen">
           {/*logo section for mobile */}
           <div className="flex w-full lg:hidden justify-between p-3">
             <div className="flex flex-row lg:items-center gap-2 lg:gap-6 ">
