@@ -7,9 +7,9 @@ const nextConfig = {
       "abp-mahakumbh-hindi.s3.dualstack.us-east-1.amazonaws.com",
       "abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com",
     ],
-    // unoptimized: true,
+    unoptimized: true,
   },
-  // output: 'export',
+  output: 'export',
 };
 
 export default nextConfig;

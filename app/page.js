@@ -325,8 +325,8 @@ export default function Home() {
         >
           {/*logo section for mobile */}
           <div className="flex w-full lg:hidden justify-between p-3">
-            <div className="flex flex-row lg:items-center gap-2 lg:gap-6 ">
-              <div className="z-10 w-24 h-12 lg:h-auto lg:w-24">
+            <div className="flex flex-row  justify-center items-center gap-2 ">
+              <div className="z-10 w-auto h-[24px] lg:h-[32px] lg:w-24">
                 <Image
                   src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
                   alt="ABP logo"
@@ -335,9 +335,9 @@ export default function Home() {
                   className="object-contain w-full h-full"
                 />
               </div>
-              <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
+              <div className="w-14 h-[27px] z-10">
                 <Image
-                  src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
+                  src="https://kumbh.gov.in/Content/assets/img/logo/kumbh-logo.png"
                   alt="Kumbh logo"
                   width={80}
                   height={80}
@@ -345,7 +345,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="relative w-32 h-20 lg:w-40 lg:h-32">
+            <a href="#about-section" className="relative w-32 h-20 lg:w-40 lg:h-32" >
               <div className="absolute inset-0">
                 <Image
                   src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/day-to-go.svg"
@@ -364,12 +364,12 @@ export default function Home() {
                   className="object-contain h-full w-full"
                 />
               </div>
-            </div>
+            </a>
           </div>
           <div className="flex flex-row justify-between px-3 lg:px-6 py-5">
-            <div className="hidden lg:flex flex-row lg:items-center gap-2 lg:gap-6 ">
+            <div className="hidden lg:flex flex-row lg:items-center justify-start gap-0 lg:gap-1 ">
               <Link href="https://news.abplive.com/" target="_blank">
-                <div className="z-10 w-14 h-12 lg:h-auto lg:w-28">
+                <div className="z-10 w-14 h-12 lg:h-[32px] lg:w-28" >
                   <Image
                     src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
                     alt="ABP logo"
@@ -379,10 +379,10 @@ export default function Home() {
                   />
                 </div>
               </Link>
-              <div className="w-14 h-12 lg:w-24 lg:h-auto z-10">
+              <div className="w-14 h-12 lg:w-24 lg:h-[32px] z-10">
                 <Link href="https://kumbh.gov.in" target="_blank">
                   <Image
-                    src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
+                    src="https://kumbh.gov.in/Content/assets/img/logo/kumbh-logo.png"
                     alt="Kumbh logo"
                     width={80}
                     height={80}
@@ -398,7 +398,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="hidden lg:block relative w-40 h-32">
+            <a href="#about-section" className="hidden lg:block relative w-40 h-32">
               <div className="absolute inset-0">
                 <Image
                   src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/day-to-go.svg"
@@ -417,7 +417,7 @@ export default function Home() {
                   className="object-contain h-full w-full"
                 />
               </div>
-            </div>
+            </a>
           </div>
 
           <div>
@@ -537,7 +537,7 @@ export default function Home() {
               target="_blank"
             >
               <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
+                src="https://kumbh.gov.in/Content/assets/img/logo/kumbh-logo.png"
                 alt="new kumbh logo"
                 width={500}
                 height={500}

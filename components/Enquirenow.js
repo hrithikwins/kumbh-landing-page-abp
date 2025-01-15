@@ -37,7 +37,7 @@ const Enquirenow = () => {
           </Link>
           <Link href="https://kumbh.gov.in" target="_blank">
             <Image
-              src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/new kumbh logo 1.svg"
+              src="https://kumbh.gov.in/Content/assets/img/logo/kumbh-logo.png"
               alt="kumbh-logo"
               width={100}
               height={100}
