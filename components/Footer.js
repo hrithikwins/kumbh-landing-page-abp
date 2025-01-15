@@ -220,7 +220,7 @@ const Footer = () => {
     },
     {
       name: "Advertise with us",
-      link: "https://news.abplive.com/advertisement",
+      link: "/advertise-with-us",
     },
     {
       name: "Sitemap",

@@ -45,7 +45,7 @@ export default function Home() {
       link: "#plan-your-pilgrimage",
     },
     {
-      name: "ABPlive Coverage",
+      name: "Mahakumbh ABP Live Coverage",
       link: "#hero-section",
     },
     //hiding temporary
@@ -68,7 +68,7 @@ export default function Home() {
       link: "#",
     },
     {
-      name: "HN",
+      name: "हिंदी",
       link: "#",
     },
   ];
@@ -174,9 +174,9 @@ export default function Home() {
         </div>
         <div className="w-full flex justify-center items-center">
           <div className="bg-[#FFF5E3] flex items-center w-full gap-3 h-auto rounded-t-2xl py-3 px-4">
-            <div className="flex justify-center items-center ">
-              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Enter Mahakumbh Mela</button>
-            </div>
+            <Link href="/advertise-with-us" className="flex justify-center items-center ">
+              <button  className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather" >Advertise With Us</button>
+            </Link>
 
             <div className="h-14 w-14 hover:cursor-pointer" onClick={handleLiveIconClick}>
               {isLiveOpen ? (
@@ -214,16 +214,16 @@ export default function Home() {
                 <Link href={item.link}>{item.name}</Link>
               </div>
             ))}
-            {/* <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
+            <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
             {langOptions.map((item, index) => (
               <div key={index} className="flex justify-center items-center">
                 <Link href={item.link}>{item.name}</Link>
               </div>
             ))}
-          </div> */}
-            <div className="flex justify-center items-center ">
-              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Enter Mahakumbh Mela</button>
-            </div>
+          </div>
+            <Link href="/advertise-with-us" className="flex justify-center items-center ">
+              <button  className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Advertise With Us</button>
+            </Link>
           </div>
           <div className="ml-2 flex flex-row-reverse w-[10%]">
             <div className="md:w-12 md:h-12 xl:w-16 xl:h-16 hover:cursor-pointer" onClick={handleLiveIconClick}>

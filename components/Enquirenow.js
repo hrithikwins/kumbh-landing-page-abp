@@ -135,7 +135,7 @@ const Enquirenow = () => {
           </div>
           <Link href="https://kumbh.gov.in/" target="_blank">
             <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
-              Enter Mahakumbh Mela
+              Advertise With Us
             </button>
           </Link>
         </div>
