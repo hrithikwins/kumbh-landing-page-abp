@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import ScrollToTop from "./ScrollToTop"
 const Footer = () => {
   const footerLists = {
     list1: [
@@ -459,19 +459,7 @@ const Footer = () => {
           </p>
         </div>
         {/*Button to scroll to top */}
-        <div className="fixed bottom-40 right-5 lg:bottom-24 lg:right-10 z-[999]">
-          <Link href="#top">
-            <div className="bg-[#F00000] w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center  rounded-[50%]">
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/icons/footer/up-arrow.svg"
-                alt="up-arrow"
-                width={15}
-                height={15}
-                className="w-8 h-8 lg:w-8 lg:h-8 rounded-[50%]"
-              />
-            </div>
-          </Link>
-        </div>
+<ScrollToTop/>
       </div>
     </footer>
   );
