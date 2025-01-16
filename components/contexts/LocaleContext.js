@@ -7,7 +7,7 @@ const LocaleContext = createContext(undefined);
 
 export function LocaleProvider({ children }) {
   const [locale, setLocale] = useState('en');
-  const [isAdvertisementModalOpen, setIsAdvertisementModalOpen] = useState('en');
+  const [isAdvertisementModalOpen, setIsAdvertisementModalOpen] = useState(false);
 
   return (
     <LocaleContext.Provider value={{ locale, setLocale, isAdvertisementModalOpen, setIsAdvertisementModalOpen }}>
