@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useIntl } from 'react-intl';
 
 const PlanYourPilgrimage = () => {
+  const intl = useIntl();
+
   return (
     <div
       //hiding temporary
@@ -17,13 +20,15 @@ const PlanYourPilgrimage = () => {
         className="w-full"
       />
       <div className="bg-[#FED7CF] pt-10 text-center">
-        <div>|| Sarvsidhpradh Kumbh ||</div>
+        <div>
+          <span>{intl.formatMessage({ id: "sarvsidhpradhKumbh" })}</span>
+        </div>
         <div></div>
         <div
           id="plan-your-pilgrimage"
           className="text-4xl  text-center text-[#6A302F] mt-4 "
         >
-          Majestic Acknowledgements & Testimonials
+          <span>{intl.formatMessage({ id: "acknowledgementsHeading" })}</span>
         </div>
 
         {/*For mobile  frame section */}
@@ -133,11 +138,10 @@ const PlanYourPilgrimage = () => {
 
         <div className="flex pt-20 flex-col items-center justify-center mt-5 lg:mt-10 rounded-t-[931px] bg-gradient-to-b from-[#FFF] to-[#FCF2E7] w-full">
           <div className="text-[#6A302F] text-3xl mt-7 lg:mt-0 lg:text-4xl ">
-            Plan Your Pilgrimage
+            <span>{intl.formatMessage({ id: "pilgrimageHeading" })}</span>
           </div>
           <div className="text-xs mt-4 font-lora lg:text-sm">
-            Join us in this extraordinary journey and witness the confluence of
-            tradition, devotion, and enlightenment.
+            <span>{intl.formatMessage({ id: "pilgrimageDescription" }, )}</span>
           </div>
           <Link href="#useful-links-section" passHref>
             <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
@@ -156,7 +160,7 @@ const PlanYourPilgrimage = () => {
               />
               <Link href="https://kumbh.gov.in/en/howtoreach" target="_blank">
                 <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
-                  How to reach?
+                  <span>{intl.formatMessage({ id: "howToReach" })}</span>
                 </div>
               </Link>
               <Image
@@ -168,6 +172,7 @@ const PlanYourPilgrimage = () => {
               />
             </div>
             <div className="mt-4 text-xs font-lora lg:text-sm">
+
               Prayagraj city is well connected to all major Cities in India via
               the Indian <br /> Railways network, Highways and Prayagraj Airport
               located in Bamrauli.

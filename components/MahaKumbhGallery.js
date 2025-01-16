@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { useIntl } from 'react-intl';
 
 // import "./styles.css"; // Custom CSS for arrows or styling
 
@@ -32,7 +33,7 @@ const MahaKumbhGallery = () => {
   const prevRef = useRef(null); // Ref for the previous button
   const nextRef = useRef(null); // Ref for the next button
   const [dynamicGalleryData, setDynamicGalleryData] = useState([]);
-
+const intl = useIntl();
   const galleryData = [
     {
       title: "महाकुंभ में गंगा स्नान का मिलेगा पूरा पुण्य, ध्यान रखें ये नियम",
@@ -116,13 +117,12 @@ const MahaKumbhGallery = () => {
         />
       </div>
       <div className="text-4xl  text-center text-[#6A302F] pt-20 mt-40 lg:pt-0">
-        Mahakumbh 2025 Gallery
+        <span>{intl.formatMessage({ id: "galleryHeading" })}</span>
       </div>
 
       <div className="mt-2 text-sm text-center mb-8 font-lora">
         {" "}
-        We bring to you the all the latest photos & videos of the Prayagraj Maha
-        Kumbh 2025
+        <span>{intl.formatMessage({ id: "galleryDescription" })}</span>
       </div>
       <Swiper
         modules={[Navigation]}
@@ -176,7 +176,7 @@ const MahaKumbhGallery = () => {
             target="_blank"
           >
             <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
-              View all latest updates
+<span>{intl.formatMessage({ id: "viewAllGalleryUpdates" })}</span>
             </button>
           </Link>
         </div>

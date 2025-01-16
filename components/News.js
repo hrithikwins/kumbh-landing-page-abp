@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { useIntl } from 'react-intl';
 // import "./styles.css"; // Custom CSS for arrows or styling
 
 const Card = ({ data }) => {
@@ -31,7 +32,7 @@ const MySwiper = () => {
   const prevRef = useRef(null); // Ref for the previous button
   const nextRef = useRef(null); // Ref for the next button
   const [dynamicNewsData, setDynamicNewsData] = useState([]);
-
+const intl = useIntl();
   const newsData = [
     {
       title:
@@ -127,13 +128,12 @@ const MySwiper = () => {
         id="abp-news-coverage-section"
         className="text-3xl lg:text-4xl mt-20 lg:mt-20  text-center text-[#6A302F] "
       >
-        ABP News Coverage
+        <span>{intl.formatMessage({ id: "newsSectionHeading" })}</span>
       </div>
 
       <div className="mt-2 text-sm text-center mb-8 font-lora">
         {" "}
-        We bring to you the all the latest updates about the Prayagraj Maha
-        Kumbh 2025
+        <span>{intl.formatMessage({ id: "newsSectionDescription" })}</span>
       </div>
       <Swiper
         modules={[Navigation]}
@@ -187,7 +187,7 @@ const MySwiper = () => {
             target="_blank"
           >
             <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
-              View all latest news
+             <span>{intl.formatMessage({ id: "viewAllLatestNews" })}</span>
             </button>
           </Link>
         </div>

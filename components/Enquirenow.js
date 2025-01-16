@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useIntl } from 'react-intl';
 
 const Enquirenow = () => {
+  const intl = useIntl();
   return (
     <div className="my-10">
       <Image
@@ -130,7 +132,7 @@ const Enquirenow = () => {
         <div className="mt-10 lg:mt-20">
           <div className="flex justify-center font-semibold">
             <p className="w-[90%] lg:w-auto">
-              Experience the Prayagraj Mahakumbh Mela 2025
+              <span>{intl.formatMessage({ id: "experienceHeading" })}</span>
             </p>
           </div>
           <Link href="https://kumbh.gov.in/" target="_blank">
