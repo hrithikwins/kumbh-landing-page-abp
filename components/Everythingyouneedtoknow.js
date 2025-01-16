@@ -11,107 +11,107 @@ import ServiceTabs from "./ServiceTabs"
 const Everythingyouneedtoknow = () => {
   const { locale } = useLocale();
   const intl = { formatMessage: (id) => messages[locale][id.id] };
-  const [active, setActive] = useState(intl.formatMessage({ id: "allServices" }));
+  const [active, setActive] = useState(intl.formatMessage({ id: "allServices" }, {lineBreak: <br />,}));
 
 
 const services = [
   {
-    title: intl.formatMessage({ id: "howToReach" }),
-    subtitle: intl.formatMessage({ id: "howToReachSubtitle" }),
+    title: intl.formatMessage({ id: "howToReach" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "howToReachSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/how-to-reach.svg",
   },
   {
-    title: intl.formatMessage({ id: "whereToStay" }),
-    subtitle: intl.formatMessage({ id: "whereToStaySubtitle" }),
+    title: intl.formatMessage({ id: "whereToStay" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "whereToStaySubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
-    title: intl.formatMessage({ id: "directionToGhats" }),
-    subtitle: intl.formatMessage({ id: "directionToGhatsSubtitle" }),
+    title: intl.formatMessage({ id: "directionToGhats" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "directionToGhatsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/direction-to-ghat.svg",
   },
   {
-    title: intl.formatMessage({ id: "touristGuide" }),
-    subtitle: intl.formatMessage({ id: "touristGuideSubtitle" }),
+    title: intl.formatMessage({ id: "touristGuide" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "touristGuideSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/tourist-guide.svg",
   },
   {
-    title: intl.formatMessage({ id: "visitorsGuide" }),
-    subtitle: intl.formatMessage({ id: "visitorsGuideSubtitle" }),
+    title: intl.formatMessage({ id: "visitorsGuide" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "visitorsGuideSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/visitor-guide.svg",
   },
   {
-    title: intl.formatMessage({ id: "melaAttractions" }),
-    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "melaAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
-    title: intl.formatMessage({ id: "nearbyAttractions" }),
-    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "nearbyAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
-    title: intl.formatMessage({ id: "foodAndThings" }),
-    subtitle: intl.formatMessage({ id: "foodAndThingsSubtitle" }),
+    title: intl.formatMessage({ id: "foodAndThings" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "foodAndThingsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/food-and-thing.svg",
   },
 ];
 
 const travel = [
   {
-    title: intl.formatMessage({ id: "howToReach" }),
-    subtitle: intl.formatMessage({ id: "howToReachSubtitle" }),
+    title: intl.formatMessage({ id: "howToReach" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "howToReachSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/how-to-reach.svg",
   },
   {
-    title: intl.formatMessage({ id: "whereToStay" }),
-    subtitle: intl.formatMessage({ id: "whereToStaySubtitle" }),
+    title: intl.formatMessage({ id: "whereToStay" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "whereToStaySubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/where-to-stay.svg",
   },
   {
-    title: intl.formatMessage({ id: "directionToGhats" }),
-    subtitle: intl.formatMessage({ id: "directionToGhatsSubtitle" }),
+    title: intl.formatMessage({ id: "directionToGhats" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "directionToGhatsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/direction-to-ghat.svg",
   },
   {
-    title: intl.formatMessage({ id: "touristGuide" }),
-    subtitle: intl.formatMessage({ id: "touristGuideSubtitle" }),
+    title: intl.formatMessage({ id: "touristGuide" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "touristGuideSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/tourist-guide.svg",
   },
   {
-    title: intl.formatMessage({ id: "visitorsGuide" }),
-    subtitle: intl.formatMessage({ id: "visitorsGuideSubtitle" }),
+    title: intl.formatMessage({ id: "visitorsGuide" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "visitorsGuideSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/visitor-guide.svg",
   },
 ];
 
 const food = [
   {
-    title: intl.formatMessage({ id: "melaAttractions" }),
-    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "melaAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
-    title: intl.formatMessage({ id: "nearbyAttractions" }),
-    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "nearbyAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
   {
-    title: intl.formatMessage({ id: "foodAndThings" }),
-    subtitle: intl.formatMessage({ id: "foodAndThingsSubtitle" }),
+    title: intl.formatMessage({ id: "foodAndThings" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "foodAndThingsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/food-and-thing.svg",
   },
 ];
 
 const allThings = [
   {
-    title: intl.formatMessage({ id: "melaAttractions" }),
-    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "melaAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "melaAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/mela-attraction.svg",
   },
   {
-    title: intl.formatMessage({ id: "nearbyAttractions" }),
-    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }),
+    title: intl.formatMessage({ id: "nearbyAttractions" }, {lineBreak: <br />,}),
+    subtitle: intl.formatMessage({ id: "nearbyAttractionsSubtitle" }, {lineBreak: <br />,}),
     icon: "https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/images/useful-links/nearby-attraction.svg",
   },
 ];
@@ -140,17 +140,17 @@ const allThings = [
         />
       </div>
       <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:py-36 lg:pb-12 ">
-        <div className="font-semibold text-sm">{intl.formatMessage({ id: "usefulLinks" })}</div>
+        <div className="font-semibold text-sm">{intl.formatMessage({ id: "usefulLinks" }, {lineBreak: <br />,})}</div>
         <div
           id="useful-links-section"
           className="flex justify-center text-[#6A302F] text-center font-normal text-4xl mt-4"
         >
-          <p className="w-[80%] lg:w-auto">{intl.formatMessage({ id: "everythingYouNeed" })}</p>
+          <p className="w-[80%] lg:w-auto">{intl.formatMessage({ id: "everythingYouNeed" }, {lineBreak: <br />,})}</p>
         </div>
 
         <div className="mt-4 flex justify-center">
           <p className="w-[80%] lg:w-auto">
-            {intl.formatMessage({ id: "exploreServices" })}
+            {intl.formatMessage({ id: "exploreServices" }, {lineBreak: <br />,})}
           </p>
         </div>
       </div>
@@ -161,6 +161,8 @@ const allThings = [
         travel={travel}
         food={food}
         allThings={allThings}
+        active={active}
+        setActive={setActive}
       />
 
       <div>

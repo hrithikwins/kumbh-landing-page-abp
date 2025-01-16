@@ -24,32 +24,31 @@ const Frame = ({ title, subtitle, icon }) => {
     </Link>
   );
 };
-const ServiceTabs = ({ services, travel, food, allThings }) => {
+const ServiceTabs = ({ services, travel, food, allThings, active, setActive }) => {
   const intl = useIntl();
-  const [active, setActive] = useState(intl.formatMessage({ id: "allServices" }));
 
   const tabs = [
-    { id: "allServices", label: intl.formatMessage({ id: "allServices" }) },
-    { id: "travelRest", label: intl.formatMessage({ id: "travelRest" }) },
-    { id: "foodAttractions", label: intl.formatMessage({ id: "foodAttractions" }) },
-    { id: "allThingsKumbh", label: intl.formatMessage({ id: "allThingsKumbh" }) },
+    { id: "allServices", label: intl.formatMessage({ id: "allServices" }, {lineBreak: <br />,}) },
+    { id: "travelRest", label: intl.formatMessage({ id: "travelRest" }, {lineBreak: <br />,}) },
+    { id: "foodAttractions", label: intl.formatMessage({ id: "foodAttractions" }, {lineBreak: <br />,}) },
+    { id: "allThingsKumbh", label: intl.formatMessage({ id: "allThingsKumbh" }, {lineBreak: <br />,}) },
   ];
 
   const renderContent = () => {
     switch (active) {
-      case intl.formatMessage({ id: "allServices" }):
+      case intl.formatMessage({ id: "allServices" }, {lineBreak: <br />,}):
         return services.map((item, index) => (
           <Frame key={index} title={item.title} subtitle={item.subtitle} icon={item.icon} />
         ));
-      case intl.formatMessage({ id: "travelRest" }):
+      case intl.formatMessage({ id: "travelRest" }, {lineBreak: <br />,}):
         return travel.map((item, index) => (
           <Frame key={index} title={item.title} subtitle={item.subtitle} icon={item.icon} />
         ));
-      case intl.formatMessage({ id: "foodAttractions" }):
+      case intl.formatMessage({ id: "foodAttractions" }, {lineBreak: <br />,}):
         return food.map((item, index) => (
           <Frame key={index} title={item.title} subtitle={item.subtitle} icon={item.icon} />
         ));
-      case intl.formatMessage({ id: "allThingsKumbh" }):
+      case intl.formatMessage({ id: "allThingsKumbh" }, {lineBreak: <br />,}):
         return allThings.map((item, index) => (
           <Frame key={index} title={item.title} subtitle={item.subtitle} icon={item.icon} />
         ));

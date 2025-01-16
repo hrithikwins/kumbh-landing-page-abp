@@ -132,7 +132,7 @@ const Enquirenow = () => {
         <div className="mt-10 lg:mt-20">
           <div className="flex justify-center font-semibold">
             <p className="w-[90%] lg:w-auto">
-              <span>{intl.formatMessage({ id: "experienceHeading" })}</span>
+              <span>{intl.formatMessage({ id: "experienceHeading" }, {lineBreak: <br />,})}</span>
             </p>
           </div>
           <Link href="https://kumbh.gov.in/" target="_blank">

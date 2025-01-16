@@ -14,6 +14,7 @@ import PlanYourPilgrimage from "../components/PlanYourPilgrimage";
 // import TourPackages from "@/components/TourPackages";
 import { useLocale } from "../components/contexts/LocaleContext";
 import Image from "next/image";
+import BookHeadingCard from "../components/BookHeadingCard";
 
 const Frame = ({ data }) => {
   return (
@@ -41,19 +42,19 @@ function Home() {
 
   const navBarItems = [
     {
-      name: intl.formatMessage({ id: "about" }),
+      name: intl.formatMessage({ id: "about" }, {lineBreak: <br />,}),
       link: "#about-section",
     },
     {
-      name: intl.formatMessage({ id: "planYourPilgrimage" }),
+      name: intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,}),
       link: "#plan-your-pilgrimage",
     },
     {
-      name: intl.formatMessage({ id: "mahakumbhCoverage" }),
+      name: intl.formatMessage({ id: "mahakumbhCoverage" }, {lineBreak: <br />,}),
       link: "#hero-section",
     },
     {
-      name: intl.formatMessage({ id: "usefulLinks" }),
+      name: intl.formatMessage({ id: "usefulLinks" }, {lineBreak: <br />,}),
       link: "#useful-links-section",
     },
   ];
@@ -70,27 +71,27 @@ function Home() {
 
   const framesData = [
     {
-      title: intl.formatMessage({ id: "paushPurnamasi" }),
+      title: intl.formatMessage({ id: "paushPurnamasi" }, {lineBreak: <br />,}),
       date: "13 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "makarSankranti" }),
+      title: intl.formatMessage({ id: "makarSankranti" }, {lineBreak: <br />,}),
       date: "14 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "mauniAmavasya" }),
+      title: intl.formatMessage({ id: "mauniAmavasya" }, {lineBreak: <br />,}),
       date: "29 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "basantPanchami" }),
+      title: intl.formatMessage({ id: "basantPanchami" }, {lineBreak: <br />,}),
       date: "3 FEBRUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "maghiPurnamasi" }),
+      title: intl.formatMessage({ id: "maghiPurnamasi" }, {lineBreak: <br />,}),
       date: "12 FEBRUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "mahaShivaratri" }),
+      title: intl.formatMessage({ id: "mahaShivaratri" }, {lineBreak: <br />,}),
       date: "26 FEBRUARY 2025",
     },
   ];
@@ -263,7 +264,10 @@ function Home() {
             ))}
             <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
               {langOptions.map((item, index) => (
-                <div key={index} className="flex justify-center items-center">
+                <div
+                  key={index}
+                  className="flex justify-center items-center cursor-pointer"
+                >
                   <div onClick={() => setLocale(item.locale)} href={item.link}>
                     {item.name}
                   </div>
@@ -395,9 +399,17 @@ function Home() {
               </div>
             </div>
 
-            <div className="text-[#FFF5E3] text-center text-4xl -mt-9 lg:-mt-0  flex justify-center lg:text-4xl leading-[37px] lg:leading-[60px] font-thin">
+            <div className="text-[#FFF5E3] text-center text-4xl -mt-9 lg:-mt-0  flex justify-center lg:text-4xl leading-[37px] lg:leading-[40px] font-thin">
               <p className="w-[70%] lg:w-auto">
-                THE PRESTIGIOUS PRAYAGRAJ <br /> MAHAKUMBH MELA 2025
+                <span>
+                  {intl.formatMessage(
+                    { id: "heading" },
+                    {
+                      lineBreak: <br />, // This inserts the <br /> tag as a value for the placeholder
+                    }
+                  )}
+                </span>
+                {/* THE PRESTIGIOUS PRAYAGRAJ <br /> MAHAKUMBH MELA 2025 */}
                 {/* प्रतिष्ठित प्रयागराज <br/> महाकुंभ मेला 2025 */}
               </p>
             </div>
@@ -556,7 +568,7 @@ function Home() {
               id="about-section"
               className="text-[#6A302F] text-center font-normal text-3xl translate-y-[-40px]"
             >
-              {intl.formatMessage({ id: "aboutHeading" })}
+              {intl.formatMessage({ id: "aboutHeading" }, {lineBreak: <br />,})}
             </div>
           </div>
 
@@ -575,12 +587,12 @@ function Home() {
               className="w-8 rotate-90-wait"
             />
             <div
-              className="text-[#6A302F] underline text-xl lg:text-2xl cursor-pointer"
+              className="text-[#6A302F] underline text-xl lg:text-xl cursor-pointer"
               onClick={() =>
                 window.open("https://kumbh.gov.in/en/bathingdates", "_blank")
               }
             >
-              {intl.formatMessage({ id: "aboutSubheading" })}
+              {intl.formatMessage({ id: "aboutSubheading" }, {lineBreak: <br />,})}
             </div>
             <Image
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
@@ -593,36 +605,25 @@ function Home() {
 
           <div className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[60px] lg:pb-[200px]">
             <div className="flex flex-col items-center px-10 gap-10 justify-center text-center mt-10 lg:flex-row">
-              <div className="text-center">
-                <div className="uppercase text-[#6A302F] text-4xl">
-                  {intl.formatMessage({ id: "aboutHeading2" })}
-                </div>
-                <div className="text-xs text-[#222] mt-2 font-lora">
-                  {intl.formatMessage({ id: "aboutSubHeading2" })}
-                </div>
-              </div>
+              <BookHeadingCard
+                heading={intl.formatMessage({ id: "aboutHeading2" }, {lineBreak: <br />,})}
+                subHeading={intl.formatMessage({ id: "aboutSubHeading2" }, {lineBreak: <br />,})}
+              />
 
-              <div className="text-center">
-                <div className="uppercase text-[#6A302F] text-4xl">
-                  {intl.formatMessage({ id: "spiritualSignificanceHeading" })}
-                </div>
-                <div className="text-xs text-[#222] mt-2 font-lora">
-                  {intl.formatMessage({
-                    id: "spiritualSignificanceDescription",
-                  })}
-                </div>
-              </div>
-
-              <div className="text-center">
-                <div className="uppercase text-[#6A302F] text-4xl">
-                  {intl.formatMessage({ id: "continuousCycleHeading" })}
-                </div>
-                <div className="text-xs text-[#222] mt-2 font-lora">
-                  {intl.formatMessage({
-                    id: "spiritualSignificanceDescription",
-                  })}
-                </div>
-              </div>
+              <BookHeadingCard
+                heading={intl.formatMessage({
+                  id: "spiritualSignificanceHeading",
+                })}
+                subHeading={intl.formatMessage({
+                  id: "spiritualSignificanceDescription",
+                })}
+              />
+              <BookHeadingCard
+                heading={intl.formatMessage({ id: "continuousCycleHeading" }, {lineBreak: <br />,})}
+                subHeading={intl.formatMessage({
+                  id: "spiritualSignificanceDescription",
+                })}
+              />
             </div>
           </div>
 
@@ -693,7 +694,7 @@ function Home() {
         {/*Useful Links section */}
 
         <Everythingyouneedtoknow />
-
+{intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,})}
         <Enquirenow />
 
         <Footer />

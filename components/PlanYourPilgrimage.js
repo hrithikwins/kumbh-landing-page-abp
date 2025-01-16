@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useIntl } from 'react-intl';
-
+import { useIntl } from "react-intl";
+import WhereToStay from "./WhereToStay";
 const PlanYourPilgrimage = () => {
   const intl = useIntl();
 
@@ -21,14 +21,24 @@ const PlanYourPilgrimage = () => {
       />
       <div className="bg-[#FED7CF] pt-10 text-center">
         <div>
-          <span>{intl.formatMessage({ id: "sarvsidhpradhKumbh" })}</span>
+          <span>
+            {intl.formatMessage(
+              { id: "sarvsidhpradhKumbh" },
+              { lineBreak: <br /> }
+            )}
+          </span>
         </div>
         <div></div>
         <div
           id="plan-your-pilgrimage"
           className="text-4xl  text-center text-[#6A302F] mt-4 "
         >
-          <span>{intl.formatMessage({ id: "acknowledgementsHeading" })}</span>
+          <span>
+            {intl.formatMessage(
+              { id: "acknowledgementsHeading" },
+              { lineBreak: <br /> }
+            )}
+          </span>
         </div>
 
         {/*For mobile  frame section */}
@@ -138,110 +148,75 @@ const PlanYourPilgrimage = () => {
 
         <div className="flex pt-20 flex-col items-center justify-center mt-5 lg:mt-10 rounded-t-[931px] bg-gradient-to-b from-[#FFF] to-[#FCF2E7] w-full">
           <div className="text-[#6A302F] text-3xl mt-7 lg:mt-0 lg:text-4xl ">
-            <span>{intl.formatMessage({ id: "pilgrimageHeading" })}</span>
+            <span>
+              {intl.formatMessage(
+                { id: "pilgrimageHeading" },
+                { lineBreak: <br /> }
+              )}
+            </span>
           </div>
           <div className="text-xs mt-4 font-lora lg:text-sm">
-            <span>{intl.formatMessage({ id: "pilgrimageDescription" }, )}</span>
+            <span>{intl.formatMessage({ id: "pilgrimageDescription" })}</span>
           </div>
           <Link href="#useful-links-section" passHref>
             <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
               Explore our service offerings
             </button>
           </Link>
-
-          <div className="mt-20">
-            <div className="flex flex-row items-center justify-center gap-5 ">
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-              <Link href="https://kumbh.gov.in/en/howtoreach" target="_blank">
-                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
-                  <span>{intl.formatMessage({ id: "howToReach" })}</span>
-                </div>
-              </Link>
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-            </div>
-            <div className="mt-4 text-xs font-lora lg:text-sm">
-
-              Prayagraj city is well connected to all major Cities in India via
-              the Indian <br /> Railways network, Highways and Prayagraj Airport
-              located in Bamrauli.
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <div className="flex flex-row items-center justify-center gap-5 ">
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-              <Link
-                href="https://kumbh.gov.in/en/travelplanner"
-                target="_blank"
-              >
-                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
-                  Tourist guide
-                </div>
-              </Link>
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-            </div>
-            <div className="mt-4 text-xs font-lora lg:text-sm">
-              The Tourism Department Uttar Pradesh has introduced 4 walks
-              <br /> showcasing the various aspects of Prayagraj heritage.
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <div className="flex flex-row items-center justify-center gap-5 ">
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-              <Link
-                href="https://kumbh.gov.in/en/travelplanner"
-                target="_blank"
-              >
-                <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
-                  Where to stay?
-                </div>
-              </Link>
-              <Image
-                src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
-                alt="diamond"
-                width={32}
-                height={32}
-                className="w-8 rotate-90-wait"
-              />
-            </div>
-            <div className="mt-4 text-xs font-lora lg:text-sm">
-              Tent city, hotels, public accommodations and home stay- Prayagraj{" "}
-              <br /> Mahakumbh 2025 offers all types stays for you and your
-              family.
-            </div>
-          </div>
-
+          <WhereToStay
+            title={
+              <span>
+                {intl.formatMessage(
+                  { id: "howToReach" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+            subTitle={
+              <span>
+                {intl.formatMessage(
+                  { id: "howToReachSubtitle" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+          />
+          <WhereToStay
+            title={
+              <span>
+                {intl.formatMessage(
+                  { id: "whereToStay" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+            subTitle={
+              <span>
+                {intl.formatMessage(
+                  { id: "whereToStaySubtitle" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+          />
+          <WhereToStay
+            title={
+              <span>
+                {intl.formatMessage(
+                  { id: "directionToGhats" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+            subTitle={
+              <span>
+                {intl.formatMessage(
+                  { id: "directionToGhatsSubtitle" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
+            }
+          />
           <div className="hidden lg:flex lg:flex-row lg:justify-between mt-10 lg:gap-0 w-full items-center">
             <img
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/sadhu new 1.svg"

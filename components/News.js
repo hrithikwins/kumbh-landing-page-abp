@@ -128,12 +128,12 @@ const intl = useIntl();
         id="abp-news-coverage-section"
         className="text-3xl lg:text-4xl mt-20 lg:mt-20  text-center text-[#6A302F] "
       >
-        <span>{intl.formatMessage({ id: "newsSectionHeading" })}</span>
+        <span>{intl.formatMessage({ id: "newsSectionHeading" }, {lineBreak: <br />,})}</span>
       </div>
 
       <div className="mt-2 text-sm text-center mb-8 font-lora">
         {" "}
-        <span>{intl.formatMessage({ id: "newsSectionDescription" })}</span>
+        <span>{intl.formatMessage({ id: "newsSectionDescription" }, {lineBreak: <br />,})}</span>
       </div>
       <Swiper
         modules={[Navigation]}
@@ -187,7 +187,7 @@ const intl = useIntl();
             target="_blank"
           >
             <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
-             <span>{intl.formatMessage({ id: "viewAllLatestNews" })}</span>
+             <span>{intl.formatMessage({ id: "viewAllLatestNews" }, {lineBreak: <br />,})}</span>
             </button>
           </Link>
         </div>

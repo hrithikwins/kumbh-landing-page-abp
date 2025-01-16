@@ -117,12 +117,12 @@ const intl = useIntl();
         />
       </div>
       <div className="text-4xl  text-center text-[#6A302F] pt-20 mt-40 lg:pt-0">
-        <span>{intl.formatMessage({ id: "galleryHeading" })}</span>
+        <span>{intl.formatMessage({ id: "galleryHeading" }, {lineBreak: <br />,})}</span>
       </div>
 
       <div className="mt-2 text-sm text-center mb-8 font-lora">
         {" "}
-        <span>{intl.formatMessage({ id: "galleryDescription" })}</span>
+        <span>{intl.formatMessage({ id: "galleryDescription" }, {lineBreak: <br />,})}</span>
       </div>
       <Swiper
         modules={[Navigation]}
@@ -176,7 +176,7 @@ const intl = useIntl();
             target="_blank"
           >
             <button className="bg-[#6A302F] text-sm text-white text-center px-4 py-2 rounded-xl">
-<span>{intl.formatMessage({ id: "viewAllGalleryUpdates" })}</span>
+<span>{intl.formatMessage({ id: "viewAllGalleryUpdates" }, {lineBreak: <br />,})}</span>
             </button>
           </Link>
         </div>
