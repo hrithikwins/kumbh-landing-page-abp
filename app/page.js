@@ -1,18 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import DosAndDonts from "@/components/DosAndDonts";
-import Enquirenow from "@/components/Enquirenow";
-import Everythingyouneedtoknow from "@/components/Everythingyouneedtoknow";
-import Footer from "@/components/Footer";
-// import MahaKumbh from "@/components/MahaKumbh";
-import MahaKumbhGallery from "@/components/MahaKumbhGallery";
-import News from "@/components/News";
-import PlanYourPilgrimage from "@/components/PlanYourPilgrimage";
+import { useIntl } from "react-intl";
+import Link from "next/link";
+import Enquirenow from "../components/Enquirenow";
+import Everythingyouneedtoknow from "../components/Everythingyouneedtoknow";
+import Footer from "../components/Footer";
+// import MahaKumbh from "../components/MahaKumbh";
+import MahaKumbhGallery from "../components/MahaKumbhGallery";
+import News from "../components/News";
+import PlanYourPilgrimage from "../components/PlanYourPilgrimage";
 // import TimingSlider from "@/components/TimingSlider";
 // import TourPackages from "@/components/TourPackages";
+import { useLocale} from "../components/contexts/LocaleContext"
 import Image from "next/image";
-import Link from "next/link";
 
 const Frame = ({ data }) => {
   return (
@@ -26,76 +27,65 @@ const Frame = ({ data }) => {
   );
 };
 
-export default function Home() {
+function Home() {
+  const {locale, setLocale} = useLocale();
+  const intl = useIntl();
   const [youtubeLink, setYoutubeLink] = useState("");
   const [isLiveOpen, setIsLiveOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navBarItems = [
     {
-      name: "About",
+      name: intl.formatMessage({ id: "about" }),
       link: "#about-section",
     },
-    // {
-    //   name: "History",
-    //   link: "#history-section",
-    // },
     {
-      name: "Plan Your Pilgrimage",
+      name: intl.formatMessage({ id: "planYourPilgrimage" }),
       link: "#plan-your-pilgrimage",
     },
     {
-      name: "Mahakumbh ABP Live Coverage",
+      name: intl.formatMessage({ id: "mahakumbhCoverage" }),
       link: "#hero-section",
     },
-    //hiding temporary
-    // {
-    //   name: "Do's and Don't",
-    //   link: "#dos-and-donts-section",
-    // },
-    // {
-    //   name: "Tour Packages",
-    //   link: "#tour-package-section",
-    // },
     {
-      name: "Useful Links",
+      name: intl.formatMessage({ id: "usefulLinks" }),
       link: "#useful-links-section",
     },
   ];
-  const langOptions = [
+const langOptions = [
     {
       name: "EN",
-      link: "#",
+      locale: "en",
     },
     {
       name: "हिंदी",
-      link: "#",
+      locale: "hi",
     },
   ];
 
   const framesData = [
     {
-      title: "PAUSH PURNAMASI",
+      title: intl.formatMessage({ id: "paushPurnamasi" }),
       date: "13 JANUARY 2025",
     },
     {
-      title: "MAKAR SANKRANTI",
+      title: intl.formatMessage({ id: "makarSankranti" }),
       date: "14 JANUARY 2025",
     },
     {
-      title: "MAUNI AMAVASYA",
+      title: intl.formatMessage({ id: "mauniAmavasya" }),
       date: "29 JANUARY 2025",
     },
     {
-      title: "BASANT PANCHAMI",
+      title: intl.formatMessage({ id: "basantPanchami" }),
       date: "3 FEBRUARY 2025",
     },
     {
-      title: "MAGHI PURNAMASI",
+      title: intl.formatMessage({ id: "maghiPurnamasi" }),
       date: "12 FEBRUARY 2025",
     },
     {
-      title: "MAHA SHIVARATRI",
+      title: intl.formatMessage({ id: "mahaShivaratri" }),
       date: "26 FEBRUARY 2025",
     },
   ];
@@ -116,6 +106,9 @@ export default function Home() {
     getYoutubeLink();
   }, []);
 
+  // const toggleLocale = () => {
+  //   setLocale(locale === "en" ? "hi" : "en");
+  // };
   useEffect(() => {
     // Automatically open the YouTube video on laptops or desktops
     const handleResize = () => {
@@ -145,8 +138,7 @@ export default function Home() {
   };
 
   return (
-    <>
-      {/**Mobile navBar */}
+    <div>
       <div className="flex fixed sm:hidden flex-col gap-2 bottom-0 left-0 right-0 w-full justify-center items-center text-[#6A302F] font-lora font-medium z-[999]">
         <div className={`w-full  ${isMenuOpen || isLiveOpen ? "flex" : "hidden"}`}>
           <div className={`w-full flex flex-col gap-3 ${isLiveOpen ? "" : "py-3"} bg-[#FFF5E3] rounded-lg  transition-opacity duration-500 z-50 ${isMenuOpen || isLiveOpen ? "opacity-100" : "opacity-0"}`}>
@@ -175,7 +167,7 @@ export default function Home() {
         <div className="w-full flex justify-center items-center">
           <div className="bg-[#FFF5E3] flex items-center w-full gap-3 h-auto rounded-t-2xl py-3 px-4">
             <Link href="/advertise-with-us" className="flex justify-center items-center ">
-              <button  className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather" >Advertise With Us</button>
+              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Advertise With Us</button>
             </Link>
 
             <div className="h-14 w-14 hover:cursor-pointer" onClick={handleLiveIconClick}>
@@ -215,14 +207,14 @@ export default function Home() {
               </div>
             ))}
             <div className="flex justify-center items-center gap-5 md:ml-0 xl:ml-4">
-            {langOptions.map((item, index) => (
-              <div key={index} className="flex justify-center items-center">
-                <Link href={item.link}>{item.name}</Link>
-              </div>
-            ))}
-          </div>
+              {langOptions.map((item, index) => (
+                <div key={index} className="flex justify-center items-center">
+                  <div onClick={() => setLocale(item.locale)} href={item.link}>{item.name}</div>
+                </div>
+              ))}
+            </div>
             <Link href="/advertise-with-us" className="flex justify-center items-center ">
-              <button  className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Advertise With Us</button>
+              <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">Advertise With Us</button>
             </Link>
           </div>
           <div className="ml-2 flex flex-row-reverse w-[10%]">
@@ -435,6 +427,8 @@ export default function Home() {
 
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
+
+export default Home;
