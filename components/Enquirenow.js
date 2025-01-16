@@ -2,9 +2,11 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { useIntl } from 'react-intl';
+import { useLocale } from './contexts/LocaleContext';
 
 const Enquirenow = () => {
   const intl = useIntl();
+  const { locale } = useLocale();
   return (
     <div className="my-10">
       <Image
@@ -25,7 +27,7 @@ const Enquirenow = () => {
       <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center -z-10 px-10">
         <div className="flex flex-row items-center gap-6">
           <Link
-            href="https://news.abplive.com/"
+            href={(locale == "en" ? "https://news.abplive.com/" : "https://www.abplive.com/")}
             target="_blank"
             className="w-28"
           >

@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useIntl } from 'react-intl';
+import { useIntl } from "react-intl";
 
 // import "./styles.css"; // Custom CSS for arrows or styling
 
@@ -33,7 +33,7 @@ const MahaKumbhGallery = () => {
   const prevRef = useRef(null); // Ref for the previous button
   const nextRef = useRef(null); // Ref for the next button
   const [dynamicGalleryData, setDynamicGalleryData] = useState([]);
-const intl = useIntl();
+  const intl = useIntl();
   const galleryData = [
     {
       title: "महाकुंभ में गंगा स्नान का मिलेगा पूरा पुण्य, ध्यान रखें ये नियम",
@@ -117,12 +117,19 @@ const intl = useIntl();
         />
       </div>
       <div className="text-4xl  text-center text-[#6A302F] pt-20 mt-40 lg:pt-0">
-        <span>{intl.formatMessage({ id: "galleryHeading" }, {lineBreak: <br />,})}</span>
+        <span>
+          {intl.formatMessage({ id: "galleryHeading" }, { lineBreak: <br /> })}
+        </span>
       </div>
 
       <div className="mt-2 text-sm text-center mb-8 font-lora">
         {" "}
-        <span>{intl.formatMessage({ id: "galleryDescription" }, {lineBreak: <br />,})}</span>
+        <span>
+          {intl.formatMessage(
+            { id: "galleryDescription" },
+            { lineBreak: <br /> }
+          )}
+        </span>
       </div>
       <Swiper
         modules={[Navigation]}
@@ -176,7 +183,12 @@ const intl = useIntl();
             target="_blank"
           >
             <button className="variant-1">
-<span>{intl.formatMessage({ id: "viewAllGalleryUpdates" }, {lineBreak: <br />,})}</span>
+              <span>
+                {intl.formatMessage(
+                  { id: "viewAllGalleryUpdates" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
             </button>
           </Link>
         </div>

@@ -42,19 +42,25 @@ function Home() {
 
   const navBarItems = [
     {
-      name: intl.formatMessage({ id: "about" }, {lineBreak: <br />,}),
+      name: intl.formatMessage({ id: "about" }, { lineBreak: <br /> }),
       link: "#about-section",
     },
     {
-      name: intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,}),
+      name: intl.formatMessage(
+        { id: "planYourPilgrimage" },
+        { lineBreak: <br /> }
+      ),
       link: "#plan-your-pilgrimage",
     },
     {
-      name: intl.formatMessage({ id: "mahakumbhCoverage" }, {lineBreak: <br />,}),
+      name: intl.formatMessage(
+        { id: "mahakumbhCoverage" },
+        { lineBreak: <br /> }
+      ),
       link: "#hero-section",
     },
     {
-      name: intl.formatMessage({ id: "usefulLinks" }, {lineBreak: <br />,}),
+      name: intl.formatMessage({ id: "usefulLinks" }, { lineBreak: <br /> }),
       link: "#useful-links-section",
     },
   ];
@@ -71,27 +77,42 @@ function Home() {
 
   const framesData = [
     {
-      title: intl.formatMessage({ id: "paushPurnamasi" }, {lineBreak: <br />,}),
+      title: intl.formatMessage(
+        { id: "paushPurnamasi" },
+        { lineBreak: <br /> }
+      ),
       date: "13 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "makarSankranti" }, {lineBreak: <br />,}),
+      title: intl.formatMessage(
+        { id: "makarSankranti" },
+        { lineBreak: <br /> }
+      ),
       date: "14 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "mauniAmavasya" }, {lineBreak: <br />,}),
+      title: intl.formatMessage({ id: "mauniAmavasya" }, { lineBreak: <br /> }),
       date: "29 JANUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "basantPanchami" }, {lineBreak: <br />,}),
+      title: intl.formatMessage(
+        { id: "basantPanchami" },
+        { lineBreak: <br /> }
+      ),
       date: "3 FEBRUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "maghiPurnamasi" }, {lineBreak: <br />,}),
+      title: intl.formatMessage(
+        { id: "maghiPurnamasi" },
+        { lineBreak: <br /> }
+      ),
       date: "12 FEBRUARY 2025",
     },
     {
-      title: intl.formatMessage({ id: "mahaShivaratri" }, {lineBreak: <br />,}),
+      title: intl.formatMessage(
+        { id: "mahaShivaratri" },
+        { lineBreak: <br /> }
+      ),
       date: "26 FEBRUARY 2025",
     },
   ];
@@ -148,7 +169,7 @@ function Home() {
 
   return (
     <div>
-      <div className="flex fixed sm:hidden flex-col gap-2 bottom-0 left-0 right-0 w-full justify-center items-center text-[#6A302F] font-lora font-medium z-[999]">
+      <div className="flex fixed sm:hidden flex-col  gap-2 bottom-0 left-0 right-0 w-full justify-center items-center text-[#6A302F] font-lora font-medium z-[999]">
         <div
           className={`w-full  ${isMenuOpen || isLiveOpen ? "flex" : "hidden"}`}
         >
@@ -375,7 +396,7 @@ function Home() {
           </div>
           <div className="flex flex-row justify-between px-3 lg:px-6 py-5 items-center">
             <div className="hidden lg:flex flex-row lg:items-center justify-start gap-0 lg:gap-1 ">
-              <Link href="https://news.abplive.com/" target="_blank">
+              <Link href={locale == "en" ? "https://news.abplive.com/" : "https://www.abplive.com/"} target="_blank">
                 <div className="z-10 w-14 h-12 lg:h-[32px] lg:w-28">
                   <Image
                     src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/ABP.png"
@@ -568,7 +589,10 @@ function Home() {
               id="about-section"
               className="text-[#6A302F] text-center font-normal text-3xl translate-y-[-40px]"
             >
-              {intl.formatMessage({ id: "aboutHeading" }, {lineBreak: <br />,})}
+              {intl.formatMessage(
+                { id: "aboutHeading" },
+                { lineBreak: <br /> }
+              )}
             </div>
           </div>
 
@@ -592,7 +616,10 @@ function Home() {
                 window.open("https://kumbh.gov.in/en/bathingdates", "_blank")
               }
             >
-              {intl.formatMessage({ id: "aboutSubheading" }, {lineBreak: <br />,})}
+              {intl.formatMessage(
+                { id: "aboutSubheading" },
+                { lineBreak: <br /> }
+              )}
             </div>
             <Image
               src="https://abp-mahakumbh-hindi.s3.us-east-1.amazonaws.com/diamond.svg"
@@ -606,8 +633,14 @@ function Home() {
           <div className="border-[#87C0F0] border-t border-r border-l mx-10 rounded-t-3xl mt-10 border-b-transparent pb-[60px] lg:pb-[200px]">
             <div className="flex flex-col items-center px-10 gap-10 justify-center text-center mt-10 lg:flex-row">
               <BookHeadingCard
-                heading={intl.formatMessage({ id: "aboutHeading2" }, {lineBreak: <br />,})}
-                subHeading={intl.formatMessage({ id: "aboutSubHeading2" }, {lineBreak: <br />,})}
+                heading={intl.formatMessage(
+                  { id: "aboutHeading2" },
+                  { lineBreak: <br /> }
+                )}
+                subHeading={intl.formatMessage(
+                  { id: "aboutSubHeading2" },
+                  { lineBreak: <br /> }
+                )}
               />
 
               <BookHeadingCard
@@ -619,7 +652,10 @@ function Home() {
                 })}
               />
               <BookHeadingCard
-                heading={intl.formatMessage({ id: "continuousCycleHeading" }, {lineBreak: <br />,})}
+                heading={intl.formatMessage(
+                  { id: "continuousCycleHeading" },
+                  { lineBreak: <br /> }
+                )}
                 subHeading={intl.formatMessage({
                   id: "spiritualSignificanceDescription",
                 })}
@@ -694,7 +730,7 @@ function Home() {
         {/*Useful Links section */}
 
         <Everythingyouneedtoknow />
-{/* {intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,})} */}
+        {/* {intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,})} */}
         <Enquirenow />
 
         <Footer />

@@ -148,14 +148,14 @@ function AdvertiseForm() {
                 Get in touch
               </button>
 
-              <Link href="https://news.abplive.com/mahakumbh-mela" type="button" className="w-full text-[#6a302f] text-xl font-medium">
+              <Link href={(locale == "en" ? "https://news.abplive.com/" : "https://www.abplive.com/") + "mahakumbh-mela"} type="button" className="w-full text-[#6a302f] text-xl font-medium">
                 Close
               </Link>
             </form>
           </div>
         </div>
       )}
-      {showSuccess && <SuccessDialog open={showSuccess} onClose={() => window.location.href="https://news.abplive.com/mahakumbh-mela"} />}
+      {showSuccess && <SuccessDialog open={showSuccess} onClose={() => {}} />}
     </>
   );
 }

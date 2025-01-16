@@ -220,8 +220,8 @@ const Everythingyouneedtoknow = () => {
           className="absolute translate-y-[-100px] right-0 w-52 lg:w-auto lg:translate-y-[-300px]"
         />
       </div>
-      <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:py-36 lg:pb-12 ">
-        <div className="  ">
+      <div className="bg-[#FED7CF] text-center pb-14 pt-36 lg:pt-[72px] lg:pb-0 ">
+        <div className="">
           || {intl.formatMessage({ id: "usefulLinks" }, { lineBreak: <br /> })}{" "}
           ||
         </div>

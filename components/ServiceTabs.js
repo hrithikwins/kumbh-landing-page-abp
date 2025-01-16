@@ -58,7 +58,7 @@ const ServiceTabs = ({ services, travel, food, allThings, active, setActive }) =
   };
 
   return (
-    <div className="bg-[#FED7CF] pt-0 lg:py-10">
+    <div className="bg-[#FED7CF] pt-0 lg:py-10 ">
       <div className="w-fit m-auto py-2 px-3 rounded-md text-center bg-[#FFF5E3] grid grid-cols-2 lg:grid-cols-4 gap-2 font-medium">
         {tabs.map((tab) => (
           <div
