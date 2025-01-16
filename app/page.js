@@ -288,7 +288,7 @@ function Home() {
               {langOptions.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-center items-center cursor-pointer"
+                  className={"flex justify-center items-center cursor-pointer " + (locale == item.locale ? " underline" : "")}
                 >
                   <div onClick={() => setLocale(item.locale)} href={item.link}>
                     {item.name}
