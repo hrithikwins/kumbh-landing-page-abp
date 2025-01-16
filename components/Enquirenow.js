@@ -116,8 +116,8 @@ const Enquirenow = () => {
             className="w-8 rotate-90-wait"
           />
           <Link href="https://kumbh.gov.in/" target="_blank">
-            <div className="text-[#6A302F] uppercase underline text-xl lg:text-4xl">
-              Visit official site of maha kumbh 2025
+            <div className="text-[#6A302F] uppercase underline text-xl lg:text-[32px]">
+              <span>{intl.formatMessage({ id: "officialSiteVisit" }, { lineBreak: <br/>})}</span>
             </div>
           </Link>
           <Image

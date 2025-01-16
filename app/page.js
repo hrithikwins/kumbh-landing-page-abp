@@ -373,7 +373,7 @@ function Home() {
               </div>
             </a>
           </div>
-          <div className="flex flex-row justify-between px-3 lg:px-6 py-5">
+          <div className="flex flex-row justify-between px-3 lg:px-6 py-5 items-center">
             <div className="hidden lg:flex flex-row lg:items-center justify-start gap-0 lg:gap-1 ">
               <Link href="https://news.abplive.com/" target="_blank">
                 <div className="z-10 w-14 h-12 lg:h-[32px] lg:w-28">
@@ -587,7 +587,7 @@ function Home() {
               className="w-8 rotate-90-wait"
             />
             <div
-              className="text-[#6A302F] underline text-xl lg:text-xl cursor-pointer"
+              className="text-[#6A302F] underline text-xl lg:text-[32px] cursor-pointer"
               onClick={() =>
                 window.open("https://kumbh.gov.in/en/bathingdates", "_blank")
               }
@@ -694,7 +694,7 @@ function Home() {
         {/*Useful Links section */}
 
         <Everythingyouneedtoknow />
-{intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,})}
+{/* {intl.formatMessage({ id: "planYourPilgrimage" }, {lineBreak: <br />,})} */}
         <Enquirenow />
 
         <Footer />

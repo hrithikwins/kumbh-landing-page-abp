@@ -65,3 +65,7 @@ html {
 .rotate-90-wait {
   animation: rotate-90-wait 4s linear infinite;
 }
+
+.variant-1{
+  @apply bg-[#6A302F] text-base text-white text-center px-4 py-2 rounded-xl
+}

@@ -18,7 +18,7 @@ const Frame = ({ title, subtitle, icon }) => {
             <Image src={icon || "/placeholder.svg"} alt={title} width={50} height={50} />
           </div>
           <div className="text-[20px]">{title}</div>
-          <div className="text-xs max-w-72 mt-2">{subtitle}</div>
+          <div className="text-xs max-w-[17rem] mt-2">{subtitle}</div>
         </div>
       </div>
     </Link>

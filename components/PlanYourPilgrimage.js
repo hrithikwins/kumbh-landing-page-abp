@@ -159,8 +159,13 @@ const PlanYourPilgrimage = () => {
             <span>{intl.formatMessage({ id: "pilgrimageDescription" })}</span>
           </div>
           <Link href="#useful-links-section" passHref>
-            <button className="bg-[#6A302F] w-60 mt-4 text-sm text-white text-center px-4 py-2 rounded-xl">
-              Explore our service offerings
+            <button className="variant-1 mt-4">
+              <span>
+                {intl.formatMessage(
+                  { id: "exploreServicesButton" },
+                  { lineBreak: <br /> }
+                )}
+              </span>
             </button>
           </Link>
           <WhereToStay

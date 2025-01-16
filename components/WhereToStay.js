@@ -16,7 +16,7 @@ const WhereToStay = ({title, subTitle}) => {
           href="https://kumbh.gov.in/en/travelplanner"
           target="_blank"
         >
-          <div className="text-[#6A302F] underline text-3xl lg:text-4xl cursor-pointer uppercase">
+          <div className="text-[#6A302F] underline text-xl lg:text-[32px] cursor-pointer uppercase">
             {title}
           </div>
         </Link>

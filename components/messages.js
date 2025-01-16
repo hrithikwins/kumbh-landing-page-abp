@@ -74,6 +74,8 @@ const messages = {
     whereToStay: "Where to stay?",
     stayOptions:
       "Tent city, hotels, public accommodations and home stay - Prayagraj Mahakumbh 2025 offers all types stays for you and your family.",
+      officialSiteVisit: "Visit official site of maha kumbh 2025",
+      exploreServicesButton: "Explore our service offerings",
 
   },
   hi: {
@@ -151,6 +153,8 @@ const messages = {
     whereToStay: "कहाँ ठहरें?",
     stayOptions:
       "टेंट सिटी, होटल, सार्वजनिक आवास और होम स्टे - प्रयागराज महाकुंभ 2025 आपके और आपके परिवार के लिए सभी प्रकार के ठहराव प्रदान करता है।",
+      officialSiteVisit: "महाकुंभ 2025 की आधिकारिक साइट पर जाएँ",
+      exploreServicesButton: "हमारी सेवाओं का अन्वेषण करें"
   },
 };
 
