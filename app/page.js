@@ -275,6 +275,7 @@ const langOptions = [
             <div className="text-[#FFF5E3] text-center text-4xl -mt-9 lg:-mt-0  flex justify-center lg:text-4xl leading-[37px] lg:leading-[60px] font-thin">
               <p className="w-[70%] lg:w-auto">
                 THE PRESTIGIOUS PRAYAGRAJ <br /> MAHAKUMBH MELA 2025
+                {/* प्रतिष्ठित प्रयागराज <br/> महाकुंभ मेला 2025 */}
               </p>
             </div>
 
