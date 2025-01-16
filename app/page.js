@@ -14,6 +14,7 @@ import PlanYourPilgrimage from "../components/PlanYourPilgrimage";
 // import TourPackages from "@/components/TourPackages";
 import { useLocale } from "../components/contexts/LocaleContext";
 import Image from "next/image";
+import AdvertiseForm from "/components/AdvertiseWithUs.js";
 import BookHeadingCard from "../components/BookHeadingCard";
 
 const Frame = ({ data }) => {
@@ -34,7 +35,7 @@ const Frame = ({ data }) => {
 };
 
 function Home() {
-  const { locale, setLocale } = useLocale();
+  const { locale, setLocale , setIsAdvertisementModalOpen, isAdvertisementModalOpen} = useLocale();
   const intl = useIntl();
   const [youtubeLink, setYoutubeLink] = useState("");
   const [isLiveOpen, setIsLiveOpen] = useState(false);
@@ -208,14 +209,14 @@ function Home() {
         </div>
         <div className="w-full flex justify-center items-center">
           <div className="bg-[#FFF5E3] flex items-center w-full gap-3 h-auto rounded-t-2xl py-3 px-4">
-            <Link
-              href="/advertise-with-us"
+            <div
+              onClick={()=> setIsAdvertisementModalOpen(true)}
               className="flex justify-center items-center "
             >
               <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">
                 Advertise With Us
               </button>
-            </Link>
+            </div>
 
             <div
               className="h-14 w-14 hover:cursor-pointer"
@@ -295,14 +296,14 @@ function Home() {
                 </div>
               ))}
             </div>
-            <Link
-              href="/advertise-with-us"
+            <div
+              onClick={()=> setIsAdvertisementModalOpen(true)}
               className="flex justify-center items-center "
             >
               <button className="rounded-2xl py-2 px-4 bg-[#6A302F] text-white font-merriweather">
                 Advertise With Us
               </button>
-            </Link>
+            </div>
           </div>
           <div className="ml-2 flex flex-row-reverse w-[10%]">
             <div
@@ -734,6 +735,7 @@ function Home() {
         <Enquirenow />
 
         <Footer />
+        {isAdvertisementModalOpen && <><AdvertiseForm/></>}
       </div>
     </div>
   );

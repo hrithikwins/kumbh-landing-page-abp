@@ -459,7 +459,7 @@ const Footer = () => {
           </p>
         </div>
         {/*Button to scroll to top */}
-        <div className="absolute bottom-40 right-5 lg:bottom-24 lg:right-10">
+        <div className="fixed bottom-40 right-5 lg:bottom-24 lg:right-10 z-[999]">
           <Link href="#top">
             <div className="bg-[#F00000] w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center  rounded-[50%]">
               <Image

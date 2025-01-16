@@ -29,7 +29,7 @@ export function SuccessDialog({ open, onClose }) {
   return (
     <dialog
       ref={dialogRef}
-      className="bg-white h-full w-full flex justify-center items-center p-4"
+      className="bg-transparent/60 h-full w-full flex justify-center items-center p-4"
       onClick={handleClose}
     >
       <div
