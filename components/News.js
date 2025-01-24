@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useIntl } from 'react-intl';
+import { useLocale } from './contexts/LocaleContext';
 // import "./styles.css"; // Custom CSS for arrows or styling
 
 const Card = ({ data }) => {
@@ -33,6 +34,7 @@ const MySwiper = () => {
   const nextRef = useRef(null); // Ref for the next button
   const [dynamicNewsData, setDynamicNewsData] = useState([]);
 const intl = useIntl();
+const {locale} = useLocale()
   const newsData = [
     {
       title:
@@ -97,7 +99,7 @@ const intl = useIntl();
     const fetchData = async () => {
       try {
         const data = await fetch(
-          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-news-subset30"
+          "https://feeds.abplive.com/testfeeds/"+(locale == "en" ? "english" : "hindi") + "/maha-kumbh-2025/tag-index-news-subset30"
         );
         const newsData = await data.json();
         setDynamicNewsData(newsData);
@@ -108,7 +110,7 @@ const intl = useIntl();
     };
 
     fetchData();
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     // Delay assigning refs to ensure DOM elements are rendered

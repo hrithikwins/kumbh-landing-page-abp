@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useIntl } from "react-intl";
+import { useLocale } from './contexts/LocaleContext';
 
 // import "./styles.css"; // Custom CSS for arrows or styling
 
@@ -29,11 +30,7 @@ const Card = ({ data }) => {
   );
 };
 
-const MahaKumbhGallery = () => {
-  const prevRef = useRef(null); // Ref for the previous button
-  const nextRef = useRef(null); // Ref for the next button
-  const [dynamicGalleryData, setDynamicGalleryData] = useState([]);
-  const intl = useIntl();
+
   const galleryData = [
     {
       title: "महाकुंभ में गंगा स्नान का मिलेगा पूरा पुण्य, ध्यान रखें ये नियम",
@@ -65,15 +62,23 @@ const MahaKumbhGallery = () => {
     },
   ];
 
+
+const MahaKumbhGallery = () => {
+  const prevRef = useRef(null); // Ref for the previous button
+  const nextRef = useRef(null); // Ref for the next button
+  const [dynamicGalleryData, setDynamicGalleryData] = useState([]);
+  const intl = useIntl();
+    const { locale } = useLocale();
+
   //fetch data from API
   useEffect(() => {
     const fetchData = async () => {
       try {
         const resPics = await fetch(
-          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-gallery-subset30"
+          "https://feeds.abplive.com/testfeeds/"+ (locale == "en" ? "english" : "hindi") + "/maha-kumbh-2025/tag-index-gallery-subset30"
         );
         const resVideos = await fetch(
-          "https://feeds.abplive.com/testfeeds/english/maha-kumbh-2025/tag-index-video-subset30"
+          "https://feeds.abplive.com/testfeeds/"+ (locale == "en" ? "english" : "hindi") + "/maha-kumbh-2025/tag-index-video-subset30"
         );
         const videosData = await resVideos.json();
         const picsData = await resPics.json();
@@ -84,7 +89,7 @@ const MahaKumbhGallery = () => {
     };
 
     fetchData();
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     // Delay assigning refs to ensure DOM elements are rendered
