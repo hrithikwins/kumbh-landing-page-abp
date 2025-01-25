@@ -24,7 +24,7 @@ const Card = ({ data }) => {
             className="rounded-lg"
           />
         </div>
-        <div className="text-2xl py-2">{data.title}</div>
+        <div className="text-base font-[600] py-2">{data.title}</div>
       </Link>
     </div>
   );

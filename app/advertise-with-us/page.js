@@ -1,7 +1,7 @@
 "use client";
 import AdvertiseForm from "/components/AdvertiseWithUs.js";
 
-const Page = (props) => {
+const Page = () => {
   return (
     <>
       <AdvertiseForm />
