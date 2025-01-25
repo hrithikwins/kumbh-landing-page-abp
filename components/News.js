@@ -21,7 +21,7 @@ const Card = ({ data }) => {
           height={200}
         />
 
-        <div className="text-2xl  py-2">{data.title}</div>
+        <div className="text-[1rem] font-[600] py-2">{data.title}</div>
 
         <div className="text-sm font-lora">{data.excerpt}</div>
       </Link>
