@@ -33,9 +33,9 @@ function IntlWrapper({ children }) {
       console.log("hostname", hostname);
 
       if (hostname === "news.abplive.com") {
-        setLocale("hi"); // Hindi
+        setLocale("en"); // Hindi
       } else {
-        setLocale("en"); // English
+        setLocale("hi"); // English
       }
     }
   }, []);
