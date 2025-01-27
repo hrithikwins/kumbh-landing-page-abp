@@ -31,12 +31,13 @@ function IntlWrapper({ children }) {
       const url = window.location.href; // Get the current URL
       const hostname = new URL(url).hostname;
       console.log("hostname", hostname);
-
-      if (hostname === "news.abplive.com") {
-        setLocale("en"); // english
-      } else {
-        setLocale("hi"); // hindi
-      }
+      setTimeout(() => {
+        if (hostname === "news.abplive.com") {
+          setLocale("en"); // english
+        } else {
+          setLocale("hi"); // hindi
+        }
+      }, 10);
     }
   }, []);
 
