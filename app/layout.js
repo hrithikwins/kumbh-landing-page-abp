@@ -11,6 +11,24 @@ import Script from "next/script"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News</title>
+        <meta name="description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.abplive.com/mahakumbh-mela" />
+        <meta property="og:title" content="Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News" />
+        <meta property="og:description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+        <meta property="og:image" content="https://abpverse-mahakumbh.s3.us-east-1.amazonaws.com/ABP+Mahakumbh+2025+Image.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.abplive.com/mahakumbh-mela" />
+        <meta property="twitter:title" content="Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News" />
+        <meta property="twitter:description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+        <meta property="twitter:image" content="https://abpverse-mahakumbh.s3.us-east-1.amazonaws.com/ABP+Mahakumbh+2025+Image.png" />
+      </Head>
       <Script
         id="google-analytics"
         strategy="afterInteractive"
