@@ -12,21 +12,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News</title>
-        <meta name="description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+        <title>Mahakumbh 2025 News Hindi, महाकुंभ मेला, Prayagraj Kumbh Mela Photos & Videos | ABP News</title>
+        <meta name="description" content="Mahakumbh 2025 News in Hindi: Get latest news updates of Prayagraj Maha Kumbh Mela Snan dates, tent booking, routs guidelines, photos and video at www.abplive.com" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.abplive.com/mahakumbh-mela" />
-        <meta property="og:title" content="Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News" />
-        <meta property="og:description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+        <meta property="og:title" content="Mahakumbh 2025 News Hindi, महाकुंभ मेला, Prayagraj Kumbh Mela Photos & Videos | ABP News" />
+        <meta property="og:description" content="Mahakumbh 2025 News in Hindi: Get latest news updates of Prayagraj Maha Kumbh Mela Snan dates, tent booking, routs guidelines, photos and video at www.abplive.com" />
         <meta property="og:image" content="https://abpverse-mahakumbh.s3.us-east-1.amazonaws.com/ABP+Mahakumbh+2025+Image.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.abplive.com/mahakumbh-mela" />
-        <meta property="twitter:title" content="Kumbh Mela 2025 | Prayagraj Kumbh Stay, Important Dates | ABP News" />
-        <meta property="twitter:description" content="Kumbh Mela 2025: कुंभ मेला २०२५ स्नान की ज़रूरी तारीखें यहाँ देखें | Prayagraj Kumbh Stay, Important Dates, Latest Updates on ABP News" />
+        <meta property="twitter:title" content="Mahakumbh 2025 News Hindi, महाकुंभ मेला, Prayagraj Kumbh Mela Photos & Videos | ABP News" />
+        <meta property="twitter:description" content="Mahakumbh 2025 News in Hindi: Get latest news updates of Prayagraj Maha Kumbh Mela Snan dates, tent booking, routs guidelines, photos and video at www.abplive.com" />
         <meta property="twitter:image" content="https://abpverse-mahakumbh.s3.us-east-1.amazonaws.com/ABP+Mahakumbh+2025+Image.png" />
       </Head>
       <Script
