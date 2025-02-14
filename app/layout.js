@@ -11,7 +11,7 @@ import Script from "next/script"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Mahakumbh 2025 News Hindi, महाकुंभ मेला, Prayagraj Kumbh Mela Photos & Videos | ABP News</title>
         <meta name="description" content="Mahakumbh 2025 News in Hindi: Get latest news updates of Prayagraj Maha Kumbh Mela Snan dates, tent booking, routs guidelines, photos and video at www.abplive.com" />
 
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:title" content="Mahakumbh 2025 News Hindi, महाकुंभ मेला, Prayagraj Kumbh Mela Photos & Videos | ABP News" />
         <meta property="twitter:description" content="Mahakumbh 2025 News in Hindi: Get latest news updates of Prayagraj Maha Kumbh Mela Snan dates, tent booking, routs guidelines, photos and video at www.abplive.com" />
         <meta property="twitter:image" content="https://abpverse-mahakumbh.s3.us-east-1.amazonaws.com/ABP+Mahakumbh+2025+Image.png" />
-      </Head>
+      </head>
       <Script
         id="google-analytics"
         strategy="afterInteractive"
